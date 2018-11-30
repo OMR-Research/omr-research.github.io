@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+    font-family: "Open Sans";
+}
+
+table {
+	border-spacing: 0px;
+}
+
+h1 {
+	padding-left: 50px;	
+}
+
+.subtitle {
+	padding-left: 50px;	
+}
+
+td {	
+	padding: 10px;
+}
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+td.bibtexnumber {
+    padding-left: 10px;
+	padding-right: 10px;
+}
+
+td.bibtexitem {
+    font-size: medium;
+}
+
+blockquote {
+	font-size: small;		
+    margin-block-start: 1em;
+    margin-block-end: 0em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
