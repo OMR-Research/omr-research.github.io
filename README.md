@@ -1,4 +1,4 @@
-# Resources for Optical Music Recognition Research
+# [Music Recognition Research Bibliography](https://omr-research.github.io/)
 
 Build the website on Windows using the command 
 
