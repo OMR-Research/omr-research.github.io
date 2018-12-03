@@ -25,14 +25,31 @@ h1 {
     transition: color 0.2s, background-color 0.2s, border-color 0.2s;
 }
 
+.btn-light {
+	padding: 0.75rem 1rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255,255,255,0.7);    
+    border-radius: 0.3rem;
+    transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+}
 
 .page-header {
 	padding-top:60px;
-	padding-bottom:60px;
+	padding-bottom:20px;
 	color:#fff;
 	text-align:center;
 	background-color:#159957;
 	background-image:linear-gradient(120deg, #155799, #159957);
+}
+
+.page-header-table {
+	margin: 0px auto;
+	padding: 0px;
+}
+
+.page-header-table.tr {
+	height: 20px;
 }
 
 td {	
@@ -42,6 +59,7 @@ td {
 tr:nth-child(even) {background-color: #f2f2f2;}
 
 td.bibtexnumber {
+    font-size: medium;
     padding-left: 10px;
 	padding-right: 10px;
 }
