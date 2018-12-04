@@ -1,0 +1,9 @@
+---
+name: Pull Request
+about: Propose a change
+
+---
+
+Fixes #...
+
+This PR adds/correct entry [BibTex-Key] in the bibliography `OMR-Research`/`OMR-Related`/`OMR-Unverified`.
