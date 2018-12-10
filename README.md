@@ -1,4 +1,4 @@
-# [Music Recognition Research Bibliography](https://omr-research.github.io/)
+# [Optical Music Recognition Research Bibliography](https://omr-research.github.io/)
 
 This repository contains the most extensive, curated bibliography on Optical Music Recognition. It contains three different BibTex files that are the authoritative sources from which the website [https://omr-research.github.io/](https://omr-research.github.io/) will be generated.
 
