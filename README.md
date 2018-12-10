@@ -17,25 +17,25 @@ Make sure you have LaTeX/BibTex installed and available on your commandline. We 
 You can build the website on Windows using the following commands 
 
 ```
-del docs\*.html
+del *.html
 
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o docs\OMR-Research-Key .\OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -d -o docs\OMR-Research-Year .\OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -noabstract -o docs\OMR-Research-No-Abstract .\OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o docs\OMR-Related .\OMR-Related-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o docs\OMR-Unverified .\OMR-Research-Unverified.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o OMR-Research-Key sources\OMR-Research.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -d -o OMR-Research-Year sources\OMR-Research.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -noabstract -o OMR-Research-No-Abstract sources\OMR-Research.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o OMR-Related sources\OMR-Related-Research.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o OMR-Unverified sources\OMR-Research-Unverified.bib
 
-copy template\Header.html + docs\OMR-Research-Key.html + template\Footer.html docs\index.html /Y
-copy template\Header.html + docs\OMR-Research-Year.html + template\Footer.html docs\omr-research-sorted-by-year.html /Y
-copy template\Header.html + docs\OMR-Research-No-Abstract.html + template\Footer.html docs\omr-research-compact.html /Y
-copy template\Header.html + docs\OMR-Related.html + template\Footer.html docs\omr-related-research.html /Y
-copy template\Header.html + docs\OMR-Unverified.html + template\Footer.html docs\omr-research-unverified.html /Y
+copy template\Header.html + OMR-Research-Key.html + template\Footer.html index.html /Y
+copy template\Header.html + OMR-Research-Year.html + template\Footer.html omr-research-sorted-by-year.html /Y
+copy template\Header.html + OMR-Research-No-Abstract.html + template\Footer.html omr-research-compact.html /Y
+copy template\Header.html + OMR-Related.html + template\Footer.html omr-related-research.html /Y
+copy template\Header.html + OMR-Unverified.html + template\Footer.html omr-research-unverified.html /Y
 
-del docs\OMR-Research-Key.html
-del docs\OMR-Research-Year.html
-del docs\OMR-Research-No-Abstract.html
-del docs\OMR-Related.html
-del docs\OMR-Unverified.html
+del OMR-Research-Key.html
+del OMR-Research-Year.html
+del OMR-Research-No-Abstract.html
+del OMR-Related.html
+del OMR-Unverified.html
 
 ```
 
