@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE preferences SYSTEM "http://java.sun.com/dtd/preferences.dtd">
+<preferences EXTERNAL_XML_VERSION="1.0">
+<root type="user">
+<map/>
+<node name="org">
+<map/>
+<node name="jabref">
+<map>
+<entry key="bindings" value=""/>
+<entry key="autoCompleteFields" value="author;editor;title;journal;publisher;keywords;crossref;related;entryset"/>
+<entry key="pushToApplication" value="TeXstudio"/>
+<entry key="mainWindowPosX" value="2005"/>
+<entry key="mainWindowPosY" value="163"/>
+<entry key="mainWindowSizeX" value="1566"/>
+<entry key="mainWindowSizeY" value="934"/>
+<entry key="windowMaximised" value="false"/>
+<entry key="toolbarVisible" value="true"/>
+<entry key="collectTelemetry" value="false"/>
+<entry key="askedCollectTelemetry" value="true"/>
+<entry key="workingDirectory" value="C:\Users\Alex\Repositories\omr-agenda\OMR Scientific Papers"/>
+<entry key="cyclePreviewPos" value="0"/>
+<entry key="cyclePreview" value="Preview;/ieee.csl"/>
+<entry key="previewPanelHeight" value="354"/>
+<entry key="previewStyle" value="&lt;font face=&quot;sans-serif&quot;&gt;&lt;b&gt;&lt;i&gt;\bibtextype&lt;/i&gt;&lt;a name=&quot;\bibtexkey&quot;&gt;\begin{bibtexkey} (\bibtexkey)&lt;/a&gt;\end{bibtexkey}&lt;/b&gt;&lt;br&gt;__NEWLINE__\begin{author} \format[Authors(LastFirst,Initials,Semicolon,Amp),HTMLChars]{\author}&lt;BR&gt;\end{author}__NEWLINE__\begin{editor} \format[Authors(LastFirst,Initials,Semicolon,Amp),HTMLChars]{\editor} &lt;i&gt;(\format[IfPlural(Eds.,Ed.)]{\editor})&lt;/i&gt;&lt;BR&gt;\end{editor}__NEWLINE__\begin{title} \format[HTMLChars]{\title} \end{title}&lt;BR&gt;__NEWLINE__\begin{chapter} \format[HTMLChars]{\chapter}&lt;BR&gt;\end{chapter}__NEWLINE__\begin{journal} &lt;em&gt;\format[HTMLChars]{\journal}, &lt;/em&gt;\end{journal}__NEWLINE__\begin{booktitle} &lt;em&gt;\format[HTMLChars]{\booktitle}, &lt;/em&gt;\end{booktitle}__NEWLINE__\begin{school} &lt;em&gt;\format[HTMLChars]{\school}, &lt;/em&gt;\end{school}__NEWLINE__\begin{institution} &lt;em&gt;\format[HTMLChars]{\institution}, &lt;/em&gt;\end{institution}__NEWLINE__\begin{publisher} &lt;em&gt;\format[HTMLChars]{\publisher}, &lt;/em&gt;\end{publisher}__NEWLINE__\begin{year}&lt;b&gt;\year&lt;/b&gt;\end{year}\begin{volume}&lt;i&gt;, \volume&lt;/i&gt;\end{volume}\begin{pages}, \format[FormatPagesForHTML]{\pages} \end{pages}__NEWLINE__\begin{abstract}&lt;BR&gt;&lt;BR&gt;&lt;b&gt;Abstract: &lt;/b&gt; \format[HTMLChars]{\abstract} \end{abstract}__NEWLINE__\begin{review}&lt;BR&gt;&lt;BR&gt;&lt;b&gt;Review: &lt;/b&gt; \format[HTMLChars]{\review} \end{review}&lt;/dd&gt;__NEWLINE__&lt;p&gt;&lt;/p&gt;&lt;/font&gt;"/>
+<entry key="previewEnabled" value="true"/>
+<entry key="entryEditorHeight" value="308"/>
+<entry key="importDefaultPDFimportStyle" value="4"/>
+<entry key="importAlwaysUsePDFImportStyle" value="true"/>
+<entry key="DroppedFileHandler_LeaveFileInDir" value="false"/>
+<entry key="DroppedFileHandler_CopyFile" value="false"/>
+<entry key="DroppedFileHandler_MoveFile" value="true"/>
+<entry key="DroppedFileHandler_RenameFile" value="true"/>
+<entry key="CleanUpDOI" value="true"/>
+<entry key="CleanUpISSN" value="true"/>
+<entry key="CleanUpMovePDF" value="false"/>
+<entry key="CleanUpMakePathsRelative" value="true"/>
+<entry key="CleanUpRenamePDF" value="false"/>
+<entry key="CleanUpRenamePDFonlyRelativePaths" value="false"/>
+<entry key="CleanUpUpgradeExternalLinks" value="false"/>
+<entry key="CleanUpConvertToBiblatex" value="false"/>
+<entry key="CleanUpConvertToBibtex" value="true"/>
+<entry key="CleanUpFixFileLinks" value="true"/>
+<entry key="CleanUpFormatters" value="enabled;date[normalize_date]&#13;&#10;editor[unicode_to_latex]&#13;&#10;pages[normalize_page_numbers]&#13;&#10;journal[unicode_to_latex]&#13;&#10;month[normalize_month]&#13;&#10;author[unicode_to_latex]&#13;&#10;all-text-fields[identity]&#13;&#10;title[html_to_latex,unicode_to_latex]&#13;&#10;booktitle[unicode_to_latex]&#13;&#10;"/>
+<entry key="priSort" value="year"/>
+<entry key="priDescending" value="false"/>
+<entry key="secSort" value=""/>
+<entry key="secDescending" value="false"/>
+<entry key="terSort" value=""/>
+<entry key="terDescending" value="false"/>
+<entry key="lastFocused" value="C:\Users\Alex\Repositories\omr-agenda\OMR Scientific Papers\OMR-Research.bib"/>
+<entry key="recentDatabases" value="C:\\Users\\Alex\\Repositories\\omr-agenda\\OMR Scientific Papers\\OMR-Research.bib;C:\\Users\\Alex\\Repositories\\omr-agenda\\OMR Scientific Papers\\OMR-Agenda.bib;C:\\Users\\Alex\\Repositories\\omr-agenda\\OMR Scientific Papers\\OMR-Related-Papers.bib;C:\\Users\\Alex\\Dropbox\\Doktorat\\Docear\\OpticalMusicRecognitionWithDeepLearning.bib;C:\\Users\\Alex\\Repositories\\omr-agenda\\Docear\\OMR-Agenda.bib"/>
+<entry key="warnBeforeOverwritingKey" value="false"/>
+<entry key="confirmDelete" value="false"/>
+<entry key="sidePaneWidth" value="220"/>
+<entry key="termsPosX" value="331"/>
+<entry key="termsPosY" value="361"/>
+<entry key="termsSizeX" value="500"/>
+<entry key="termsSizeY" value="500"/>
+<entry key="useOwner" value="false"/>
+<entry key="overwriteOwner" value="false"/>
+<entry key="useTimeStamp" value="false"/>
+<entry key="overwriteTimeStamp" value="false"/>
+<entry key="updateTimestamp" value="false"/>
+<entry key="enforceLegalBibtexKey" value="true"/>
+<entry key="memoryStickMode" value="false"/>
+<entry key="warnAboutDuplicatesInInspection" value="true"/>
+<entry key="defaultOwner" value="Alex"/>
+<entry key="timeStampFormat" value="yyyy-MM-dd"/>
+<entry key="timeStampField" value="timestamp"/>
+<entry key="defaultEncoding" value="UTF-8"/>
+<entry key="markImportedEntries" value="true"/>
+<entry key="unmarkAllEntriesBeforeImporting" value="true"/>
+<entry key="biblatexMode" value="false"/>
+<entry key="fileDirectory" value=""/>
+<entry key="bibLocAsPrimaryDir" value="false"/>
+<entry key="runAutomaticFileSearch" value="false"/>
+<entry key="allowFileAutoOpenBrowse" value="true"/>
+<entry key="useRegExpSearch" value="false"/>
+<entry key="autolinkExactKeyOnly" value="false"/>
+<entry key="newline" value="&#13;&#10;"/>
+<entry key="backup" value="true"/>
+<entry key="reformatFileOnSaveAndExport" value="false"/>
+<entry key="openLastEdited" value="true"/>
+<entry key="resolveStringsAllFields" value="false"/>
+<entry key="doNotResolveStringsFor" value="url"/>
+<entry key="localAutoSave" value="false"/>
+<entry key="namesAsIs" value="false"/>
+<entry key="namesFf" value="false"/>
+<entry key="namesNatbib" value="true"/>
+<entry key="namesLastOnly" value="false"/>
+<entry key="abbrAuthorNames" value="true"/>
+<entry key="autoResizeMode" value="4"/>
+<entry key="floatMarkedEntries" value="true"/>
+<entry key="fileColumn" value="true"/>
+<entry key="urlColumn" value="true"/>
+<entry key="preferUrlDoi" value="false"/>
+<entry key="arxivColumn" value="false"/>
+<entry key="extraFileColumns" value="false"/>
+<entry key="listOfFileColumns" value=""/>
+<entry key="emailSubject" value="References"/>
+<entry key="openFoldersOfAttachedFiles" value="false"/>
+<entry key="citeCommand" value="\cite"/>
+<entry key="useDefaultConsoleApplication" value="true"/>
+<entry key="consoleCommand" value="C:\Program Files\ConEmu\ConEmu64.exe /single /dir &quot;%DIR&quot;"/>
+<entry key="adobeAcrobatCommand" value="C:\Program Files (x86)\Adobe\Acrobat Reader DC\Reader"/>
+<entry key="sumatraCommand" value="C:\Program Files\SumatraPDF"/>
+<entry key="grayOutNonHits" value="true"/>
+<entry key="groupsDefaultField" value="keywords"/>
+<entry key="autoAssignGroup" value="true"/>
+<entry key="groupKeywordSeparator" value=", "/>
+<entry key="groupIntersectSelections" value="false"/>
+<entry key="autoOpenForm" value="true"/>
+<entry key="defaultShowSource" value="true"/>
+<entry key="showRecommendations" value="true"/>
+<entry key="validateInEntryEditor" value="true"/>
+<entry key="autoComplete" value="false"/>
+<entry key="autoCompFirstNameMode" value="BOTH"/>
+<entry key="autoCompLF" value="false"/>
+<entry key="autoCompFF" value="false"/>
+<entry key="defaultBibtexKeyPattern" value="[auth][year]"/>
+<entry key="avoidOverwritingKey" value="false"/>
+<entry key="KeyPatternRegex" value=""/>
+<entry key="KeyPatternReplacement" value=""/>
+<entry key="generateKeysAfterInspection" value="true"/>
+<entry key="generateKeysBeforeSaving" value="false"/>
+<entry key="keyGenFirstLetterA" value="true"/>
+<entry key="keyGenAlwaysAddLetter" value="false"/>
+<entry key="importFileNamePattern" value="[year] - [title]"/>
+<entry key="importFileDirPattern" value="pdfs"/>
+<entry key="exportInOriginalOrder" value="false"/>
+<entry key="exportInSpecifiedOrder" value="false"/>
+<entry key="exportPriDescending" value="false"/>
+<entry key="exportSecDescending" value="false"/>
+<entry key="exportTerDescending" value="true"/>
+<entry key="exportPriSort" value="bibtexkey"/>
+<entry key="exportSecSort" value="author"/>
+<entry key="exportTerSort" value="title"/>
+<entry key="useXmpPrivacyFilter" value="false"/>
+<entry key="useProxy" value="false"/>
+<entry key="proxyHostname" value=""/>
+<entry key="proxyPort" value="80"/>
+<entry key="useProxyAuthentication" value="false"/>
+<entry key="proxyUsername" value=""/>
+<entry key="proxyPassword" value=""/>
+<entry key="remoteServerPort" value="6050"/>
+<entry key="useRemoteServer" value="true"/>
+<entry key="useCaseKeeperOnSearch" value="true"/>
+<entry key="useUnitFormatterOnSearch" value="true"/>
+<entry key="useDefaultLookAndFeel" value="true"/>
+<entry key="lookAndFeel" value="com.sun.java.swing.plaf.windows.WindowsLookAndFeel"/>
+<entry key="fxFontRenderingTweak" value="false"/>
+<entry key="tableColorCodesOn" value="false"/>
+<entry key="tableResolvedColorCodesOn" value="false"/>
+<entry key="fontFamily" value="Dialog"/>
+<entry key="fontStyle" value="0"/>
+<entry key="fontSize" value="12"/>
+<entry key="overrideDefaultFonts" value="true"/>
+<entry key="tableText" value="0:0:0"/>
+<entry key="markedEntryBackground0" value="255:255:180"/>
+<entry key="tableBackground" value="255:255:255"/>
+<entry key="markedEntryBackground1" value="255:220:180"/>
+<entry key="tableReqFieldBackground" value="230:235:255"/>
+<entry key="markedEntryBackground2" value="255:180:160"/>
+<entry key="tableOptFieldBackground" value="230:255:230"/>
+<entry key="markedEntryBackground3" value="255:120:120"/>
+<entry key="incompleteEntryBackground" value="250:175:175"/>
+<entry key="markedEntryBackground4" value="255:75:75"/>
+<entry key="gridColor" value="210:210:210"/>
+<entry key="markedEntryBackground5" value="220:255:220"/>
+<entry key="fieldEditorTextColor" value="0:0:0"/>
+<entry key="validFieldBackgroundColor" value="255:255:255"/>
+<entry key="activeFieldEditorBackgroundColor" value="220:220:255"/>
+<entry key="invalidFieldBackgroundColor" value="255:0:0"/>
+<entry key="tableResolvedFieldBackground" value="240:240:240"/>
+<entry key="iconEnabledColor" value="79:95:143"/>
+<entry key="iconDisabledColor" value="200:200:200"/>
+<entry key="tableShowGrid" value="false"/>
+<entry key="tableRowPadding" value="9"/>
+<entry key="specialFieldsEnabled" value="false"/>
+<entry key="showRankingColumn" value="true"/>
+<entry key="showPriorityColumn" value="false"/>
+<entry key="showQualityColumn" value="false"/>
+<entry key="showRelevanceColumn" value="false"/>
+<entry key="showPrintedColumn" value="false"/>
+<entry key="showReadColumn" value="false"/>
+<entry key="autoSyncSpecialFieldsToKeywords" value="true"/>
+<entry key="serializeSpecialFields" value="false"/>
+<entry key="searchDialogWidth" value="650"/>
+<entry key="searchDialogHeight" value="500"/>
+<entry key="searchDialogPosX" value="0"/>
+<entry key="searchDialogPosY" value="0"/>
+<entry key="menuFontSize" value="12"/>
+<entry key="idEntryGenerator" value="DOI"/>
+<entry key="lastEdited" value="C:\\Users\\Alex\\Repositories\\omr-agenda\\OMR Scientific Papers\\OMR-Research.bib"/>
+</map>
+<node name="bibtexkeypatterns">
+<map/>
+</node>
+<node name="customizedBiblatexTypes">
+<map/>
+</node>
+<node name="customizedBibtexTypes">
+<map/>
+</node>
+</node>
+</node>
+</root>
+</preferences>
