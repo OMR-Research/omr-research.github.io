@@ -19,11 +19,11 @@ You can build the website on Windows using the following commands
 ```
 del *.html
 
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o OMR-Research-Key sources\OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -d -o OMR-Research-Year sources\OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -noabstract -o OMR-Research-No-Abstract sources\OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o OMR-Related sources\OMR-Related-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o OMR-Unverified sources\OMR-Research-Unverified.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o OMR-Research-Key OMR-Research.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -d -o OMR-Research-Year OMR-Research.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -noabstract -o OMR-Research-No-Abstract OMR-Research.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o OMR-Related OMR-Related-Research.bib
+BibTeX2HTML\Windows\bibtex2html.exe --use-keys --no-keywords --nodoc -a -o OMR-Unverified OMR-Research-Unverified.bib
 
 copy template\Header.html + OMR-Research-Key.html + template\Footer.html index.html /Y
 copy template\Header.html + OMR-Research-Year.html + template\Footer.html omr-research-sorted-by-year.html /Y
