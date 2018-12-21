@@ -20,7 +20,7 @@ You can build the website on Windows using the following commands
 del *.html
 
 BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -o OMR-Research-Key OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -d -o OMR-Research-Year OMR-Research.bib
+BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -d -r -o OMR-Research-Year OMR-Research.bib
 BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -noabstract -o OMR-Research-No-Abstract OMR-Research.bib
 BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -o OMR-Related OMR-Related-Research.bib
 BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -o OMR-Unverified OMR-Research-Unverified.bib
