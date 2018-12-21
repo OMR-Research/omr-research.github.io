@@ -290,10 +290,8 @@ FUNCTION {format.url}
 }
 
 FUNCTION {format.doi}
-{ doi empty$
-    { "" }
-    { new.block "\doi{" doi * "}" * }
-  if$
+{ 
+  doi
 }
 
 FUNCTION {format.title}
@@ -534,7 +532,7 @@ FUNCTION {format.vol.num.pages}
 { volume field.or.null
   number empty$
     'skip$
-    { "\penalty0 (" number * ")" * *
+    { " (" number * ")" * *
       volume empty$
         { "there's a number but no volume in " cite$ * warning$ }
         'skip$
@@ -545,7 +543,7 @@ FUNCTION {format.vol.num.pages}
     'skip$
     { duplicate$ empty$
         { pop$ format.pages }
-        { ":\penalty0 " * pages n.dashify * }
+        { ": " * pages n.dashify * }
       if$
     }
   if$
@@ -555,7 +553,7 @@ FUNCTION {format.vol.num.eid}
 { volume field.or.null
   number empty$
     'skip$
-    { "\penalty0 (" number * ")" * *
+    { " (" number * ")" * *
       volume empty$
         { "there's a number but no volume in " cite$ * warning$ }
         'skip$
@@ -566,7 +564,7 @@ FUNCTION {format.vol.num.eid}
     'skip$
     { duplicate$ empty$
         { pop$ format.eid }
-        { ":\penalty0 " * eid * }
+        { ": " * eid * }
       if$
     }
   if$
@@ -718,7 +716,6 @@ FUNCTION {article}
   if$
   format.issn output
   format.doi output
-  format.url output
   new.block
   note output
   fin.entry
@@ -755,7 +752,6 @@ FUNCTION {book}
   format.date "year" output.check
   format.isbn output
   format.doi output
-  format.url output
   new.block
   note output
   fin.entry
@@ -773,7 +769,6 @@ FUNCTION {booklet}
   format.date output
   format.isbn output
   format.doi output
-  format.url output
   new.block
   note output
   fin.entry
@@ -812,7 +807,6 @@ FUNCTION {inbook}
   format.date "year" output.check
   format.isbn output
   format.doi output
-  format.url output
   new.block
   note output
   fin.entry
@@ -842,7 +836,6 @@ FUNCTION {incollection}
   if$
   format.isbn output
   format.doi output
-  format.url output
   new.block
   note output
   fin.entry
@@ -880,7 +873,6 @@ FUNCTION {inproceedings}
   if$
   format.isbn output
   format.doi output
-  format.url output
   new.block
   note output
   fin.entry
@@ -899,7 +891,6 @@ FUNCTION {manual}
   address output
   format.edition output
   format.date output
-  format.url output
   new.block
   note output
   fin.entry
@@ -916,7 +907,6 @@ FUNCTION {mastersthesis}
   school "school" output.check
   address output
   format.date "year" output.check
-  format.url output
   new.block
   note output
   fin.entry
@@ -932,7 +922,6 @@ FUNCTION {misc}
   howpublished output
   format.date output
   format.issn output
-  format.url output
   new.block
   note output
   fin.entry
@@ -950,7 +939,6 @@ FUNCTION {phdthesis}
   school "school" output.check
   address output
   format.date "year" output.check
-  format.url output
   new.block
   note output
   fin.entry
@@ -971,7 +959,6 @@ FUNCTION {proceedings}
   publisher output
   format.isbn output
   format.doi output
-  format.url output
   new.block
   note output
   fin.entry
@@ -988,7 +975,6 @@ FUNCTION {techreport}
   institution "institution" output.check
   address output
   format.date "year" output.check
-  format.url output
   new.block
   note output
   fin.entry
@@ -1003,7 +989,6 @@ FUNCTION {unpublished}
   new.block
   note "note" output.check
   format.date output
-  format.url output
   fin.entry
 }
 
@@ -1381,7 +1366,7 @@ FUNCTION {reverse.pass}
   extra.label
   duplicate$ empty$
     'skip$
-    { "{\natexlab{" swap$ * "}}" * }
+    { "{{" swap$ * "}}" * }
   if$
   'extra.label :=
   label extra.label * 'label :=
@@ -1408,7 +1393,7 @@ FUNCTION {begin.bib}
   if$
   "\begin{thebibliography}{" number.label int.to.str$ * "}" *
   write$ newline$
-  "\providecommand{\natexlab}[1]{#1}"
+  "\providecommand{}[1]{#1}"
   write$ newline$
   "\providecommand{\url}[1]{\texttt{#1}}"
   write$ newline$
