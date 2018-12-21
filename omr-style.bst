@@ -291,7 +291,7 @@ FUNCTION {format.url}
 
 FUNCTION {format.doi}
 { 
-  doi
+  ""
 }
 
 FUNCTION {format.title}
