@@ -8,25 +8,37 @@
   pages   = {8--12},
 }
 
-@Article{Bainbridge1995,
-  author = {Bainbridge, D.},
-  title  = {Optical music recognition: Progress report 2},
-  year   = {1995},
+@Article{Aoyama1982,
+  author  = {Aoyama, H. and Tojo, A.},
+  title   = {Automatic recognition of music scores (in Japanese)},
+  journal = {Electronic Image Conference Journal},
+  year    = {1982},
+  volume  = {TG PREL82-5},
+  pages   = {33--40},
+}
+
+@Article{Aoyama1982a,
+  author  = {Aoyama, H. and Tojo, A.},
+  title   = {Automatic recognition of printed music (in Japanese)},
+  journal = {Institute of Electronics and Communications Engineers of Japan (IECE)},
+  year    = {1982},
+  volume  = {11},
+  number  = {5},
+  pages   = {427--35},
+}
+
+@TechReport{Bainbridge1995,
+  author      = {Bainbridge, D.},
+  title       = {Optical music recognition: Progress report 2},
+  institution = {Department of Computer Science, University of Canterbury},
+  year        = {1995},
 }
 
 @InProceedings{Bainbridge1996a,
-  author = {Bainbridge, D.},
-  title  = {Optical music recognition: A generalised approach},
-  year   = {1996},
-}
-
-@Article{Baumann1995a,
-  author  = {Baumann, S. and Tombre, K.},
-  title   = {Report of the line drawing and music recognition working group},
-  journal = {International Association for Pattern Recognition Workshop on Document Analysis Systems},
-  year    = {1995},
-  volume  = {14},
-  pages   = {1080--1083},
+  author    = {Bainbridge, D.},
+  title     = {Optical music recognition: A generalised approach},
+  booktitle = {Second New Zealand Computer Science Graduate Conference},
+  year      = {1996},
 }
 
 @PhdThesis{Beran1997,
@@ -37,15 +49,15 @@
   address = {Prague, Czech Republic},
 }
 
-@Article{Capitaine1995,
-  author   = {Capitaine, T. and Mouaddib, E. and Trannois, H. and Lebrun, A.},
-  title    = {Automatic recognition of musical scores},
-  journal  = {Second Asian Conference on Computer Vision},
-  year     = {1995},
-  volume   = {1},
-  pages    = {422--424},
-  abstract = {Optical music recognition is a complex problem because of the stave lines which link up the musical symbols. Thus, the standard approach of segmentation attempts to remove them, without cutting the symbols, by developing a complex algorithm or using them to operate on the zones they delimit. For the segmentation phase, some workers have tried considering a musical score as a set of line segments, but this approach is not appropriate to easy recognition. Our original approach to the segmentation problem is based on an exploitation of these lines and on the creation of virtual interlines according to the musical significance that they have. To limit the influence of the skew, line detection only appears at bar level. The same is true of the final recognition phase which can also deal with a local musical context local for each bar to render the identification. More accurate these lines and virtual interlines define the limits of 2*13 vertical projections (F and G clef) to detect the presence of musical information (patterns). These patterns are coded with 3 characters according to their forms and their relative height and width. A pattern position analysis combined with the score writing rules allow strings of chars matching 2 classes of musical symbols to be created (horizontal analysis to create slurs and vertical analysis for the others). These strings feed a syntactic analyzer for the final recognition according to their musical significance. The checking of the number of beats played in association with the tone of the bar and the identified alterations enables us to guarantee an optimal musical symbols recognition (5 Refs.) segmentation; pattern recognition},
-  keywords = {automatic recognition of musical scores; optical music recognition; stave lines; segmentation; virtual interlines; skew; line detection; pattern position analysis; optimal musical symbols recognition processing); C1250 (Pattern recognition); C5260B (Computer vision and image processing techniques); C6170 (Expert systems)},
+@InProceedings{Capitaine1995,
+  author    = {Capitaine, T. and Mouaddib, E. and Trannois, H. and Lebrun, A.},
+  title     = {Automatic recognition of musical scores},
+  booktitle = {Second Asian Conference on Computer Vision},
+  year      = {1995},
+  volume    = {1},
+  pages     = {422--424},
+  abstract  = {Optical music recognition is a complex problem because of the stave lines which link up the musical symbols. Thus, the standard approach of segmentation attempts to remove them, without cutting the symbols, by developing a complex algorithm or using them to operate on the zones they delimit. For the segmentation phase, some workers have tried considering a musical score as a set of line segments, but this approach is not appropriate to easy recognition. Our original approach to the segmentation problem is based on an exploitation of these lines and on the creation of virtual interlines according to the musical significance that they have. To limit the influence of the skew, line detection only appears at bar level. The same is true of the final recognition phase which can also deal with a local musical context local for each bar to render the identification. More accurate these lines and virtual interlines define the limits of 2*13 vertical projections (F and G clef) to detect the presence of musical information (patterns). These patterns are coded with 3 characters according to their forms and their relative height and width. A pattern position analysis combined with the score writing rules allow strings of chars matching 2 classes of musical symbols to be created (horizontal analysis to create slurs and vertical analysis for the others). These strings feed a syntactic analyzer for the final recognition according to their musical significance. The checking of the number of beats played in association with the tone of the bar and the identified alterations enables us to guarantee an optimal musical symbols recognition (5 Refs.) segmentation; pattern recognition},
+  keywords  = {automatic recognition of musical scores; optical music recognition; stave lines; segmentation; virtual interlines; skew; line detection; pattern position analysis; optimal musical symbols recognition processing); C1250 (Pattern recognition); C5260B (Computer vision and image processing techniques); C6170 (Expert systems)},
 }
 
 @PhdThesis{Carter1989,
@@ -180,13 +192,6 @@ touching notes) and by pointing out badly recognized zones.},
   keywords = {Structured Document Analysis, A Priori Knowledge Introduction, Segmentation, Grammar, DCG, Optical Music Recognition},
 }
 
-@InProceedings{dAndecy1993,
-  author   = {Poulain d'Andecy, Vincent},
-  title    = {Segmentation et reconnaissance optique de partitions musicales},
-  year     = {1993},
-  location = {Rennes, France},
-}
-
 @PhdThesis{DiRiso1992,
   author  = {Di Riso, D.},
   title   = {Lettura automatica di partiture musicali},
@@ -213,14 +218,14 @@ touching notes) and by pointing out badly recognized zones.},
   location = {Montréal, QC},
 }
 
-@Article{Fahmy1991,
-  author   = {Fahmy, H. and Blostein, D.},
-  title    = {A graph grammar for high-level recognition of music notation},
-  journal  = {International Conference on Document Analysis and Recognition},
-  year     = {1991},
-  volume   = {1},
-  pages    = {70--78},
-  location = {St. Malo, France},
+@InProceedings{Fahmy1991,
+  author    = {Fahmy, H. and Blostein, D.},
+  title     = {A graph grammar for high-level recognition of music notation},
+  booktitle = {First International Conference on Document Analysis and Recognition},
+  year      = {1991},
+  volume    = {1},
+  pages     = {70--78},
+  location  = {St. Malo, France},
 }
 
 @MastersThesis{Fahmy1991a,
@@ -228,7 +233,7 @@ touching notes) and by pointing out badly recognized zones.},
   title   = {A graph-grammar approach to high-level music recognition},
   school  = {Queen’s University},
   year    = {1991},
-  address = {Kingston, ON},
+  address = {Kingston, Ontario, Canada},
 }
 
 @PhdThesis{Fischer1978,
@@ -511,6 +516,14 @@ touching notes) and by pointing out badly recognized zones.},
   pages   = {1358--1366},
 }
 
+@Misc{Lee1995,
+  author  = {Lee, S. D.},
+  title   = {Automatic Optical Music Recognition},
+  year    = {1995},
+  comment = {Uncertain type},
+  school  = {Department of Computer Science, Hong Kong University},
+}
+
 @PhdThesis{Leite1994,
   author = {Leite, J. A. and Ferrand, M.},
   title  = {RIEM: Reconhecimento e Interpretao de Escrita Musical (in Portuguese)},
@@ -721,6 +734,13 @@ touching notes) and by pointing out badly recognized zones.},
   pages   = {208--215},
 }
 
+@InProceedings{Modayur1991,
+  author    = {Modayur, B. R.},
+  title     = {Restriced domain music score recognition using mathematical morphology},
+  booktitle = {Fifth International Conference on Symbolic and Logical Computing},
+  year      = {1991},
+}
+
 @Proceedings{Modayur1992a,
   title     = {On printed music score symbol recognition},
   year      = {1992},
@@ -788,22 +808,29 @@ touching notes) and by pointing out badly recognized zones.},
   address = {Leeds, UK},
 }
 
-@Proceedings{Ng1995b,
+@Misc{Ng1995b,
+  author    = {Ng, K. and Boyle, R. and Cooper, D.},
   title     = {Automated optical musical score recognition and its enhancement using high-level musical knowledge},
   year      = {1995},
   address   = {Bologna, Italy},
-  author    = {Ng, K. and Boyle, R. and Cooper, D.},
-  booktitle = {Automated optical musical score recognition and its enhancement using high-level musical knowledge},
+  booktitle = {XI Colloquium on Musical Informatics},
   pages     = {167--170},
 }
 
-@Proceedings{Ng1996a,
-  title     = {Hand written music manuscript recognition},
-  year      = {1996},
-  address   = {Hong Kong, China},
+@InProceedings{Ng1996a,
   author    = {Ng, K. and Boyle, R. and Cooper, D.},
-  booktitle = {Hand written music manuscript recognition},
+  title     = {Hand written music manuscript recognition},
+  booktitle = {Proceedings of the International Computer Music Conference},
+  year      = {1996},
   pages     = {500--503},
+  address   = {Hong Kong, China},
+}
+
+@Misc{Ng2000,
+  author    = {Ng, K. C. and Cooper, D},
+  title     = {Enhancement of optical music recognition using metric analysis},
+  year      = {2000},
+  booktitle = {XIII Colloquium on Musical Informatics},
 }
 
 @Proceedings{Ng2001,
@@ -822,12 +849,12 @@ touching notes) and by pointing out badly recognized zones.},
   booktitle = {Document Imaging for Music Manuscript},
 }
 
-@Proceedings{Ng2002b,
+@InProceedings{Ng2002b,
+  author    = {Ng, K and Cooper, D. and Ong, B},
   title     = {Optical music analysis: A reverse engineering approach},
+  booktitle = {EVA},
   year      = {2002},
   address   = {Florence, Italy},
-  author    = {Ng, K and Cooper, D. and Ong, B},
-  booktitle = {Optical music analysis: A reverse engineering approach},
 }
 
 @Article{Ohteru1984,
@@ -835,6 +862,13 @@ touching notes) and by pointing out badly recognized zones.},
   title   = {A multi processor system for high speed recognition of printed music (in Japanese)},
   journal = {National Convention Records of IECE},
   year    = {1984},
+}
+
+@Misc{Ohteru1984a,
+  author       = {Ohteru, S. and others},
+  title        = {A multi processor system for high speed recognition of printed music (in Japanese)},
+  howpublished = {National Convention Records of I. E. C. E.},
+  year         = {1984},
 }
 
 @Article{Ohteru1987,
@@ -885,6 +919,23 @@ touching notes) and by pointing out badly recognized zones.},
   booktitle = {Pre-processamento, Exctracao de Atributos e Primeiro Nivel de Classiccao para un Sistema de Reconhecimento Otico de Simbolos Musicais},
 }
 
+@InProceedings{PoulaindAndecy1993,
+  author   = {Poulain d'Andecy, Vincent},
+  title    = {Segmentation et reconnaissance optique de partitions musicales},
+  year     = {1993},
+  location = {Rennes, France},
+}
+
+@InProceedings{Prerau1975,
+  author    = {Prerau, D. S.},
+  title     = {Do-Re-Mi: A program that recognizes music notation},
+  booktitle = {Computers and the Humanities},
+  year      = {1975},
+  volume    = {9},
+  number    = {1},
+  pages     = {25--9},
+}
+
 @Article{Pugin2008,
   author   = {Pugin, L.},
   title    = {Computer Tools for Early Music Sources Comparison: A Practical Study on Marenzio Editions and Re-editions},
@@ -900,6 +951,13 @@ touching notes) and by pointing out badly recognized zones.},
   volume   = {Beihefte zur Editio, Internationales Jahrbuch für Editionswissenschaften},
   pages    = {94--103},
   location = {Tübingen},
+}
+
+@MastersThesis{Reed1995,
+  author = {Reed, K. T.},
+  title  = {Optical Music Recognition},
+  school = {University of Calgary, Canada},
+  year   = {1995},
 }
 
 @Article{Richard1990,
@@ -974,9 +1032,16 @@ touching notes) and by pointing out badly recognized zones.},
 }
 
 @Article{Stueckelberg1999,
-  author = {St{\"{u}}ckelberg, M.},
+  author = {Vuilleumier St{\"{u}}ckelberg, Marc},
   title  = {Musical score recognition using probabilistic inference},
   year   = {1999},
+}
+
+@MastersThesis{Sumsion1992,
+  author = {Sumsion, H.},
+  title  = {Optical Music Recognition},
+  school = {Leeds, University of Leeds},
+  year   = {1992},
 }
 
 @Article{Thorud1988,
@@ -1004,6 +1069,21 @@ touching notes) and by pointing out badly recognized zones.},
   location = {Oslo, Norway},
 }
 
+@InProceedings{Vieira2000,
+  author    = {Vieira, P. and Marcolino, A. and others},
+  title     = {Ancient music optical recognition},
+  booktitle = {11th Portuguese Conference on Pattern Recognition RecPad2000},
+  year      = {2000},
+}
+
+@InProceedings{Vieira2001,
+  author    = {Vieira, P. and Pinto, J.},
+  title     = {A classification method for ancient hand-written musical symbols},
+  booktitle = {Actas de 10{$^{\circ}$} Encontro Portugu{\^{e}}s de Computa{\c{c}}{\~{a}}o},
+  year      = {2001},
+  address   = {Gr{\'{a}}fica, Lisbon},
+}
+
 @PhdThesis{Vrist2009,
   author  = {Vrist, S.},
   title   = {Optical Music Recognition for structural information from high-quality scanned music},
@@ -1027,6 +1107,14 @@ touching notes) and by pointing out badly recognized zones.},
   year   = {1995},
 }
 
+@MastersThesis{Wilkinson1995,
+  author  = {Wilkinson, J.},
+  title   = {Optical Music Recognition},
+  school  = {School of Computer Science, University of Birmingham},
+  year    = {1995},
+  address = {Birmingham},
+}
+
 @Article{Wittlich1973,
   author  = {Wittlich, G.},
   title   = {Project SCORE},
@@ -1041,6 +1129,13 @@ touching notes) and by pointing out badly recognized zones.},
   author = {Wittlich, G. E.},
   title  = {Non-physics measurements on the PEPR System: Seismograms and music scores},
   year   = {1974},
+}
+
+@InProceedings{Wolman1994,
+  author    = {Wolman, A. and Yeager, T.},
+  title     = {Optical music recognition: progress report},
+  booktitle = {International Computer Music Conference},
+  year      = {1994},
 }
 
 @PhdThesis{Wright1994,
@@ -1066,6 +1161,13 @@ touching notes) and by pointing out badly recognized zones.},
   volume  = {10},
   number  = {12},
   pages   = {1--10},
+}
+
+@TechReport{Yoda1994,
+  author = {Yoda, Ikushi and Yamamoto, Kazuhiko and Yamada, Hiromitsu},
+  title  = {Automatic Construction of Recognition Procedures for Musical Notes by GA},
+  year   = {1994},
+  file   = {:pdfs/1994 - Automatic Construction of Recognition Procedures for Musical Notes by GA.pdf:PDF},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
