@@ -1,5 +1,20 @@
 % Encoding: UTF-8
 
+@InProceedings{10.1007/978-3-030-31321-0_14,
+  author    = {Nu{\~{n}}ez-Alcover, Alicia and de Le{\'o}n, Pedro J. Ponce and Calvo-Zaragoza, Jorge},
+  title     = {Glyph and Position Classification of Music Symbols in Early Music Manuscripts},
+  booktitle = {Pattern Recognition and Image Analysis},
+  year      = {2019},
+  editor    = {Morales, Aythami and Fierrez, Julian and S{\'a}nchez, Jos{\'e} Salvador and Ribeiro, Bernardete},
+  pages     = {159--168},
+  address   = {Cham},
+  publisher = {Springer International Publishing},
+  abstract  = {Optical Music Recognition is a field of research that automates the reading of musical scores so as to transcribe their content into a structured digital format. When dealing with music manuscripts, the traditional workflow establishes separate stages of detection and classification of musical symbols. In the latter, most of the research has focused on detecting musical glyphs, ignoring that the meaning of a musical symbol is defined by two components: its glyph and its position within the staff. In this paper we study how to perform both glyph and position classification of handwritten musical symbols in early music manuscripts written in white Mensural notation, a common notation system used for the most part of the XVI and XVII centuries. We make use of Convolutional Neural Networks as the classification method, and we tested several alternatives such as using independent models for each component, combining label spaces, or using both multi-input and multi-output models. Our results on early music manuscripts provide insights about the effectiveness and efficiency of each approach.},
+  doi       = {10.1007/978-3-030-31321-0_14},
+  file      = {:pdfs/2019 - Glyph and Position Classification of Music Symbols in Early Music Manuscripts.pdf:PDF},
+  isbn      = {978-3-030-31321-0},
+}
+
 @InProceedings{Achankunju2018,
   author    = {Achankunju, Sanu Pulimootil},
   title     = {Music Search Engine from Noisy {OMR} Data},
@@ -1302,6 +1317,21 @@ A variety of filters were considered, and two promising ones (run-length ratios 
   day      = {30},
   doi      = {10.1007/s10044-019-00807-1},
   file     = {:pdfs/2019 - Hybrid Hidden Markov Models and Artificial Neural Networks for Handwritten Music Recognition in Mensural Notation.pdf:PDF},
+}
+
+@Article{CALVOZARAGOZA2019115,
+  author   = {Jorge Calvo-Zaragoza and Alejandro H. Toselli and Enrique Vidal},
+  title    = {Handwritten Music Recognition for Mensural notation with convolutional recurrent neural networks},
+  journal  = {Pattern Recognition Letters},
+  year     = {2019},
+  volume   = {128},
+  pages    = {115--121},
+  issn     = {0167-8655},
+  abstract = {Optical Music Recognition is the technology that allows computers to read music notation, which is also referred to as Handwritten Music Recognition when it is applied over handwritten notation. This technology aims at efficiently transcribing written music into a representation that can be further processed by a computer. This is of special interest to transcribe the large amount of music written in early notations, such as the Mensural notation, since they represent largely unexplored heritage for the musicological community. Traditional approaches to this problem are based on complex strategies with many explicit rules that only work for one particular type of manuscript. Machine learning approaches offer the promise of generalizable solutions, based on learning from just labelled examples. However, previous research has not achieved sufficiently acceptable results for handwritten Mensural notation. In this work we propose the use of deep neural networks, namely convolutional recurrent neural networks, which have proved effective in other similar domains such as handwritten text recognition. Our experimental results achieve, for the first time, recognition results that can be considered effective for transcribing handwritten Mensural notation, decreasing the symbol-level error rate of previous approaches from 25.7% to 7.0%.},
+  doi      = {https://doi.org/10.1016/j.patrec.2019.08.021},
+  file     = {:pdfs/2019 - Handwritten Music Recognition for Mensural Notation with Convolutional Recurrent Neural Networks.pdf:PDF},
+  keywords = {Handwritten Music Recognition, Optical Music Recognition, Mensural notation, Convolutional recurrent neural networks},
+  url      = {http://www.sciencedirect.com/science/article/pii/S0167865519302338},
 }
 
 @Article{Calvo-Zaragoza2019a,
@@ -4053,6 +4083,31 @@ model for general music symbols which can get 0.92 duration accurary and 0.96 pi
   url      = {https://tel.archives-ouvertes.fr/tel-00340938},
 }
 
+@MastersThesis{Mateiu2019,
+  author   = {Mateiu, Tudor Nicolae},
+  title    = {Unsupervised Learning for Domain Adaptation in automatic classification tasks through Neural Networks},
+  school   = {Universidad de Alicante},
+  year     = {2019},
+  type     = {mathesis},
+  abstract = {Machine Learning systems have improved dramatically in recent years for automatic recognition and artificial intelligence tasks. In general, these systems are based on the use of a large amount of labeled data - also called training sets - in order to learn a model that fits the problem in question. The training set consists of examples of possible inputs to the system and the output expected from them. Achieving this training set is the main limitation to use Machine Learning systems, since it requires human effort to find and map possible inputs with their corresponding outputs. The situation is often frustrating since systems learn to solve the task for a specific domain - that is, a type of input with relatively homogeneous conditions – and they are not able to generalize to correctly solve the same task in other domains. This project considers the use of Domain Adaptation algorithms, which are capable of learning to adapt a Machine Learning model to work in an unknown domain based on only unlabeled data (unsupervised learning). This facilitates the transfer of systems to new domains because obtaining unlabeled data is relatively cheap, since the cost is to label them. To date, Domain Adaptation algorithms have been used in very restricted contexts, so this project aims to make an empirical evaluation of these algorithms in a greater number of cases, as well as propose possible improvements.},
+  file     = {:pdfs/2019 - Unsupervised Learning for Domain Adaptation in Automatic Classification Tasks through Neural Networks.pdf:PDF},
+  url      = {http://hdl.handle.net/10045/96448},
+}
+
+@InProceedings{Mateiu2019a,
+  author    = {Mateiu, Tudor N. and Gallego, Antonio-Javier and Calvo-Zaragoza, Jorge},
+  title     = {Domain Adaptation for Handwritten Symbol Recognition: A Case of Study in Old Music Manuscripts},
+  booktitle = {Pattern Recognition and Image Analysis},
+  year      = {2019},
+  editor    = {Morales, Aythami and Fierrez, Julian and S{\'a}nchez, Jos{\'e} Salvador and Ribeiro, Bernardete},
+  pages     = {135--146},
+  address   = {Cham},
+  publisher = {Springer International Publishing},
+  abstract  = {The existence of a large amount of untranscripted music manuscripts has caused initiatives that use Machine Learning (ML) for Optical Music Recognition, in order to efficiently transcribe the music sources into a machine-readable format. Although most music manuscript are similar in nature, they inevitably vary from one another. This fact can negatively influence the complexity of the classification task because most ML models fail to transfer their knowledge from one domain to another, thereby requiring learning from scratch on new domains after manually labeling new data. This work studies the ability of a Domain Adversarial Neural Network for domain adaptation in the context of classifying handwritten music symbols. The main idea is to exploit the knowledge of a specific manuscript to classify symbols from different (unlabeled) manuscripts. The reported results are promising, obtaining a substantial improvement over a conventional Convolutional Neural Network approach, which can be used as a basis for future research.},
+  file      = {:pdfs/2019 - Domain Adaptation for Handwritten Symbol Recognition_ a Case of Study in Old Music Manuscripts.pdf:PDF},
+  isbn      = {978-3-030-31321-0},
+}
+
 @InProceedings{Matsushima1985,
   author    = {Matsushima, T. and Sonomoto, I. and Harada, T. and Kanamori, K. and Ohteru, S.},
   title     = {Automated High Speed Recognition of Printed Music ({WABOT}-2 Vision System)},
@@ -4632,6 +4687,17 @@ In order to achieve the proposed system, deep learning techniques based on neura
   issn            = {1613-0073},
   keywords        = {Artificial intelligence; Character recognition; Learning systems; Optical character recognition; Specifications, Automatic recognition; Contextual information; Document image analysis; Optical character recognition system; Optical music recognition; Recognition systems; Semantic information; Semantic interpretation, Semantics},
   url             = {http://ceur-ws.org/Vol-1343/paper6.pdf},
+}
+
+@MastersThesis{NunezAlcover2019,
+  author   = {N{\'{u}}{\~{n}}ez Alcover, Alicia},
+  title    = {Glyph and Position Classification of Music Symbols in Early Manuscripts},
+  school   = {Universidad de Alicante},
+  year     = {2019},
+  type     = {mathesis},
+  abstract = {In this research, we study how to classify of handwritten music symbols in early music manuscripts written in white Mensural notation, a common notation system used since the fourteenth century and until the Renaissance. The field of Optical Music Recognition researches how to automate the reading of musical scores to transcribe its content to a structured digital format such as MIDI. When dealing with music manuscripts, the traditional workflow establishes two separate stages of detection and classification of musical symbols. In the classification stage, most of the research focuses on detecting musical symbols, without taking into account that a musical note is defined in two components: glyph and its position with respect to the staff. Our purpose will consist of the design and implementation of architectures in the field of Deep Learning, using Convolutional Neural Networks (CNNs) as well as its evaluation and comparison to determine which model provides the best performance in terms of efficiency and precision for its implementation in an interactive scenario.},
+  file     = {:pdfs/2019 - Glyph and Position Classification of Music Symbols in Early Manuscripts.pdf:PDF},
+  url      = {http://hdl.handle.net/10045/96451},
 }
 
 @Article{Oh2017,
@@ -6605,6 +6671,19 @@ amongst other web-based tools to evaluate and supervise the recognition process.
 	function for machine learning and highlight the challenges of the
 	scores of music with the specified notation.},
   doi       = {10.4018/IJMDEM.2017070102},
+}
+
+@Article{Xiao2019,
+  author   = {Xiao, Zhe and Chen, Xin and Zhou, Li},
+  title    = {Real-Time Optical Music Recognition System for Dulcimer Musical Robot},
+  journal  = {Journal of Advanced Computational Intelligence and Intelligent Informatics},
+  year     = {2019},
+  volume   = {23},
+  number   = {4},
+  pages    = {782--790},
+  abstract = {Traditional optical music recognition (OMR) is an important technology that automatically recognizes scanned paper music sheets. In this study, traditional OMR is combined with robotics, and a real-time OMR system for a dulcimer musical robot is proposed. This system gives the musical robot a stronger ability to perceive and understand music. The proposed OMR system can read music scores, and the recognized information is converted into a standard electronic music file for the dulcimer musical robot, thus achieving real-time performance. During the recognition steps, we treat note groups and isolated notes separately. Specially structured note groups are identified by primitive decomposition and structural analysis. The note groups are decomposed into three fundamental elements: note stem, note head, and note beams. Isolated music symbols are recognized based on shape model descriptors. We conduct tests on real pictures taken live by a camera. The tests show that the proposed method has a higher recognition rate.},
+  doi      = {10.20965/jaciii.2019.p0782},
+  file     = {:pdfs/2019 - Real Time Optical Music Recognition System for Dulcimer Musical Robot.pdf:PDF},
 }
 
 @Article{Yadid-Pecht1996,
