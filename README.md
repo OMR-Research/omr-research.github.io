@@ -11,10 +11,11 @@ This repository contains the most extensive, curated bibliography on Optical Mus
 If you find [an error](https://github.com/OMR-Research/omr-research.github.io/issues/new?template=incorrect-entry.md) in any of the three BibTex files or want to [add a missing entry](https://github.com/OMR-Research/omr-research.github.io/issues/new?template=missing-entry.md), please open an [issue](https://github.com/OMR-Research/omr-research.github.io/issues/new/choose). Especially many old entries could not be verified by us and we appreciate any help from the community to keep this bibliography updated, accessible and a useful resource for the entire community.
 
 ## Building the website
+First update the date in the [header](template/Header.html). 
 
 Make sure you have LaTeX/BibTex installed and available on your commandline. We recommend installing it via [MikTex](https://miktex.org/).
 
-You can build the website on Windows using the following commands 
+Then you can build the website on Windows using the following commands 
 
 ```
 del *.html
@@ -39,7 +40,11 @@ del OMR-Unverified.html
 
 ```
 
+[RenderWebsite.bat](RenderWebsite.bat) contains exactly the same commands for easier execution.
+
 The same process should also be available under Linux with the binaries of bibtex2html residing in `BibTeX2HTML\Linux` but are currently not tested.
+
+We recommend that you remove the trailing special character from the generated omr-research*.html websites (caused by bibtex2html) before committing.
 
 ## Steps for updating the website
 
