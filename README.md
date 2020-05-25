@@ -15,7 +15,9 @@ First update the date in the [header](template/Header.html).
 
 Make sure you have LaTeX/BibTex installed and available on your commandline. We recommend installing it via [MikTex](https://miktex.org/).
 
-Then you can build the website on Windows using the following commands 
+### Windows
+
+You can build the website on Windows using the following commands 
 
 ```
 del *.html
@@ -42,9 +44,39 @@ del OMR-Unverified.html
 
 [RenderWebsite.bat](RenderWebsite.bat) contains exactly the same commands for easier execution.
 
-The same process should also be available under Linux with the binaries of bibtex2html residing in `BibTeX2HTML\Linux` but are currently not tested.
-
 We recommend that you remove the trailing special character from the generated omr-research*.html websites (caused by bibtex2html) before committing.
+
+
+### MacOS
+
+You can build the website on MacOS using the following commands 
+
+```
+rm *.html
+
+BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -o OMR-Research-Key OMR-Research.bib
+BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -d -r -o OMR-Research-Year OMR-Research.bib
+BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -noabstract -o OMR-Research-No-Abstract OMR-Research.bib
+BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -o OMR-Related OMR-Related-Research.bib
+BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -o OMR-Unverified OMR-Research-Unverified.bib
+
+cat template/Header.html OMR-Research-Key.html template/Footer.html > index.html
+cat template/Header.html OMR-Research-Year.html template/Footer.html > omr-research-sorted-by-year.html
+cat template/Header.html OMR-Research-No-Abstract.html template/Footer.html > omr-research-compact.html
+cat template/Header.html OMR-Related.html template/Footer.html > omr-related-research.html
+cat template/Header.html OMR-Unverified.html template/Footer.html > omr-research-unverified.html
+
+rm OMR-Research-Key.html
+rm OMR-Research-Year.html
+rm OMR-Research-No-Abstract.html
+rm OMR-Related.html
+rm OMR-Unverified.html
+```
+
+[RenderWebsite.sh](RenderWebsite.sh) contains exactly the same commands for easier execution.
+
+### Linux
+The same process should also be available under Linux with the binaries of bibtex2html residing in `BibTeX2HTML\Linux` but are currently not tested.
 
 ## Steps for updating the website
 
