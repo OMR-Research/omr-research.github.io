@@ -1332,12 +1332,19 @@ A variety of filters were considered, and two promising ones (run-length ratios 
   author    = {Calvo-Zaragoza, Jorge and Haji\v{c} Jr., Jan and Pacha, Alexander},
   journal   = {ACM Comput. Surv.},
   title     = {Understanding Optical Music Recognition},
+  year      = {2020},
+  issue_date = {September 2020},
   issn      = {0360-0300},
+  number    = {4},
+  volume    = {53},
   address   = {New York, NY, USA},
   doi       = {10.1145/3397499},
-  numpages  = {34},
+  numpages  = {35},
   publisher = {Association for Computing Machinery},
   url       = {https://doi.org/10.1145/3397499},
+  articleno = {77},
+  keywords = {music scores, music notation, Optical music recognition},
+  abstract = {For over 50 years, researchers have been trying to teach computers to read music notation, referred to as Optical Music Recognition (OMR). However, this field is still difficult to access for new researchers, especially those without a significant musical background: Few introductory materials are available, and, furthermore, the field has struggled with defining itself and building a shared terminology. In this work, we address these shortcomings by (1) providing a robust definition of OMR and its relationship to related fields, (2) analyzing how OMR inverts the music encoding process to recover the musical notation and the musical semantics from documents, and (3) proposing a taxonomy of OMR, with most notably a novel taxonomy of applications. Additionally, we discuss how deep learning affects modern OMR research, as opposed to the traditional pipeline. Based on this work, the reader should be able to attain a basic understanding of OMR: its objectives, its inherent structure, its relationship to other fields, the state of the art, and the research opportunities it affords.}
 }
 
 @InProceedings{Campos2016,
@@ -6518,6 +6525,16 @@ This paper aims to show that this removal of the stave lines before symbol recog
   file      = {:pdfs/2018 - Deep Watershed Detector for Music Object Recognition.pdf:PDF},
   isbn      = {978-2-9540351-2-3},
   url       = {http://ismir2018.ircam.fr/doc/pdfs/225_Paper.pdf},
+}
+
+@InProceedings{Tuggener2020,
+  author    = {Tuggener, Lukas and Satyawan, Yvan Putra and Pacha, Alexander and Schmidhuber, J{\"{u}}rgen and Stadelmann, Thilo},
+  booktitle = {Proceedings of the 25th International Conference on Pattern Recognition},
+  title     = {The DeepScoresV2 Dataset and Benchmark for Music Object Detection},
+  year      = {2020},
+  address   = {Milan, Italy},
+  abstract  = {In this paper, we present DeepScoresV2, an extended version of the DeepScores dataset for optical music recognition (OMR). We improve upon the original DeepScores dataset by providing much more detailed annotations, namely (a) annotations for 135 classes including fundamental symbols of non-fixed size and shape, increasing the number of annotated symbols by 23%; (b) oriented bounding boxes; (c) higher-level rhythm and pitch information (onset beat for all symbols and line position for noteheads); and (d) a compatibility mode for easy use in conjunction with the MUSCIMA++ dataset for OMR on handwritten documents. These additions open up the potential for future advancement in OMR research. Additionally, we release two state-of-the-art baselines for DeepScoresV2 based on Faster R-CNN and the Deep Watershed Detector. An analysis of the baselines shows that regular orthogonal bounding boxes are unsuitable for objects which are long, small, and potentially rotated, such as ties and beams, which demonstrates the need for detection algorithms that naturally incorporate object angles.},
+  doi       = {10.21256/zhaw-20647},
 }
 
 @TechReport{Vidal2012,
