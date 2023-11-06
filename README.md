@@ -75,7 +75,7 @@ We recommend that you remove the trailing special character from the generated o
 
 ### MacOS
 
-You can build the website on MacOS using the following commands. Make sure you have bibtex installed by running `brew install mactex` 
+You can build the website on MacOS using the following commands. Make sure you have bibtex installed via MikTex (e.g., `brew install miktex-console` and then install the basic Tex installation).
 
 ```bash
 rm *.html
