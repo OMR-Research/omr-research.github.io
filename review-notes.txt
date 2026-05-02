@@ -1,0 +1,765 @@
+BATCH 1 REVIEW NOTES
+====================
+
+Items requiring manual attention (routine fixes like author names, abstracts, URLs not listed).
+
+
+Rigaux2026
+  The original entry title "CollabScore, a collaborative system for OMR validation and
+  correction" is a SEPARATE paper from the dataset paper (Rigaux2026b below). Both share
+  the same author list. The Gmail Scholar alert (2026-03-31) confirms a PDF exists for
+  this paper but it was not yet retrieved. Venue is unknown/forthcoming.
+
+Rigaux2026b  [NEW -- not in new-entries-only.bib]
+  "The collabscore Dataset. Towards Robust and Generalized OMR Evaluation" -- discovered
+  via the official CollabScore GitHub dataset repo. Booktitle is listed as XXX (forthcoming)
+  in the repo's own BibTeX. No DOI or PDF yet. Should be added to new-entries-only.bib.
+
+Jung2025  (ISMIR LLM4Music Workshop)
+  Original entry had @Article with journal = {IEEE Transactions on Audio Speech and
+  Language Processing}, which is wrong for this publication. The confirmed venue is the
+  LLM4Music Workshop at ISMIR 2025 (Oral, 2025-09-08). Entry type changed to
+  @InProceedings. See Jung2025b for the actual TASLP publication.
+
+Jung2025b  [NEW -- not in new-entries-only.bib]
+  Separate TASLP journal publication of the same U-MusT paper, confirmed via author's
+  website (https://sakem.in/). DOI: 10.1109/TASLPRO.2025.3648794 resolves to IEEE Xplore
+  article 11316398. Volume, number, and pages not yet confirmed. PDF not downloaded
+  (requires IEEE login); download manually from https://ieeexplore.ieee.org/document/11316398/
+
+Almad2025  [moved to questionable-entries.bib]
+  "Cursogramas" are administrative flowcharts used in Argentine university education,
+  not music scores. The paper applies image processing to extract symbols from flowcharts.
+  Decide: include (broadening scope to document recognition) or exclude.
+BATCH A REVIEW NOTES
+====================
+
+AlfaroContreras2026
+- Added 3 missing co-authors: Carlos Pérez-Sancho, Jorge Calvo-Zaragoza, Jose J. Valero-Mas.
+- PDF unavailable: Elsevier Applied Soft Computing paywall; no open-access version found.
+
+Asbert2026
+- Entry type changed from @InProceedings to @InProceedings (confirmed): arXiv:2510.17869 states "Accepted at ICDAR workshop GREC 2025"; published in ICDAR 2025 Workshops proceedings (Springer LNCS). Year updated to 2026 (proceedings publication year).
+- Venue confirmed: 16th IAPR Workshop on Graphics Recognition (GREC), part of ICDAR 2025 Workshops, Wuhan, China, September 2025.
+
+Nguyen2025
+- FLAGGED QUESTIONABLE: Generic computer vision paper (oriented bounding boxes for small object detection) presented at ISCIT 2025 (communications/IT conference). No connection to sheet music, music notation, or OMR found. Moved to batch_a_questionable.bib.
+
+Romo2025 (key: Romo2025)
+- Wrong journal in source: listed as "Caderno Pedagógico" but actual journal is "Revista Eletrônica de Iniciação Científica em Computação" (REIC), ISSN 3085-8461.
+- Wrong year in source: listed as 2025 (received Nov 2025) but published March 2026. Entry year corrected to 2026.
+- Missing co-author: Jesuliana Nascimento Ulysses (4 authors total, not 4 listed in original).
+- Existing PDF in pdfs_new matches this paper.
+
+Ray2025
+- FLAGGED QUESTIONABLE as SUSPECTED DUPLICATE: Same title as Khanna2025 ("From Notes to Keys: A VR Learning Environment for Sheet Music Interpretation"). The confirmed publication is Khanna, Saha, Ray, Patibanda, Chattopadhyay at ICDAR 2025 (Springer LNCS 16025, pp. 22-39, DOI 10.1007/978-3-032-04624-6_2). The Ray2025 entry lists only 3 of those 5 authors and assigns an unverified venue ("International Conference on Intelligent Technologies"). Moved to batch_a_questionable.bib.
+
+Velloso2025
+- FLAGGED QUESTIONABLE: Searches found no connection to sheet music or score images. The thesis title ("Multi-modal music search and retrieval without symbolic representations") explicitly excludes symbolic (score-based) representations, indicating audio-only or non-notation-based retrieval. Moved to batch_a_questionable.bib.
+
+MartinezSevilla2025
+- Added missing co-authors: Patricia Garcia-Iasci, Jorge Calvo-Zaragoza, Gerhard Widmer.
+- Venue confirmed: ISMIR 2025, pp. 696-702.
+
+piranec2025
+- Entry type changed from @Misc to @MastersThesis. Title is Croatian for "Analysis of the efficiency and training of optical music recognition systems." University not confirmed beyond University of Zagreb (FER).
+
+Repolusk2025
+- Full title confirmed: "KuiSCIMA v2.0: Improved Baselines, Calibration, and Cross-Notation Generalization for Historical Chinese Music Notations in Jiang Kui's Baishidaoren Gequ." Shortened title in source omits the subtitle.
+- Venue confirmed: ICDAR 2025 main proceedings (Springer LNCS), not a preprint.
+
+Pickelmann2025
+- Paper not found in any indexed database. Florian Pickelmann is a PhD student at University of Innsbruck (Zangerle's group). Entry kept as @Misc pending publication. No PDF available.
+
+Mayer2025
+- Full author list confirmed: Jiří Mayer, Filip Jebavý, Markéta Herzánová Vlková, Martina Dvořáková. PDF unavailable (ACM DL gated despite ACM OA transition announced for January 2026).
+
+Payne2025
+- PDF unavailable (ACM DL gated). DOI confirmed: 10.1145/3663547.3746322.
+BATCH B REVIEW NOTES
+====================
+
+Della2025
+----------
+WRONG VENUE IN SOURCE: The input bib listed booktitle as "Proceedings of the Fourth International Conference on Innovations in Intelligent Systems and Applications" (INISTA), which is incorrect. The actual venue is the Fourth International Conference on Innovations in Computing Research (ICR'25), published by Springer in Lecture Notes in Networks and Systems (DOI: 10.1007/978-3-031-95652-2_9). INISTA is a different conference.
+
+GuillotelNothmann2024
+---------------------
+AUTHOR ORDER CORRECTED: The input bib listed Guillotel-Nothmann as first author. The actual paper (as confirmed from the WoRMS 2024 proceedings PDF and HAL record) lists the authors in alphabetical order: Coüasnon, Giraud, Guillotel-Nothmann, Lemaitre, Rigaux. The WoRMS 2024 proceedings arXiv (2411.15741) is the citable proceedings volume; the paper itself is also at HAL hal-04925968.
+
+Asbert2025
+----------
+ENTRY TYPE CHANGED: Input was @MastersThesis. The actual work is an arXiv preprint (arXiv:2510.17869, October 2025) with 5 authors from the Computer Vision Center / Universitat Autònoma de Barcelona. Changed to @Misc. The original entry's single abbreviated author "Asbert, Marcos G" omitted 4 co-authors (Torras, Kang, Fornés, Lladós).
+
+Stutter2025
+-----------
+BORDERLINE ENTRY - KEPT: The thesis is primarily musicology/corpus study on Notre Dame polyphony. However, the author explicitly develops novel optical music recognition (OMR) and encoding methodologies for thirteenth-century notation as core contributions. Kept in main bib on this basis.
+
+Li2025
+------
+VENUE CLARIFIED: Input listed journal as "Artificial Intelligence" (implying the Elsevier journal of that name). The actual venue is the Journal of Network Intelligence (Taiwan Ubiquitous Information), Vol. 10, No. 2 (May 2025), a lower-tier journal. Not the Elsevier Artificial Intelligence journal.
+
+Pastor2025
+----------
+UNCONFIRMED ENTRY: Could not locate any preprint, thesis repository record, or conference paper for this entry. The abbreviated author form "Pastor, Mas I" may refer to "Ignasi Pastor Mas". No institutional affiliation, venue, or URL could be confirmed. Placed in questionable file pending clarification.
+BATCH C REVIEW NOTES
+====================
+
+Rosell2024 / Rosello2024 — SAME AUTHOR, DISTINCT WORKS (NOT a duplicate):
+  Rosell2024 is a conference paper at ICDAR 2024 (DOI: 10.1007/978-3-031-70552-6_1)
+  co-authored by Roselló, Fuentes-Martínez, Alfaro-Contreras, Rizo, and Calvo-Zaragoza.
+  Rosello2024 is Adrián Roselló Pedraza's master's thesis at Universidad de Alicante.
+  Both concern source-free domain adaptation for OMR. The thesis likely preceded or
+  accompanied the conference paper. Kept both; flagged for awareness.
+
+Penarrubia2024 — WRONG VENUE in source entry:
+  The source entry said booktitle = "International Workshop on Reading Music Systems"
+  but the paper was published at DAS 2024 (16th IAPR International Workshop on Document
+  Analysis Systems), not WoRMS 2024. DOI: 10.1007/978-3-031-70442-0_19. Corrected.
+
+Kim2024 — YEAR CORRECTED TO 2025:
+  The source entry had year = 2024, but the paper was published in ACM Journal on
+  Computing and Cultural Heritage, Vol. 18, No. 3, 2025 (pages 52:1–52:21).
+  The preprint appeared in 2024 (Research Square: rs-4668854/v1) but the journal
+  publication is 2025. Entry type changed from @InProceedings to @Article. Key kept
+  as Kim2024 to avoid downstream breakage, but year field is 2025.
+
+Simonetta2024 — ENTRY TYPE CHANGED:
+  Source was @Misc but the paper was published as an @InProceedings at ACM Multimedia
+  2024 (DOI: 10.1145/3678299.3678324). Changed accordingly.
+
+Gonzlez2024 — FLAGGED OUT OF SCOPE (see batch_c_questionable.bib):
+  Music education thesis with no OMR or score recognition component. Entry type also
+  corrected from @Misc to @PhDThesis.
+
+Romo2024, Rosell2024, Castellanos2024, Villarreal2024, Penarrubia2024, Woo2024, Kim2024 — NO ACCESSIBLE PDF:
+  Romo2024: Observatorio journal blocks download via Cloudflare. No OA version found.
+  Rosell2024, Castellanos2024, Villarreal2024: Springer ICDAR 2024 chapters behind paywall; no arXiv preprints found.
+  Penarrubia2024: Springer DAS 2024 chapter behind paywall; no arXiv preprint found.
+  Woo2024: IEEE icABCD 2024; behind IEEE paywall.
+  Kim2024: ACM JOCCH; behind ACM paywall.
+
+de2024 (de Lambertye) — NOTABLE:
+  Thesis supervised by Alexander Pacha (TU Wien), the OMR-Datasets maintainer.
+  The same author also appears in WoRMS 2024 proceedings with a related shorter paper
+  ("Semantic Reconstruction of Sheet Music with Graph-Neural Networks").
+
+Ma2024 (Foundation Models for Music) — KEPT despite broad scope:
+  This 40+ author survey explicitly addresses OMR as a downstream task. OMR is mentioned
+  alongside score images, symbolic music, and music representations. Retained.
+
+Wei2024 (GOT-OCR2) — KEPT despite general OCR scope:
+  The paper explicitly lists "sheet music" as one of the character types handled by GOT,
+  making it directly relevant to the OMR bibliography. High-impact preprint.
+
+Hristov2024 — UNCONFIRMED VENUE:
+  This paper is a Stanford CS231N (Deep Learning for Computer Vision) course report,
+  not a peer-reviewed conference or journal publication. Kept as @Misc with the Stanford
+  course paper URL. No arXiv ID found.
+
+Castellanos2024 — MISSING CO-AUTHOR in source entry:
+  Source listed only Castellanos, Martinez-Esteso, Galán-Cuenca. Full author list is
+  Castellanos, Martinez-Esteso, Galán-Cuenca, AND Gallego (Antonio Javier Gallego),
+  confirmed via Springer metadata.
+batch_d review notes
+====================
+
+Torras2023: Entry type changed from @Misc (arXiv preprint) to @Article — the paper was published in the International Journal on Document Analysis and Recognition (IJDAR), Vol. 27, No. 3, pp. 379–393, 2024. Note that the publication year is 2024 (online July 24, 2024), not 2023 (the arXiv preprint was submitted December 2023). Entry key kept as Torras2023 to match original; consider renaming to Torras2024.
+
+Yesilkanat2023: Entry was listed as @InProceedings for 2023, but the conference (Document Analysis Systems, DAS 2024) and published proceedings are dated 2024. Year corrected to 2024 in the enriched entry. The paper was submitted to HAL in November 2023, but the conference and proceedings are 2024. Entry key kept as Yesilkanat2023; consider renaming to Yesilkanat2024.
+
+Tuggener2023: Full author list has 12 authors. The source entry listed only 4 (Tuggener, Emberger, Ghosh, Sager); 8 co-authors were missing: Satyawan, Montoya, Goldschagg, Seibold, Gut, Ackermann, Schmidhuber, Stadelmann. Published year in TISMIR is 2024 (accepted 2023).
+
+Mayer2024: arXiv listed only 3 authors (Mayer, Straka, Pecina); the fourth co-author Jan Hajič was missing from the source entry.
+
+ArifiMller2023 (questionable): The entry key and source listed "Arifi-Müller, V and Krause, M and Zalkow, F and Klauk, S" as authors. The full author list from TISMIR has 7 authors; the first author is actually Christof Weiß, not Arifi-Müller. The corrected entry in the questionable file reflects the full author list.
+
+Jiang2024 (questionable): No venue could be found for this paper despite extensive searching. Flagged as questionable because of unconfirmed/unknown venue and inability to verify publication. If the venue is identified, it may be appropriate to move to the main bib.
+
+Graczyk2024: Missing co-author Ewa Łukasik was not in the source entry (only 4 of 5 authors were listed). Added.
+
+He2023: Entry listed as @InProceedings at "Chinese Conference on Pattern Recognition and Computer Vision" — confirmed as PRCV 2023 (6th Chinese Conference), Xiamen, China, October 13–15, 2023. Published in LNCS 14432, Springer (Part II). Pages: 400–411.
+
+Ramoneda2023: Entry type changed from @Misc to @InProceedings — the paper was presented at ISMIR 2023 (Milan, Italy, November 5–9, 2023), pages 708–715. The arXiv preprint (2309.16287) predated the conference.
+
+Ferm2024 (questionable): This is a master's thesis (degree project), not a journal article or conference paper. Entry type should be @MastersThesis if moved to main bib.
+BATCH E REVIEW NOTES
+====================
+
+Chen2023 — OUT OF SCOPE
+  The paper uses audio signal processing (sound-level contours, signal features) to train an HMM-based
+  music note recognition model for university teaching. No sheet music images are involved; the approach
+  is purely audio/signal-based. Moved to batch_e_questionable.bib.
+
+Lian2023 — OUT OF SCOPE
+  PeerJ cs-1472. Audio-feature-based emotion classification (RBF model on audio features) applied to
+  music education. No score images, no notation recognition. Moved to batch_e_questionable.bib.
+
+Vigliensoni2023 — OUT OF SCOPE
+  XAIxArts 2023 workshop paper on interactive machine learning for neural audio synthesis. Pure
+  audio-only, no sheet music or notation. Moved to batch_e_questionable.bib.
+  Note: booktitle reconstructed from UAL Research Online metadata; no formal proceedings DOI found.
+
+Janmohamed2023 — ENTRY TYPE: changed from MastersThesis to MastersThesis (retained), but is actually
+  an Honors Undergraduate Thesis (not a graduate master's thesis). Institution: University of Central
+  Florida. Full author name expanded to Nashir A. Janmohamed. PDF downloaded from UCF STARS repository.
+
+MartinezSevilla2023 — KEY CORRECTED (was Martnez2023; key typo fixed to MartinezSevilla2023).
+  Author corrected to Martínez-Sevilla, Juan Carlos (was mis-hyphenated as "Martínez, Sevilla JC").
+  Institution: Universitat d'Alacant (University of Alicante), confirmed via RUA repository.
+  No DOI available; URL provided from institutional repository.
+
+GarcaIasci2023 — UNCONFIRMED VENUE
+  Author corrected to García-Iasci, Patricia and Merchán Sánchez-Jara, Javier.
+  The GRIAL repository entry (repositorio.grial.eu/handle/grial/2642) indicates this is a conference
+  presentation/paper but the specific conference proceedings, publisher, and DOI could not be confirmed.
+  The paper discusses OMR of jazz manuscripts, which is in scope. Entered with URL only pending venue
+  confirmation.
+
+Lou2023 — ENTRY TYPE CHANGED: was @InProceedings; actual publication is a journal article in Applied
+  Sciences (MDPI), vol. 13, no. 23, article 12627, November 2023. Changed to @Article.
+
+CalvoZaragoza2023 — Co-author Ríos-Vila, Antonio added (4 authors total, not 3 as in original entry).
+  Published in ICDAR 2023 Workshops proceedings (Part I), LNCS vol. 14193, pages 94–104.
+
+PDF DOWNLOAD STATUS
+===================
+Downloaded successfully:
+  - 2023 - Musical Form Reconstruction in Printed and Handwritten Lead Sheets via Optical Recognition of Chord Symbols.pdf
+  - 2023 - Stacking Ensemble Learning for Optical Music Recognition.pdf
+  - 2023 - Self-Supervised Contrastive Learning for Robust Audio-Sheet Music Retrieval Systems.pdf
+  - 2023 - End-to-End Optical Music Recognition for Pianoform Sheet Music.pdf (Springer Open Access)
+  - 2023 - TrOMR Transformer-Based Polyphonic Optical Music Recognition.pdf (arXiv)
+  - 2023 - Ekstraksi Partitur Balok Monofonik untuk Instrumen Flute dengan CRNN dan CRF.pdf
+
+PDF unavailable (paywalled or not found as open access):
+  - Villarreal2023 (ACM DL, no open preprint found)
+  - Ayllon2023 (Springer LNCS, no open preprint found)
+  - CalvoZaragoza2023 (Springer LNCS, no open preprint found)
+  - MartinezSevilla2023 (master's thesis, RUA institutional access only)
+  - GarcaIasci2023 (conference paper, GRIAL repository PDF not retrievable)
+  - Chen2023 (Elsevier ScienceDirect, paywalled) [out of scope anyway]
+  - Lian2023 (PeerJ OA but out of scope, not downloaded)
+  - Payne2023 (Springer LNCS, no open preprint found)
+batch_f processing notes
+========================
+
+Shi2022:
+  - Conference corrected: entry said "2022 IEEE International Conference on Robotics and Automation" (ICRA) but paper is in "2022 IEEE International Conference on Robotics and Biomimetics" (ROBIO). DOI 10.1109/ROBIO55434.2022.10011881 confirms ROBIO. Booktitle updated accordingly.
+  - Kept in scope per instructions (robot piano playing that reads a bi-phonic musical score image as input).
+
+Castellanos2022:
+  - The 3rd International Workshop on Reading Music Systems (WoRMS) proceedings (arXiv:2212.00378) were posted December 2022 but the workshop itself took place 23 July 2021 in Alicante. The paper (pp. 50–54) appears to originate from WoRMS 2021. Year retained as 2022 (proceedings publication year); unconfirmed whether this is truly a new 2022 contribution or a 2021 proceedings finally archived. File field points to the full proceedings PDF.
+
+Song2022:
+  - Conference is ICSINC 2021 (Signal and Information Processing, Networking and Computers, 2021 edition); proceedings published by Springer in 2022. Year 2022 retained (publication year). Note possible year discrepancy if citation is by conference year.
+
+Xiao2022:
+  - Applied Intelligence volume 53 is the 2023 print volume; the article was published online in 2022 (doi 10.1007/s10489-022-03929-y). Year 2022 retained as online-first year.
+
+De2022:
+  - Author names corrected from original "De, Vega FF and Alvarado, J and Cortez, JV" to proper form: Fernández de Vega, FF; Alvarado, J; Villegas Cortez, J. Entry key De2022 retained.
+
+Barbosa2022:
+  - Volume, number, and page information for the Revista Eletrônica de Iniciação Científica em Computação (REIC) could not be confirmed from available sources. Fields omitted pending verification.
+
+Bolya2022:
+  - Full journal name ETHNOMUSIC appears to be the correct short title used by the Hungarian Academy of Sciences repository (real.mtak.hu); it corresponds to an ethnomusicology journal with ISSN 2523-4846. Full expanded name not independently confirmed.
+
+Mnnich2022 (Münnich):
+  - Chapter on digital encoding of musical notation in an edited volume on Adorno's theory of musical reproduction. Kept in scope as it directly addresses computational/digital encoding of musical script. The book is also available via Brill (eISBN 9783846766804) in addition to the Wilhelm Fink print edition (ISBN 978-3-7705-6680-8).
+
+--- OUT OF SCOPE ---
+
+Park2022: Music plagiarism detection uses MIDI data (audio/symbolic), not score images. No sheet music image processing. Flagged out of scope.
+
+Vigliensoni2022: R-VAE is a drum rhythm generation system using variational autoencoders on MIDI clips. No score images involved. Flagged out of scope.
+
+Rosenzweig2022: PhD thesis on audio signal processing for singing voice recordings. No sheet music or notation recognition. Flagged out of scope. Institution: Friedrich-Alexander-Universität Erlangen-Nürnberg (AudioLabs).
+BATCH G PROCESSING NOTES
+========================
+Processed: 2026-05-01
+Entries: 16 total → 13 in-scope (batch_g.bib), 3 out-of-scope (batch_g_questionable.bib)
+
+---
+
+Pacha2022
+---------
+STATUS: IN SCOPE
+YEAR CORRECTION: The BibTeX entry said 2022, but the paper was actually presented at WoRMS 2021
+(3rd International Workshop on Reading Music Systems, Alicante, Spain, 23 July 2021), pp. 4-7.
+The repositum.tuwien.at record confirms year=2021. Updated year to 2021.
+VENUE: 3rd International Workshop on Reading Music Systems (WoRMS 2021)
+FULL AUTHOR: Alexander Pacha
+PDF: Downloaded as "2021 - The Challenge of Reconstructing Digits in Music Scores.pdf"
+(Using the WoRMS 3rd proceedings PDF from arxiv.org/abs/2212.00378, which contains this paper)
+SOURCE: https://repositum.tuwien.at/handle/20.500.12708/58655
+
+Won2022
+-------
+STATUS: OUT OF SCOPE
+REASON: PhD thesis from UPF (Universitat Pompeu Fabra), supervised by Xavier Serra & Horacio Saggion.
+Focuses on audio-based music tagging, genre classification, and bridging natural language semantics
+with audio music semantics. No score images, notation detection, or OMR content found.
+INSTITUTION: Universitat Pompeu Fabra (MTG)
+URL: https://repositori.upf.edu/handle/10230/54160
+DEFENSE DATE: July 1, 2022
+
+Garrido2022
+-----------
+STATUS: IN SCOPE
+FULL AUTHOR: Carlos Garrido Muñoz
+INSTITUTION: Universidad de Alicante, Escuela Politécnica Superior
+DEGREE: Máster Universitario en Ciencia de Datos (Master's thesis)
+SUPERVISORS: Jorge Calvo-Zaragoza, Antonio Ríos-Vila
+DATE: June 2022
+PDF: Downloaded directly from RUA repository
+SOURCE: https://rua.ua.es/dspace/handle/10045/124715
+NOTE: Title in original BibTeX had "Garrido, Muñoz C" but correct author is "Carlos Garrido Muñoz".
+
+Hartelt2022
+-----------
+STATUS: IN SCOPE
+FULL DETAILS: Algorithms (MDPI), vol. 15, no. 7, article 221, 2022
+DOI: 10.3390/a15070221
+Published online: 22 June 2022
+PDF: Downloaded from MDPI
+
+Gut2022
+-------
+STATUS: IN SCOPE
+PUBLISHED AS: Student thesis at ZHAW School of Engineering (Zurich University of Applied Sciences).
+Urs Gut is listed as a contributor in the published TISMIR paper "Real World Music Object Recognition"
+(Tuggener et al., 2024, DOI: 10.5334/tismir.157), described as working "while studying at the
+ZHAW School of Engineering, Switzerland". The @Misc entry is retained with a note about the
+ZHAW origin. No public URL or DOI found for the thesis itself.
+
+Yue2022
+-------
+STATUS: OUT OF SCOPE
+REASON: Audio-based note detection using CNN+BiLSTM applied to audio signals in a music teaching
+context. Does not involve sheet music images or score recognition. Additionally, the paper has
+been formally RETRACTED (retraction notice: doi:10.1155/2023/9850239, published 2023).
+
+Liang2022
+---------
+STATUS: IN SCOPE
+FULL AUTHOR: Mingheng Liang
+DOI: 10.1155/2022/2415857
+Mathematical Problems in Engineering, vol. 2022, pp. 1-9, June 2022.
+PDF: Could not be downloaded (Hindawi/Wiley blocks automated access). No file field added.
+
+Li2022
+------
+STATUS: IN SCOPE
+FULL AUTHOR: Na Li
+DOI: 10.1155/2022/8724688
+Computational Intelligence and Neuroscience, vol. 2022, pp. 1-9.
+Paper uses GAN for musical notation recognition from images (score images).
+PDF: Could not be downloaded (Hindawi/Wiley blocks automated access). No file field added.
+
+Zhu2022
+-------
+STATUS: IN SCOPE (music score retrieval)
+FULL AUTHORS: Tiange Zhu, Raphaël Fournier-S'niehotta, Philippe Rigaux, Nicolas Travers
+DOI: 10.3390/bdcc6010023
+Big Data and Cognitive Computing, vol. 6, no. 1, p. 23, 23 February 2022.
+SCOPE NOTE: Paper focuses on content-based search in collections of XML-encoded symbolic music
+scores (MusicXML), which qualifies as score retrieval / MIR for written music.
+PDF: Downloaded via HAL open access (hal-03678103).
+
+Agrawal2022
+-----------
+STATUS: IN SCOPE (audio-score alignment / performance-score synchronisation)
+FULL AUTHOR: Ruchit Agrawal
+INSTITUTION: Queen Mary University of London
+arXiv: 2206.00454, submitted May 31, 2022
+This is described as a PhD thesis overview paper. The synchronisation directly bridges audio
+recordings with symbolic scores and sheet music scans.
+PDF: Downloaded from arXiv.
+
+Rettinghaus2022
+---------------
+STATUS: IN SCOPE (sheet music library application)
+FULL AUTHORS: Klaus Rettinghaus, Alexander Pacha
+VENUE: Music Encoding Conference Proceedings 2021 (published 2022)
+DOI: 10.17613/s315-2y29
+ISBN: 978-84-1302-173-7
+PAGES: 41-48
+Published via Humanities Commons
+NOTE: This was NOT in DLfM proceedings as originally suspected; it is in the MEC 2021 proceedings.
+PDF: Downloaded from Alexander Pacha's website.
+
+Santamara2022
+-------------
+STATUS: IN SCOPE
+FULL AUTHORS: Gonzalo Santamaría, Carlos Domínguez, Jónthan Heras, Eloy J. Mata, Vico Pascual
+NOTE: The original entry had "Santamaría, G" (missing accent on á).
+VENUE: 15th IAPR International Workshop on Document Analysis Systems (DAS 2022),
+La Rochelle, France, May 22-25, 2022
+BOOK: Document Analysis Systems, LNCS vol. 13237, Springer, Cham
+PAGES: 553-567
+DOI: 10.1007/978-3-031-06555-2_37
+ISBN: 978-3-031-06554-5 (softcover), 978-3-031-06555-2 (eBook)
+PDF: Paywalled Springer chapter; not downloaded.
+
+Lee2022
+-------
+STATUS: IN SCOPE (score following / audio-score alignment)
+FULL AUTHOR: Lin Hao Lee
+arXiv: 2205.03247, submitted May 6, 2022
+Likely a final-year project or MSc thesis submitted as a preprint.
+DOI: 10.48550/arXiv.2205.03247
+PDF: Downloaded from arXiv.
+
+AlfaroContreras2022
+-------------------
+STATUS: IN SCOPE
+FULL AUTHORS: María Alfaro-Contreras, Antonio Ríos-Vila, José J. Valero-Mas,
+José M. Iñesta, Jorge Calvo-Zaragoza
+NOTE: Original entry listed only 3 authors ("Alfaro-Contreras, M and Ríos-Vila, A and Valero-Mas, JJ");
+two additional authors (Iñesta and Calvo-Zaragoza) added from Semantic Scholar.
+JOURNAL: Pattern Recognition Letters, vol. 158, pp. 157-163, 2022
+DOI: 10.1016/j.patrec.2022.04.032
+ISSN: 0167-8655
+PDF: Paywalled (ScienceDirect); not downloaded.
+
+Liu2022
+-------
+STATUS: OUT OF SCOPE
+REASON: Audio-based acoustic quality evaluation and note recognition from audio signals of lute
+performance. No sheet music images or optical music recognition involved.
+FULL AUTHOR: Lili Liu
+DOI: 10.1155/2022/1978746
+
+Henkel2022
+----------
+STATUS: IN SCOPE
+FULL AUTHOR: Florian Henkel
+INSTITUTION: Johannes Kepler University Linz (Institut of Computational Perception)
+TYPE: PhD thesis, 2022
+Confirmed via JKU institutional repository: https://epub.jku.at/obvulihs/content/titleinfo/7439006
+PDF: Downloaded from JKU epub repository.
+
+---
+
+PDF DOWNLOAD SUMMARY
+====================
+Downloaded successfully:
+- 2021 - The Challenge of Reconstructing Digits in Music Scores.pdf (WoRMS 3rd proceedings)
+- 2022 - A Framework for Content-Based Search in Large Music Collections.pdf (HAL)
+- 2022 - Building a Comprehensive Sheet Music Library Application.pdf (author website)
+- 2022 - Multi-modal Deep Learning for On-line Music Following in Score Sheet Images.pdf (JKU)
+- 2022 - Musical Score Following and Audio Alignment.pdf (arXiv)
+- 2022 - Optical Medieval Music Recognition Using Background Knowledge.pdf (MDPI)
+- 2022 - Recuperación de Grafos para Optical Music Recognition.pdf (RUA)
+- 2022 - Towards Context-Aware Neural Performance-Score Synchronisation.pdf (arXiv)
+
+Skipped (paywalled or inaccessible):
+- AlfaroContreras2022 (ScienceDirect)
+- Santamara2022 (Springer)
+- Li2022 (Hindawi/Wiley — automated access blocked)
+- Liang2022 (Hindawi/Wiley — automated access blocked)
+- Gut2022 (no public URL found)
+BATCH H PROCESSING NOTES
+=========================
+
+IN-SCOPE ENTRIES (batch_h.bib)
+--------------------------------
+
+Hart2021
+  - Identified as a Research Master thesis at Utrecht University, Department of Media
+    and Culture Studies, supervised via the Musicology research programme.
+  - Content: case studies on the Leuven Chansonnier (digitized 2017) and two Purcell
+    manuscripts (digitized 2012) -- focussed on heritage digitization policy/archaeology,
+    NOT notation recognition or OMR algorithms.
+  - DECISION: Borderline. Kept in-scope as the thesis directly addresses digital
+    preservation of music manuscripts and digitization workflows, which are OMR-adjacent
+    (digitization infrastructure for the sources OMR systems operate on).
+  - PDF downloaded from Utrecht University student theses repository.
+  - Author initials expanded to "Delaney R." based on thesis cover page.
+
+Wang2021
+  - Full author: Yanfang Wang.
+  - Journal: Journal of Internet Technology, vol. 22, no. 6, pp. 1443--1455, 2021.
+  - DOI confirmed: 10.53106/160792642021112206020 (Taiwan ERICDATA record).
+  - Content involves deep-learning-based handwritten music NOTE recognition -- clearly OMR.
+  - No open-access PDF found; no file field added.
+
+de2021
+  - Full authors confirmed: Carlos de la Fuente, José J. Valero-Mas, Francisco J.
+    Castellanos, Jorge Calvo-Zaragoza (via WoRMS 2021 YouTube and Springer page).
+  - Published as journal article in Int. J. Multimedia Information Retrieval, vol. 11,
+    pp. 77--84, 2022 (received/accepted 2021, hence year=2022 in the article metadata).
+  - DOI: 10.1007/s13735-021-00221-6.
+  - Springer paywalled; no open-access PDF found; no file field added.
+  - Key entry: corrected author field from malformed "de, la Fuente C" to proper name.
+
+Paul2021
+  - Published online November 2021; volume/issue: Neural Computing and Applications
+    34(13), pp. 10409--10427, 2022.
+  - DOI: 10.1007/s00521-021-06629-9.
+  - Springer paywalled; no open-access PDF found; no file field added.
+
+Torras2021
+  - Venue: ISMIR 2021 (NOT ICDAR as original entry implied).
+  - Pages: 690--696 confirmed from PDF.
+  - DOI: 10.5281/zenodo.5624451 (Zenodo deposit; this is the canonical citable DOI).
+  - PDF downloaded from Zenodo (file 000086.pdf inside record 5624451).
+
+Ahmed2021
+  - Conference: ASSETS '21, October 18--22, 2021, Virtual Event, USA.
+  - Full author list recovered (includes William Christopher Payne and Amy Hurst, who
+    were missing from original entry).
+  - Pages: Article 89, 4 pages (pp. 1--4 for article-numbered proceedings).
+  - DOI: 10.1145/3441852.3476555.
+  - ACM DL paywalled; no open-access PDF found; no file field added.
+  - Booktitle corrected to full formal name.
+
+RosVila2021
+  - ICDAR 2021, Lausanne, September 5--10, 2021.
+  - LNCS vol. 12823, pp. 661--675.
+  - DOI: 10.1007/978-3-030-86334-0_43.
+  - Springer paywalled; no open-access preprint found; no file field added.
+
+Mayer2021
+  - ICDAR 2021, Lausanne, September 5--10, 2021.
+  - LNCS vol. 12823, pp. 626--641.
+  - DOI: 10.1007/978-3-030-86334-0_41.
+  - Springer paywalled; no open-access PDF found; no file field added.
+  - Author first name LaTeX-encoded: Ji{\v{r}}{\'\i} (Jiří).
+
+LpezGutirrez2021
+  - Published in ICDAR 2021 WORKSHOPS proceedings (separate volume from main conf).
+  - LNCS vol. 12916, pp. 59--73.
+  - DOI: 10.1007/978-3-030-86198-8_5.
+  - Full author list added: López-Gutiérrez, Valero-Mas, Castellanos, Calvo-Zaragoza.
+  - Springer paywalled; no file field added.
+
+Edirisooriya2021
+  - Originally Misc; confirmed published at ISMIR 2021, pp. 167--173.
+  - Changed to @InProceedings.
+  - arXiv preprint: https://arxiv.org/abs/2108.01769.
+  - PDF downloaded from ISMIR archives.
+  - DOI points to ISMIR Zenodo deposit (10.5281/zenodo.5624585).
+
+Bhumichitr2021
+  - IEEE Xplore document 9493818; conference JCSSE 2021, Lampang, Thailand, June 30--July 2, 2021.
+  - DOI: 10.1109/JCSSE53117.2021.9493818.
+  - Pages: 1--5.
+  - IEEE paywalled; no file field added.
+  - SCOPE NOTE: Paper uses Haar-like Feature for music pitch symbol detection in sheet
+    music images -- OMR-adjacent (symbol detection from notation images). Kept in-scope.
+
+Ji2021
+  - Originally Misc; confirmed @InProceedings at ISMIR 2021, pp. 326--333.
+  - Authors: Kevin Ji, Daniel Yang, TJ Tsai (Harvey Mudd College).
+  - PDF downloaded from ISMIR archives.
+  - No formal DOI found for ISMIR 2021 proceedings paper; URL to PDF provided instead.
+
+Ros2021
+  - Author corrected: Antonio Ríos Vila (not "Ríos, Vila A").
+  - Key retained as Ros2021 (as given; could be RiosVila2021 but kept consistent with input).
+  - Institution: Universidad de Alicante.
+  - Programme: Máster Universitario en Ciencia de Datos (Master in Data Science).
+  - Month: July 2021 (confirmed from thesis cover: "Julio 2021").
+  - PDF downloaded from RUA repository.
+
+Liu2021
+  - @InCollection (handbook chapter), Chapter 24.
+  - Editor: Eduardo Reck Miranda.
+  - Pages: 693--714 (confirmed from Springer metadata and QMUL preprint header).
+  - DOI: 10.1007/978-3-030-72116-9_24.
+  - ISBN (hardcover): 978-3-030-72115-2.
+  - Publisher: Springer, Cham, 2021.
+  - SCOPE NOTE: Chapter covers automatic music transcription from audio to notation,
+    which is OMR-adjacent (output is music notation; involves understanding of score
+    structure). Kept in-scope per instructions ("audio→notation" is listed as keep).
+  - Springer paywalled; QMUL preprint blocked; no file field added.
+
+OUT-OF-SCOPE ENTRIES (batch_h_questionable.bib)
+------------------------------------------------
+
+Moss2021
+  - CHR 2021 (Computational Humanities Research Conference), CEUR-WS Vol. 2989,
+    pp. 159--170.
+  - Content: text similarity and topic modelling applied to 19th-century German music
+    theory texts (the "dualism debate"). No music notation image recognition or OMR
+    component. Pipeline is text-based NLP, not score image processing.
+  - FLAGGED OUT OF SCOPE: digital musicology / computational humanities, not OMR.
+  - PDF downloaded from CEUR-WS (open access).
+
+Zalkow2021
+  - PhD thesis, Friedrich-Alexander-Universität Erlangen-Nürnberg, 2021.
+  - Content: audio-only representations for music retrieval; cross-version audio
+    matching using chroma features. No sheet music images or notation.
+  - FLAGGED OUT OF SCOPE: audio-only, no score images.
+  - FAU open-access repository blocked bot access; PDF not downloadable.
+
+PDF STATUS SUMMARY
+------------------
+Downloaded successfully:
+  - 2021 - Towards an Archaeology of Digital Early Music Heritage.pdf
+  - 2021 - On the Integration of Language Models into Sequence to Sequence Architectures for Handwritten Music Recognition.pdf
+  - 2021 - An Empirical Evaluation of End-to-End Polyphonic Optical Music Recognition.pdf
+  - 2021 - Piano Sheet Music Identification Using Marketplace Fingerprinting.pdf
+  - 2021 - Development of a Complete Optical Music Recognition Workflow.pdf
+  - 2021 - Digitizing a 19th-Century Music Theory Debate for Computational Analysis.pdf
+
+Paywalled / not downloadable (no file field in .bib):
+  - Wang2021 (Journal of Internet Technology, no OA version found)
+  - de2021 (Springer, paywalled)
+  - Paul2021 (Springer, paywalled)
+  - Ahmed2021 (ACM DL, paywalled)
+  - RosVila2021 (Springer, paywalled)
+  - Mayer2021 (Springer, paywalled)
+  - LpezGutirrez2021 (Springer, paywalled)
+  - Bhumichitr2021 (IEEE Xplore, paywalled)
+  - Liu2021 (Springer, paywalled; QMUL preprint blocked)
+  - Zalkow2021 (FAU repository blocked bot access)
+
+WARNING: The file "2021 - Learning Audio Representations for Cross-Version Retrieval of
+Western Classical Music.pdf" in pdfs_new/ is an HTML page (bot-blocked), NOT a real PDF.
+It should be deleted. This file was created during a failed download attempt and cannot
+be removed due to sandbox permissions. Do not reference it in any .bib file.
+BATCH i PROCESSING NOTES
+========================
+
+IN-SCOPE ENTRIES (batch_i.bib)
+--------------------------------
+
+Braae2021
+  - Entry type changed from @Misc to @MastersThesis (it is an AAU master's thesis, not a conference paper).
+  - Full author names: David O. Braae and Thomas R. Rusbjerg.
+  - Institution: Aalborg University (projekter.aau.dk).
+  - PDF downloaded from AAU repository.
+  - Note: No separate WoRMS/ICDAR paper was found; the primary output is the thesis.
+
+Shishido2021
+  - Full author names recovered: Tomoyuki Shishido, Farida Fati, Daisuke Tokushige, Yuya Ono, Itsuo Kumazawa.
+  - arXiv preprint 2106.12037 (June 2021); no separate conference proceedings found.
+  - PDF downloaded from arxiv.org.
+
+Echevarria2021
+  - Key corrected from Echevarra2021 to Echevarria2021.
+  - Author field corrected to "Echevarría Naharro, Daniel" with LaTeX encoding.
+  - Institution: Universitat Autònoma de Barcelona (UAB), Escola d'Enginyeria.
+  - Type: TFG (Final Degree Project in Computer Engineering), not a master's thesis.
+  - Director: Alicia Fornés Bisquerra.
+  - URL: https://ddd.uab.cat/record/238421
+  - PDF downloaded (1-page cover page only from UAB DDD; full thesis accessible at URL).
+
+Yang2021
+  - TISMIR Vol. 4, No. 1, pp. 42–51, 2021.
+  - DOI: 10.5334/tismir.70
+  - PDF downloaded from Semantic Scholar.
+
+Schneider2021
+  - Full author names: Daniel Schneider, Nikolaus Korfhage, Matthias Mühling, Peter Lüttig.
+  - TISMIR Vol. 4, No. 1, pp. 14–28, 2021. Published 24 Feb 2021.
+  - DOI: 10.5334/tismir.77
+  - PDF downloaded from Semantic Scholar.
+
+Furukawa2021
+  - Entry type changed from @Misc to @TechReport.
+  - Full author names: Erick Seiji Furukawa, Hélio Pedrini.
+  - Institution: Instituto de Computação, UNICAMP; Report number IC-PFG-20-26.
+  - URL: https://ic.unicamp.br/~reltech/PFG/2020/PFG-20-26.pdf
+  - PDF could not be downloaded (server timeout). No file field added.
+
+Wick2021
+  - Journal of New Music Research, Vol. 50, No. 1, pp. 18–36, published online 19 Jan 2021.
+  - DOI: 10.1080/09298215.2021.1873393
+  - Paper is behind paywall (Taylor & Francis); no open-access version confirmed.
+    The preprints.org version (202001.0149) is a different earlier paper with a different title.
+    PDF not downloaded (paywalled). No file field added.
+
+Samiotis2020
+  - Full venue confirmed: ISMIR 2020 (21st ISMIR Conference, Montréal, Canada).
+  - Pages: 901–907.
+  - Added sixth author: Alessandro Bozzon (from TU Delft proceedings metadata).
+  - PDF downloaded from ISMIR archives.
+
+DegrootMaggetti2020
+  - Author list expanded from 3 to 9 (per HAL record): Jacob Degroot-Maggetti, Timothy de Reuse,
+    Laurent Feisthauer, Samuel Howes, Yaolong Ju, Suzaka Kokubu, Sylvain Margot, Néstor Nápoles López, Finn Upham.
+  - Venue confirmed as ISMIR 2020.
+  - Page numbers not found in accessible sources; left empty.
+  - PDF downloaded from HAL.
+  - Title expanded: "...and Implications for MIR Analysis".
+
+Sands2020
+  - Institution confirmed: MIT, Department of Electrical Engineering and Computer Science. May 2020.
+  - URL: https://dspace.mit.edu/handle/1721.1/127516
+  - PDF not downloadable (MIT DSpace returns HTML redirect for programmatic access). No file field.
+
+Foscarin2020
+  - Author "Mcleod" corrected to "McLeod" (Andrew McLeod).
+  - Added fifth author: Masahiko Sakai.
+  - Pages: 534–541.
+  - PDF downloaded from ISMIR archives.
+
+RiosVila2020
+  - Entry type changed from @Misc to @InProceedings.
+  - Venue: 17th International Conference on Frontiers in Handwriting Recognition (ICFHR 2020),
+    Dortmund, Germany, Sept 8–10, 2020. Pages 193–198.
+  - DOI: 10.1109/ICFHR2020.2020.00044
+  - Author names LaTeX-encoded (accents).
+  - PDF not downloaded (IEEE paywall). No file field.
+
+Malakar2020
+  - Full author list recovered: Samir Malakar, Manosij Ghosh, Agneet Chaterjee, Showmik Bhowmik.
+    (Note: original entry had "Chaterjee" — kept as spelled in publication; fourth author
+     is Showmik Bhowmik, not listed in original entry.)
+  - Multimedia Tools and Applications, Vol. 79, pp. 32011–32036, published Aug 25, 2020.
+  - DOI: 10.1007/s11042-020-09638-3
+  - PDF not downloadable (Springer paywall; Asutosh College mirror returns HTML). No file field.
+
+
+OUT-OF-SCOPE / QUESTIONABLE ENTRIES (batch_i_questionable.bib)
+----------------------------------------------------------------
+
+Gong2021 — OUT OF SCOPE (audio-only music classification)
+  - Paper uses audio signal features (rhythm, spectral, harmonic) only.
+  - No sheet music, notation recognition, or score images.
+  - DOI: 10.1155/2021/8861896
+
+Bertiaux2020 — BORDERLINE / OUT OF SCOPE
+  - Study examines motor dynamics of handwriting music notation (pen pressure, velocity).
+  - Does not involve automated recognition, score scanning, or OMR systems.
+  - Relevant to understanding human music handwriting but not OMR per se.
+  - Published online Dec 2020; journal volume/issue is Vol. 27, No. 1 (2023 print date), pp. 247–259.
+  - DOI: 10.1177/1029864920972145
+
+Zalkow2020 — BORDERLINE (kept in questionable; includes sheet music images)
+  - MTD dataset includes graphical sheet music images and supports OMR tasks, but the primary
+    focus is audio-based MIR (cross-modal retrieval, audio-to-score alignment).
+  - Kept in questionable rather than in-scope because OMR is secondary to the dataset's purpose.
+  - If the bibliography includes cross-modal datasets that partly support OMR, move to batch_i.bib.
+  - TISMIR Vol. 3, No. 1, pp. 180–192. DOI: 10.5334/tismir.68
+  - PDF downloaded from AudioLabs.
+
+Kong2020 — OUT OF SCOPE (MIDI dataset, no sheet music)
+  - GiantMIDI-Piano is a transcription of audio to MIDI; no score images or notation recognition.
+  - arXiv 2010.07061. DOI: 10.48550/arXiv.2010.07061
+
+
+PDF DOWNLOAD SUMMARY
+---------------------
+Downloaded successfully:
+  2021 - DETR for Combined Object Detection and Notation Assembly in Optical Music Recognition.pdf
+  2021 - Listen to Your Favorite Melodies with img2Mxml.pdf
+  2021 - Piano Sheet Music Identification Using Dynamic N-gram Fingerprinting.pdf
+  2021 - Automatic Transcription of Organ Tablature Music Notation with Deep Neural Networks.pdf
+  2021 - Sistema de Reconocimiento de Partituras Musicales y Generacion de Archivos Sonoros.pdf
+  2020 - ASAP A Dataset of Aligned Scores and Performances for Piano Transcription.pdf
+  2020 - Microtask Crowdsourcing for Music Score Transcriptions An Experiment with Error Detection.pdf
+  2020 - Data Quality Matters Iterative Corrections on a Corpus of Mendelssohn String Quartets.pdf
+  2020 - MTD A Multimodal Dataset of Musical Themes for MIR Research.pdf
+
+Not downloaded (paywalled or unavailable):
+  Wick2021 — Taylor & Francis paywall; no open version found
+  Malakar2020 — Springer paywall; no open version found
+  RiosVila2020 — IEEE Xplore paywall
+  Sands2020 — MIT DSpace requires browser session
+  Furukawa2021 — Unicamp server timed out
