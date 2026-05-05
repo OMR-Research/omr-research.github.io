@@ -2,3 +2,5 @@
 *.bib.sav
 pdfs
 *.pyc
+__pycache__/
+.DS_Store

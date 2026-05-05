@@ -37,74 +37,37 @@ category in BibTex.
 If you find [an error](https://github.com/OMR-Research/omr-research.github.io/issues/new?template=incorrect-entry.md) in any of the three BibTex files or want to [add a missing entry](https://github.com/OMR-Research/omr-research.github.io/issues/new?template=missing-entry.md), please open an [issue](https://github.com/OMR-Research/omr-research.github.io/issues/new/choose). Especially many old entries could not be verified by us and we appreciate any help from the community to keep this bibliography updated, accessible and a useful resource for the entire community.
 
 ## Building the website
-First, update the date in the [header](template/Header.html), then follow the remaining instructions below. 
 
-Make sure you have LaTeX/BibTex installed and available on your commandline. We recommend installing it via [MikTex](https://miktex.org/).
+The website is generated from the three BibTeX files using a Python script. No external tools (LaTeX, BibTeX, bibtex2html) are required.
 
-### Windows
+**Requirements:** Python 3 (standard library only — no additional packages needed).
 
-You can build the website on Windows using the following commands 
-
-```
-del *.html
-
-BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -o OMR-Research-Key OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -d -r -o OMR-Research-Year OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -noabstract -o OMR-Research-No-Abstract OMR-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -o OMR-Related OMR-Related-Research.bib
-BibTeX2HTML\Windows\bibtex2html.exe -s omr-style --use-keys --no-keywords --nodoc -o OMR-Unverified OMR-Research-Unverified.bib
-
-copy template\Header.html + OMR-Research-Key.html + template\Footer.html index.html /Y
-copy template\Header.html + OMR-Research-Year.html + template\Footer.html omr-research-sorted-by-year.html /Y
-copy template\Header.html + OMR-Research-No-Abstract.html + template\Footer.html omr-research-compact.html /Y
-copy template\Header.html + OMR-Related.html + template\Footer.html omr-related-research.html /Y
-copy template\Header.html + OMR-Unverified.html + template\Footer.html omr-research-unverified.html /Y
-
-del OMR-Research-Key.html
-del OMR-Research-Year.html
-del OMR-Research-No-Abstract.html
-del OMR-Related.html
-del OMR-Unverified.html
-
-```
-
-[RenderWebsite.bat](RenderWebsite.bat) contains exactly the same commands for easier execution.
-
-We recommend that you remove the trailing special character from the generated omr-research*.html websites (caused by bibtex2html) before committing.
-
-
-### MacOS
-
-You can build the website on MacOS using the following commands. Make sure you have bibtex installed via MikTex (e.g., `brew install miktex-console` and then install the basic Tex installation).
+### Generating the HTML files
 
 ```bash
-rm *.html
-
-BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -o OMR-Research-Key OMR-Research.bib
-BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -d -r -o OMR-Research-Year OMR-Research.bib
-BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -d -r -o -noabstract OMR-Research-No-Abstract OMR-Research.bib
-BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -o OMR-Related OMR-Related-Research.bib
-BibTeX2HTML/OSX_x86_64/bibtex2html -s omr-style --use-keys --no-keywords --nodoc -o OMR-Unverified OMR-Research-Unverified.bib
-
-cat template/Header.html OMR-Research-Year.html template/Footer.html > index.html
-cat template/Header.html OMR-Research-Key.html template/Footer.html > omr-research-sorted-by-key.html
-cat template/Header.html OMR-Research-No-Abstract.html template/Footer.html > omr-research-compact.html
-cat template/Header.html OMR-Related.html template/Footer.html > omr-related-research.html
-cat template/Header.html OMR-Unverified.html template/Footer.html > omr-research-unverified.html
-
-rm OMR-Research-Key.html
-rm OMR-Research-Year.html
-rm OMR-Research-No-Abstract.html
-rm OMR-Related.html
-rm OMR-Unverified.html
-
+python3 generate_site.py
 ```
 
-[RenderWebsite.sh](RenderWebsite.sh) contains exactly the same commands for easier execution.
+This produces three HTML files:
 
-### Linux
-The same process should also be available under Linux with the binaries of bibtex2html residing in `BibTeX2HTML\Linux` but are currently not tested.
+| Output file | Source | Description |
+|---|---|---|
+| `index.html` | `OMR-Research.bib` | Main verified OMR bibliography |
+| `omr-related-research.html` | `OMR-Related-Research.bib` | Related (non-OMR-primary) works |
+| `omr-research-unverified.html` | `OMR-Research-Unverified.bib` | Unverified entries |
+
+[RenderWebsite.sh](RenderWebsite.sh) is a convenience wrapper that calls the same command.
+
+### Sanity-checking the bibliography
+
+A separate script generates a diff-style report comparing the current state of `OMR-Research.bib` against a known-good baseline commit, highlighting entries with missing or suspicious abstracts, missing PDFs, missing DOIs/URLs, and other metadata issues:
+
+```bash
+python3 gen_sanity_check.py
+```
+
+This writes `sanity-check.html` (not committed to the repository). Open it in a browser to review flagged entries. The script lives outside the repository at the path used during generation; copy it next to `generate_site.py` if needed.
 
 ## Steps for updating the website
 
-To update the rendered html, firstly make sure that the BibTex-files are updated and correct. Then you can execute the commands from above to build the HTML files that will be committed directly into the repository along with the generated content. 
+Make sure the BibTeX files are correct, then run `python3 generate_site.py` and commit the updated HTML files together with any bib changes.
