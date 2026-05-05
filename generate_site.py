@@ -22,13 +22,14 @@ TODAY = date.today().strftime("%d.%m.%Y")
 
 # ─── BibTeX Parser ──────────────────────────────────────────────────────────
 
+
 def parse_bib(path):
     """Parse a .bib file; return list of entry dicts with all fields lowercase."""
     text = Path(path).read_text(encoding="utf-8")
     entries = []
 
     # Locate each entry by @Type{ or @Type(
-    for m in re.finditer(r'@(\w+)\s*[\{(]', text):
+    for m in re.finditer(r"@(\w+)\s*[\{(]", text):
         etype = m.group(1)
         if etype.lower() in ("comment", "string", "preamble"):
             continue
@@ -59,7 +60,7 @@ def parse_bib(path):
 def _parse_entry_fields(entry_text, etype):
     """Parse fields from a single BibTeX entry block."""
     # Extract key: @Type{key,
-    km = re.match(r'@\w+\s*[\{(]\s*([^,\s]+)\s*,', entry_text)
+    km = re.match(r"@\w+\s*[\{(]\s*([^,\s]+)\s*,", entry_text)
     if not km:
         return None
     key = km.group(1).strip()
@@ -128,26 +129,52 @@ def _parse_entry_fields(entry_text, etype):
 
 # ─── LaTeX → Unicode ────────────────────────────────────────────────────────
 
-_ACUTE   = dict(zip("aeiouynAEIOUYN", "áéíóúýńÁÉÍÓÚÝŃ"))
-_GRAVE   = dict(zip("aeiouAEIOU",     "àèìòùÀÈÌÒÙ"))
-_CIRC    = dict(zip("aeiouAEIOU",     "âêîôûÂÊÎÔÛ"))
-_UMLAUT  = dict(zip("aeiouAEIOU",     "äëïöüÄËÏÖÜ"))
-_TILDE   = dict(zip("anoANO",         "ãñõÃÑÕ"))
-_CARON   = {"c":"č","s":"š","z":"ž","r":"ř","n":"ň","e":"ě","d":"ď","t":"ť",
-             "C":"Č","S":"Š","Z":"Ž","R":"Ř","N":"Ň","E":"Ě","D":"Ď","T":"Ť"}
-_CEDILLA = {"c":"ç","C":"Ç","s":"ş","S":"Ş"}
-_BREVE   = {"a":"ă","A":"Ă","g":"ğ","G":"Ğ","e":"ĕ","E":"Ĕ"}
-_MACRON  = {"a":"ā","A":"Ā","e":"ē","E":"Ē","u":"ū","U":"Ū"}
-_HUNGDBL = {"o":"ő","O":"Ő","u":"ű","U":"Ű"}
-_DOT     = {"z":"ż","Z":"Ż","i":"į","I":"Į"}
-_OGONEK  = {"a":"ą","A":"Ą","e":"ę","E":"Ę"}
-_STROKE  = {"l":"ł","L":"Ł","o":"ø","O":"Ø"}
+_ACUTE = dict(zip("aeiouynAEIOUYN", "áéíóúýńÁÉÍÓÚÝŃ"))
+_GRAVE = dict(zip("aeiouAEIOU", "àèìòùÀÈÌÒÙ"))
+_CIRC = dict(zip("aeiouAEIOU", "âêîôûÂÊÎÔÛ"))
+_UMLAUT = dict(zip("aeiouAEIOU", "äëïöüÄËÏÖÜ"))
+_TILDE = dict(zip("anoANO", "ãñõÃÑÕ"))
+_CARON = {
+    "c": "č",
+    "s": "š",
+    "z": "ž",
+    "r": "ř",
+    "n": "ň",
+    "e": "ě",
+    "d": "ď",
+    "t": "ť",
+    "C": "Č",
+    "S": "Š",
+    "Z": "Ž",
+    "R": "Ř",
+    "N": "Ň",
+    "E": "Ě",
+    "D": "Ď",
+    "T": "Ť",
+}
+_CEDILLA = {"c": "ç", "C": "Ç", "s": "ş", "S": "Ş"}
+_BREVE = {"a": "ă", "A": "Ă", "g": "ğ", "G": "Ğ", "e": "ĕ", "E": "Ĕ"}
+_MACRON = {"a": "ā", "A": "Ā", "e": "ē", "E": "Ē", "u": "ū", "U": "Ū"}
+_HUNGDBL = {"o": "ő", "O": "Ő", "u": "ű", "U": "Ű"}
+_DOT = {"z": "ż", "Z": "Ż", "i": "į", "I": "Į"}
+_OGONEK = {"a": "ą", "A": "Ą", "e": "ę", "E": "Ę"}
+_STROKE = {"l": "ł", "L": "Ł", "o": "ø", "O": "Ø"}
 
 _ACCENT_MAP = {
-    "'": _ACUTE, "`": _GRAVE, "^": _CIRC, '"': _UMLAUT, "~": _TILDE,
-    "v": _CARON, "c": _CEDILLA, "u": _BREVE, "=": _MACRON, "H": _HUNGDBL,
-    ".": _DOT, "k": _OGONEK,
+    "'": _ACUTE,
+    "`": _GRAVE,
+    "^": _CIRC,
+    '"': _UMLAUT,
+    "~": _TILDE,
+    "v": _CARON,
+    "c": _CEDILLA,
+    "u": _BREVE,
+    "=": _MACRON,
+    "H": _HUNGDBL,
+    ".": _DOT,
+    "k": _OGONEK,
 }
+
 
 def _sub_accent(cmd, ch):
     table = _ACCENT_MAP.get(cmd, {})
@@ -168,33 +195,45 @@ def latex_to_unicode(s):
     # {\'{o}} — accent + braced letter, wrapped in outer braces
     s = re.sub(
         r"\{\\([" + CMDS + r"])\{([a-zA-Z])\}\}",
-        lambda m: _sub_accent(m.group(1), m.group(2)), s
+        lambda m: _sub_accent(m.group(1), m.group(2)),
+        s,
     )
     # \'{i} — accent + braced letter, NO outer braces (e.g. Mart\'{i}nez)
     s = re.sub(
         r"\\([" + CMDS + r"])\{([a-zA-Z])\}",
-        lambda m: _sub_accent(m.group(1), m.group(2)), s
+        lambda m: _sub_accent(m.group(1), m.group(2)),
+        s,
     )
     # {\'o} — accent + bare letter in braces
     s = re.sub(
         r"\{\\([" + CMDS + r"])([a-zA-Z])\}",
-        lambda m: _sub_accent(m.group(1), m.group(2)), s
+        lambda m: _sub_accent(m.group(1), m.group(2)),
+        s,
     )
     # \'o — accent + bare letter, no braces at all
     s = re.sub(
         r"\\([" + CMDS + r"])([a-zA-Z])",
-        lambda m: _sub_accent(m.group(1), m.group(2)), s
+        lambda m: _sub_accent(m.group(1), m.group(2)),
+        s,
     )
 
     # Named special chars (with or without surrounding braces)
     specials = [
         (r"\{?\\ss\}?", "ß"),
-        (r"\{?\\l\}?", "ł"),   (r"\{?\\L\}?", "Ł"),
-        (r"\{?\\o\}?", "ø"),   (r"\{?\\O\}?", "Ø"),
-        (r"\{?\\ae\}?", "æ"),  (r"\{?\\AE\}?", "Æ"),
-        (r"\{?\\oe\}?", "œ"),  (r"\{?\\OE\}?", "Œ"),
-        (r"\\&", "&"), (r"\\%", "%"), (r"\\_", "_"), (r"\\#", "#"),
-        (r"\\textendash\b", "–"), (r"\\textemdash\b", "—"),
+        (r"\{?\\l\}?", "ł"),
+        (r"\{?\\L\}?", "Ł"),
+        (r"\{?\\o\}?", "ø"),
+        (r"\{?\\O\}?", "Ø"),
+        (r"\{?\\ae\}?", "æ"),
+        (r"\{?\\AE\}?", "Æ"),
+        (r"\{?\\oe\}?", "œ"),
+        (r"\{?\\OE\}?", "Œ"),
+        (r"\\&", "&"),
+        (r"\\%", "%"),
+        (r"\\_", "_"),
+        (r"\\#", "#"),
+        (r"\\textendash\b", "–"),
+        (r"\\textemdash\b", "—"),
         (r"\\ldots\b", "…"),
     ]
     for pat, repl in specials:
@@ -217,16 +256,16 @@ def latex_to_unicode(s):
 # ─── BibTeX Sanity Checks ────────────────────────────────────────────────────
 
 REQUIRED_FIELDS = {
-    "article":       {"author", "title", "journal", "year"},
-    "book":          {"title", "publisher", "year"},          # author OR editor
+    "article": {"author", "title", "journal", "year"},
+    "book": {"title", "publisher", "year"},  # author OR editor
     "inproceedings": {"author", "title", "booktitle", "year"},
-    "incollection":  {"author", "title", "booktitle", "publisher", "year"},
-    "proceedings":   {"title", "year"},
-    "phdthesis":     {"author", "title", "school", "year"},
+    "incollection": {"author", "title", "booktitle", "publisher", "year"},
+    "proceedings": {"title", "year"},
+    "phdthesis": {"author", "title", "school", "year"},
     "mastersthesis": {"author", "title", "school", "year"},
-    "techreport":    {"author", "title", "institution", "year"},
-    "unpublished":   {"author", "title", "note"},
-    "misc":          set(),
+    "techreport": {"author", "title", "institution", "year"},
+    "unpublished": {"author", "title", "note"},
+    "misc": set(),
 }
 
 
@@ -274,6 +313,7 @@ def check_bib(entries, filename):
 
 
 # ─── Entry Rendering ─────────────────────────────────────────────────────────
+
 
 def format_authors(raw):
     """'Last, First and Last2, First2' → 'First Last, First2 Last2'"""
@@ -361,7 +401,7 @@ def entry_links(e):
 
     if url:
         # Don't duplicate an arXiv link we already have from DOI
-        if "arxiv.org" in url.lower() and any(l[2] == "badge-arxiv" for l in links):
+        if "arxiv.org" in url.lower() and any(lnk[2] == "badge-arxiv" for lnk in links):
             pass
         elif url != (f"https://doi.org/{doi}" if doi else ""):
             if "arxiv.org" in url.lower():
@@ -369,7 +409,7 @@ def entry_links(e):
             else:
                 links.append(("URL", url, "badge-url"))
 
-    if eprint and not any("arxiv" in l[1].lower() for l in links):
+    if eprint and not any("arxiv" in lnk[1].lower() for lnk in links):
         links.append(("arXiv", f"https://arxiv.org/abs/{eprint}", "badge-arxiv"))
 
     return links
@@ -394,10 +434,17 @@ def build_entry_json(e):
     raw = e["_raw"]
 
     # Search text (lowercase for JS matching)
-    search_text = " ".join([
-        key.lower(), year, authors.lower(), title.lower(),
-        venue.lower(), abstract.lower(), etype.lower()
-    ])
+    search_text = " ".join(
+        [
+            key.lower(),
+            year,
+            authors.lower(),
+            title.lower(),
+            venue.lower(),
+            abstract.lower(),
+            etype.lower(),
+        ]
+    )
 
     return {
         "key": key,
@@ -417,8 +464,8 @@ def build_entry_json(e):
 # ─── HTML Generation ─────────────────────────────────────────────────────────
 
 NAV_PAGES = [
-    ("index.html",                   "OMR Research"),
-    ("omr-related-research.html",    "Related Research"),
+    ("index.html", "OMR Research"),
+    ("omr-related-research.html", "Related Research"),
     ("omr-research-unverified.html", "Unverified"),
 ]
 
@@ -438,9 +485,7 @@ def render_page(title, entries, active_page, output_path):
 
     entries_json = json.dumps(entry_data, ensure_ascii=False)
     years_options = "\n".join(f'<option value="{y}">{y}</option>' for y in years)
-    types_options = "\n".join(
-        f'<option value="{t}">{t}</option>' for t in types
-    )
+    types_options = "\n".join(f'<option value="{t}">{t}</option>' for t in types)
 
     page = f"""<!DOCTYPE html>
 <html lang="en">
@@ -706,6 +751,7 @@ applyFilters();
 
 # ─── Main ────────────────────────────────────────────────────────────────────
 
+
 def main():
     check_only = "--check" in sys.argv
     print("OMR Research site generator", file=sys.stderr)
@@ -714,9 +760,17 @@ def main():
     total_warnings = 0
 
     configs = [
-        ("OMR-Research.bib",          "Bibliography on Optical Music Recognition",           "index.html"),
-        ("OMR-Related-Research.bib",  "Related Research — Bibliography on OMR",              "omr-related-research.html"),
-        ("OMR-Research-Unverified.bib","Unverified Research — Bibliography on OMR",          "omr-research-unverified.html"),
+        ("OMR-Research.bib", "Bibliography on Optical Music Recognition", "index.html"),
+        (
+            "OMR-Related-Research.bib",
+            "Related Research — Bibliography on OMR",
+            "omr-related-research.html",
+        ),
+        (
+            "OMR-Research-Unverified.bib",
+            "Unverified Research — Bibliography on OMR",
+            "omr-research-unverified.html",
+        ),
     ]
 
     for bib_file, page_title, out_file in configs:
