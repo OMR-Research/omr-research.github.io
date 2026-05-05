@@ -1,3 +1,4 @@
 *.bib.bak
 *.bib.sav
 pdfs
+*.pyc
