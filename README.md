@@ -42,7 +42,13 @@ The website is generated from the three BibTeX files using a Python script. No e
 
 **Requirements:** Python 3 (standard library only — no additional packages needed).
 
-### Generating the HTML files
+### Automated deployment
+
+Pushing to `master` triggers `.github/workflows/deploy.yml`, which runs `generate_site.py` and deploys the output to GitHub Pages automatically. The generated HTML files are not committed to the repository.
+
+> **One-time setup:** In the repository's **Settings → Pages**, set the source to **GitHub Actions** (instead of "Deploy from a branch").
+
+### Generating the HTML files locally
 
 ```bash
 python3 generate_site.py
@@ -71,4 +77,4 @@ python3 generate_diff_report.py <commit>     # compare against any other commit
 
 ## Steps for updating the website
 
-Make sure the BibTeX files are correct, then run `python3 generate_site.py` and commit the updated HTML files together with any bib changes.
+Make sure the BibTeX files are correct and push to `master`. The GitHub Actions workflow will rebuild and redeploy the site automatically.
