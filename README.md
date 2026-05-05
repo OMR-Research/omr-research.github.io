@@ -58,15 +58,16 @@ This produces three HTML files:
 
 [RenderWebsite.sh](RenderWebsite.sh) is a convenience wrapper that calls the same command.
 
-### Sanity-checking the bibliography
+### Reviewing changes since a baseline commit
 
-A separate script generates a diff-style report comparing the current state of `OMR-Research.bib` against a known-good baseline commit, highlighting entries with missing or suspicious abstracts, missing PDFs, missing DOIs/URLs, and other metadata issues:
+`generate_diff_report.py` compares the current `OMR-Research.bib` against any previous commit and writes `diff-report.html` — a browsable report showing new entries and all changed fields (abstracts, PDFs, DOIs, other metadata) side-by-side.
 
 ```bash
-python3 gen_sanity_check.py
+python3 generate_diff_report.py              # compare against the default baseline (3bb06ea5)
+python3 generate_diff_report.py <commit>     # compare against any other commit
 ```
 
-This writes `sanity-check.html` (not committed to the repository). Open it in a browser to review flagged entries. The script lives outside the repository at the path used during generation; copy it next to `generate_site.py` if needed.
+`diff-report.html` is not committed to the repository.
 
 ## Steps for updating the website
 

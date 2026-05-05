@@ -4,3 +4,5 @@ pdfs
 *.pyc
 __pycache__/
 .DS_Store
+diff-report.html
+sanity-check.html
