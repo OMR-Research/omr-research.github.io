@@ -51,7 +51,9 @@ Pushing to `master` triggers `.github/workflows/deploy.yml`, which runs `generat
 ### Generating the HTML files locally
 
 ```bash
-python3 generate_site.py
+python3 generate_site.py                # standard output
+python3 generate_site.py --pdf-links    # local review: adds a PDF chip to each entry
+python3 generate_site.py --check        # sanity-check only, no output files written
 ```
 
 This produces three HTML files:
@@ -61,6 +63,8 @@ This produces three HTML files:
 | `index.html` | `OMR-Research.bib` | Main verified OMR bibliography |
 | `omr-related-research.html` | `OMR-Related-Research.bib` | Related (non-OMR-primary) works |
 | `omr-research-unverified.html` | `OMR-Research-Unverified.bib` | Unverified entries |
+
+The `--pdf-links` flag adds a red **PDF** badge next to the DOI/arXiv chips for every entry whose `file` field contains a local PDF path (as stored by JabRef). This gives one-click access to the papers when browsing locally. The flag is off by default so the public website is unaffected.
 
 [RenderWebsite.sh](RenderWebsite.sh) is a convenience wrapper that calls the same command.
 
