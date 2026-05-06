@@ -6,13 +6,15 @@ Generates interactive, self-contained HTML pages from the OMR Research bib files
 Includes BibTeX sanity checks equivalent to bibtex2html warnings.
 
 Usage:
-    python3 generate_site.py          # generate all pages
-    python3 generate_site.py --check  # sanity-check only, no output
+    python3 generate_site.py                # generate all pages
+    python3 generate_site.py --check        # sanity-check only, no output
+    python3 generate_site.py --pdf-links    # include local PDF chips (local review only)
 """
 
 import re
 import sys
 import json
+import argparse
 import html as html_mod
 from datetime import date
 from pathlib import Path
@@ -415,11 +417,25 @@ def entry_links(e):
     return links
 
 
-def has_pdf(e):
+def has_pdf(e: dict) -> bool:
     return bool(e.get("file", "").strip())
 
 
-def build_entry_json(e):
+def pdf_path(e: dict) -> str:
+    """Extract the relative PDF path from a JabRef 'file' field.
+
+    JabRef stores the field as  {:pdfs/filename.pdf:PDF}  (description may be
+    empty; the MIME-type suffix is always the last colon-delimited segment).
+    Returns the path string, or an empty string when absent.
+    """
+    raw = e.get("file", "").strip()
+    if not raw:
+        return ""
+    m = re.search(r":([^:]+\.pdf):", raw, re.IGNORECASE)
+    return m.group(1) if m else ""
+
+
+def build_entry_json(e: dict, include_pdf_links: bool = False) -> dict:
     """Build a JSON-serialisable dict for one entry (used by the JS renderer)."""
     key = e["ID"]
     etype = e["ENTRYTYPE"]
@@ -430,6 +446,10 @@ def build_entry_json(e):
     venue = entry_venue(e)
     abstract = latex_to_unicode(e.get("abstract", ""))
     links = entry_links(e)
+    if include_pdf_links:
+        path = pdf_path(e)
+        if path:
+            links.append(("PDF", path, "badge-pdf"))
     pdf = has_pdf(e)
     raw = e["_raw"]
 
@@ -470,9 +490,15 @@ NAV_PAGES = [
 ]
 
 
-def render_page(title, entries, active_page, output_path):
+def render_page(
+    title: str,
+    entries: list,
+    active_page: str,
+    output_path: "str | Path",
+    pdf_links: bool = False,
+) -> None:
     """Render a complete interactive HTML page for a bib file."""
-    entry_data = [build_entry_json(e) for e in entries]
+    entry_data = [build_entry_json(e, include_pdf_links=pdf_links) for e in entries]
 
     # Unique years and types for filter dropdowns
     years = sorted({e["year"] for e in entry_data if e["year"] != "0"}, reverse=True)
@@ -578,6 +604,7 @@ a:hover {{ text-decoration: underline; }}
 .badge-doi   {{ background: #dbeafe; color: #1e40af; }}
 .badge-arxiv {{ background: #fef3c7; color: #92400e; }}
 .badge-url   {{ background: #d1fae5; color: #065f46; }}
+.badge-pdf   {{ background: #fee2e2; color: #991b1b; }}
 
 /* ── Expandable panel ── */
 .entry-panel {{
@@ -752,10 +779,34 @@ applyFilters();
 # ─── Main ────────────────────────────────────────────────────────────────────
 
 
-def main():
-    check_only = "--check" in sys.argv
+def parse_args() -> argparse.Namespace:
+    p = argparse.ArgumentParser(
+        description="Generate interactive HTML pages from OMR Research bib files.",
+    )
+    p.add_argument(
+        "--check",
+        action="store_true",
+        help="Run sanity checks only; do not write output files.",
+    )
+    p.add_argument(
+        "--pdf-links",
+        action="store_true",
+        default=False,
+        help=(
+            "Add a PDF chip next to DOI/arXiv badges, linking directly to the local "
+            "PDF file stored in the 'file' field. Useful for local paper review. "
+            "Disabled by default (PDF paths are not valid on the public website)."
+        ),
+    )
+    return p.parse_args()
+
+
+def main() -> None:
+    args = parse_args()
     print("OMR Research site generator", file=sys.stderr)
     print("=" * 40, file=sys.stderr)
+    if args.pdf_links:
+        print("  PDF links enabled (local review mode)", file=sys.stderr)
 
     total_warnings = 0
 
@@ -785,10 +836,12 @@ def main():
 
         total_warnings += check_bib(entries, bib_file)
 
-        if not check_only:
-            render_page(page_title, entries, out_file, BASE / out_file)
+        if not args.check:
+            render_page(
+                page_title, entries, out_file, BASE / out_file, pdf_links=args.pdf_links
+            )
 
-    if check_only:
+    if args.check:
         print(f"\nTotal warnings: {total_warnings}", file=sys.stderr)
         sys.exit(1 if total_warnings else 0)
 
