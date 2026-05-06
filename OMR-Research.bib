@@ -45,6 +45,7 @@
   address   = {Alicante, Spain},
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander},
   pages     = {33--37},
+  abstract  = {State-of-the-art Optical Music Recognition (OMR) techniques follow a holistic approach, i.e., a sole stage for completely processing a single-staff section image and retrieving the symbols that appear therein. These approaches usually consider an agnostic music representation which characterizes music symbols by their shape and height (vertical position in the staff). Nevertheless, existing approaches neglect this two-sided nature in the learning process since these two features are gathered into single symbols. This work explores the possibility of individually exploiting this particularity of music notation in the context of end-to-end neural OMR approaches at the particular case of staff-line recognition. For that, we consider two Convolutional Recurrent Neural Network (CRNN) schemes trained to simultaneously extract the shape and height pieces of information and propose different policies for eventually merging them at the actual neural level. The results obtained for two corpora of monophonic early music manuscripts prove that our proposal decreases the recognition error in figures ranging between 14.4\% and 25.6\%, in the best-case scenarios, when compared to the baseline considered.},
   file      = {:pdfs/2021 - Neural Architectures for Exploiting the Components of Agnostic Notation in Optical Music Recognition.pdf:PDF},
   url       = {https://sites.google.com/view/worms2021/proceedings},
 }
@@ -534,6 +535,7 @@ A variety of filters were considered, and two promising ones (run-length ratios 
   address   = {Alicante, Spain},
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander},
   pages     = {55--59},
+  abstract  = {Despite decades of research in Optical Music Recognition (OMR), the recognition of old handwritten music scores remains a challenge because of the variabilities in the handwriting styles, paper degradation, lack of standard notation, etc. Therefore, the research in OMR systems adapted to the particularities of old manuscripts is crucial to accelerate the conversion of music scores existing in archives into digital libraries, fostering the dissemination and preservation of our music heritage. In this paper we explore the adaptation of sequence-to-sequence models with attention mechanism (used in translation and handwritten text recognition) and the generation of specific synthetic data for recognizing old music scores. The experimental validation demonstrates that our approach is promising, especially when compared with long short-term memory neural networks.},
   file      = {:pdfs/2021 - Handwritten Historical Music Recognition through Sequence to Sequence with Attention Mechanism.pdf:PDF},
   url       = {https://sites.google.com/view/worms2021/proceedings},
 }
@@ -1742,6 +1744,7 @@ A variety of filters were considered, and two promising ones (run-length ratios 
   address   = {Alicante, Spain},
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander},
   pages     = {50--54},
+  abstract  = {Document analysis is a key step within typical Optical Music Recognition (OMR) systems. It processes the input image to obtain a layered version by extracting different sources of information. Recently, this task has been formulated as a supervised machine learning problem, where Convolutional Neural Networks perform particularly well. However, the requirement for a large amount of labeled training data makes this task a not straightforward problem. Domain Adaptation (DA) is the research field that aims to adapt in an unsupervised fashion the knowledge learned from domains where there is labeled data available to other domains for which labels are not available. In this work, we study the use of a well-known DA approach based on adversarial training, which we combine with Selectional Auto-Encoders to propose an unsupervised document analysis framework. The results show a relevant improvement when the layers' features are very different from those of other domains, whereas, when there are certain similarities between domains, such improvement is not achieved. Note, however, that in the latter case, it is possible to obtain good results without DA.},
   file      = {:pdfs/2021 - Unsupervised Neural Document Analysis for Music Score Images.pdf:PDF},
   url       = {https://sites.google.com/view/worms2021/proceedings},
 }
@@ -2709,6 +2712,7 @@ to optical character recognition. Optical character recognition recognizes text 
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   pages     = {33--36},
   doi       = {10.48550/arXiv.2211.13285},
+  abstract  = {ConcertCue is a web application that synchronizes content delivery with live music. During a concert, a human operator supervises a score-following process to ensure it stays in sync. To aid the operator, the system displays a scanned copy of the score and highlights the current estimated measure, which requires the system to know the visual location of each measure on each page. In this paper, we present a fast, accurate OMR algorithm for identifying systems and barlines in a musical score and an integrated user interface that allows for quick OMR verification and correction. The use of this system as a part of ConcertCue has accumulated over 1,000 pages of human-verified annotations, which we plan to release as a dataset in the near future.},
   file      = {:pdfs/2022 - Computer Assisted Measure Detection in a Music Score Following Application.pdf:PDF},
   url       = {https://sites.google.com/view/worms2022/proceedings},
 }
@@ -3105,6 +3109,7 @@ to optical character recognition. Optical character recognition recognizes text 
   address   = {Alicante, Spain},
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander},
   pages     = {18--22},
+  abstract  = {Optical Music Recognition (OMR) and Automatic Music Transcription (AMT) stand for the research fields which aim at obtaining a structured digital representation of the music content present in either a sheet music image or an acoustic recording, respectively. While these fields have historically evolved separately, the fact that both tasks share the same output representation poses the question of whether they could be combined in a multimodal framework that exploits the individual transcription advantages depicted by each modality in a synergistic manner. To assess this hypothesis, this paper presents a proof-of-concept work that combines the predictions given by end-to-end AMT and OMR systems over a corpus of monophonic music pieces considering a local alignment approach. The results obtained, while showing a narrow improvement with respect to the best individual modality, validate our initial premise, thus opening avenues for further research in combined OMR-AMT transcription.},
   file      = {:pdfs/2021 - Multimodal Audio and Image Music Transcription.pdf:PDF},
   url       = {https://sites.google.com/view/worms2021/proceedings},
 }
@@ -3311,6 +3316,7 @@ a computer program that recognizes a set of musical symbols. A final test of the
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   pages     = {25--28},
   doi       = {10.48550/arXiv.2211.13285},
+  abstract  = {Modern advances in computer reading technologies have found excellent results using end-to-end neural approaches. In addition to reducing the number of steps required, these formulations force the neural network to learn to take into account the contextual nature of visual languages to boost recognition. So far, however, such approaches are only feasible when the output can be represented as a sequence. This works for many old music notations, or even for modern monophonic scores, but it is insufficient for the highest degrees of complexity of music notation. Furthermore, music notation can be nicely represented using a graph structure. In this paper, we present a first attempt at an end-to-end approach to predict graphs from images, taking complex music-notation symbols as input.},
   file      = {:pdfs/2022 - End to End Graph Prediction for Optical Music Recognition.pdf:PDF},
   url       = {https://sites.google.com/view/worms2022/proceedings},
 }
@@ -4207,6 +4213,7 @@ model for general music symbols which can get 0.92 duration accurary and 0.96 pi
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   pages     = {37--41},
   doi       = {10.48550/arXiv.2211.13285},
+  abstract  = {We present a new approach for the transcription of drum performances captured on a MIDI drum kit into scores in conventional Western notation. It works by parsing an input MIDI sequence into a tree-structured intermediate representation, using formal language techniques, post-processing using term rewriting, and finally exporting into an XML score file in the MEI encoding. An experimentation was conducted on the Groove MIDI Dataset.},
   file      = {:pdfs/2022 - Automated Transcription of Electronic Drumkits.pdf:PDF},
   url       = {https://sites.google.com/view/worms2022/proceedings},
 }
@@ -5132,6 +5139,7 @@ model for general music symbols which can get 0.92 duration accurary and 0.96 pi
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   pages     = {15--19},
   doi       = {10.48550/arXiv.2211.13285},
+  abstract  = {Training with synthetic data has been successfully used in many domains of deep learning where authentic training data is scarce. Optical Music Recognition (OMR), especially recognition of handwritten music, greatly benefits from training on synthetic data too. In this paper, we explore the challenges of synthesizing images of sheets of music for training deep learning OMR models and compare such synthesis to the process of digital music engraving. We also contrast that with the architecture of our synthesizer prototype, which was used to achieve state-of-the-art results by training on the synthetic images only.},
   file      = {:pdfs/2022 - Obstacles with Synthesizing Training Data for OMR.pdf:PDF},
   url       = {https://sites.google.com/view/worms2022/proceedings},
 }
@@ -5569,6 +5577,7 @@ In order to achieve the proposed system, deep learning techniques based on neura
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   pages     = {4--8},
   doi       = {10.48550/arXiv.2211.13285},
+  abstract  = {A major limitation of current Optical Music Recognition (OMR) systems is that their performance strongly depends on the variability in the input images. What for human readers seems almost trivial---e.g., reading music in a range of different font types in different contexts---can drastically reduce the output quality of OMR models. This paper introduces the 19MT-OMR corpus that can be used to test OMR models on a diverse set of sources. We illustrate this challenge by discussing several examples from this dataset.},
   file      = {:pdfs/2022 - Challenging Sources_ a New Dataset for OMR of Diverse 19th Century Music Theory Examples.pdf:PDF},
   url       = {https://sites.google.com/view/worms2022/proceedings},
 }
@@ -6228,6 +6237,7 @@ the **mens files.},
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   pages     = {29--32},
   doi       = {10.48550/arXiv.2211.13285},
+  abstract  = {Optical Music Recognition (OMR) is the field of research that studies how to computationally read music notation from written documents. Thanks to recent advances in computer vision and deep learning, there are successful approaches that are able to locate the notation elements out of a given image. However, the stage of notation assembly, in which these elements must be related to reconstructing the musical notation itself, has received little attention in the last years. Furthermore, given the large number of elements in a music score, this stage must be efficient enough to be useful in practice. In this work, a couple of neural approaches that perform this stage efficiently are studied. Our experiments using the MUSCIMA++ handwritten sheet music corpus show that there exists an underlying trade-off between effectiveness and efficiency, since each approach shows very good results in only one of these two aspects. We hope that this work represents a starting point for further research in this important stage of the OMR.},
   file      = {:pdfs/2022 - Efficient Approaches for Notation Assembly in Optical Music Recognition.pdf:PDF},
   url       = {https://sites.google.com/view/worms2022/proceedings},
 }
@@ -7060,6 +7070,7 @@ the **mens files.},
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   pages     = {34--38},
   doi       = {10.48550/arXiv.2311.04091},
+  abstract  = {End-to-end Optical Music Recognition traditionally involves multi-step processes to address complex documents, where single stave isolation is performed. These state-of-the art methods often fall short in handling diverse music textures, such as polyphony or Aligned Music Notation and Lyrics Transcription (AMNLT). We introduce a generic end-to-end OMR approach compatible with monophonic, polyphonic, and AMNLT systems. By leveraging score rotations and multi-line transcription unfolding, this model only requires input system annotations during training. Experimental evidence suggests this approach offers a competitive solution with encouraging outcomes, paving the way for future end-to-end music transcription research.},
   file      = {:pdfs/2023 - Rotations Are All You Need_ a Generic Method for End to End Optical Music Recognition.pdf:PDF},
   url       = {https://sites.google.com/view/worms2023/proceedings},
 }
@@ -7977,6 +7988,7 @@ This paper aims to show that this removal of the stave lines before symbol recog
   address   = {Online},
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   doi       = {10.48550/arXiv.2211.13285},
+  abstract  = {Handwritten Music Recognition, especially in the historical domain, is an inherently challenging endeavour; paper degradation artefacts and the ambiguous nature of handwriting make recognising such scores an error-prone process, even for the current state-of-the-art Sequence to Sequence models. In this work we propose a way of reducing the production of statistically implausible output sequences by fusing a Language Model into a recognition Sequence to Sequence model. The idea is leveraging visually-conditioned and context-conditioned output distributions in order to automatically find and correct any mistakes that would otherwise break context significantly. We have found this approach to improve recognition results to 25.15 SER (\%) from a previous best of 31.79 SER (\%) in the literature.},
   file      = {:pdfs/2022 - Improving Handwritten Music Recognition through Language Model Integration.pdf:PDF},
   url       = {https://sites.google.com/view/worms2022/proceedings},
 }
@@ -8415,6 +8427,7 @@ This paper aims to show that this removal of the stave lines before symbol recog
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   pages     = {9--14},
   doi       = {10.48550/arXiv.2211.13285},
+  abstract  = {There have been significant breakthroughs in computer vision research in many subfields, including composer identification from images of sheet music. Previous work in composer identification depends on a specific digital semantic representation of music and various evaluation criteria, making it difficult to quantify their relative merits. We present a novel approach using an end-to-end deep neural network model for music composer identification with images of sheet music as inputs. Hence, this method is not dependent on the conversion of the sheet music to any other intermediate digital semantic format. Additionally, we compare results from classification applied to sheet music and the respective bootleg representation. Identifying the composer can lead to more inferred data, which is helpful in archiving historical pieces digitally. Based on our experimental results, it can be concluded that the composer identification in sheet music images with deep neural models shows promising results. With the proposed model, we achieved 83\% accuracy for composer identification on sheet music images compared to 76\% accuracy when applied to the bootleg representations on our newly collected dataset.},
   file      = {:pdfs/2022 - CompIdNet_ Sheet Music Composer Identification Using Deep Neural Network.pdf:PDF},
   url       = {https://sites.google.com/view/worms2022/proceedings},
 }
@@ -8886,6 +8899,7 @@ heuristics from music theory.},
   editor    = {Calvo-Zaragoza, Jorge and Pacha, Alexander and Shatri, Elona},
   pages     = {31--33},
   doi       = {10.48550/arXiv.2311.04091},
+  abstract  = {Data preprocessing techniques are frequently employed to address a model's generalisation capability and performance constraints due to the quality and diversity of its training data. Effective data techniques such as data augmentation are crucial for data that is difficult to acquire, such as annotated scores of lower image quality. This study mainly explores sheet music image preprocessing methods and delves into the impact of these strategies on model performance. By comparing existing methods, this research aims to identify more optimised strategies, enabling the model to handle noise and interference in real-world scenarios better and improving its generalisation capability and performance.},
   file      = {:pdfs/2023 - Improving Sheet Music Recognition Using Data Augmentation and Image Enhancement.pdf:PDF},
   url       = {https://sites.google.com/view/worms2023/proceedings},
 }
