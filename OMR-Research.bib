@@ -4976,6 +4976,17 @@ model for general music symbols which can get 0.92 duration accurary and 0.96 pi
   url       = {http://www.music.mcgill.ca/~ich/research/icmc02/icmc2002.gamera.pdf},
 }
 
+@MastersThesis{Maier2024,
+  author   = {Maier, Daniel},
+  school   = {University of Stuttgart, Faculty of Computer Science, Electrical Engineering, and Information Technology, Germany},
+  title    = {Specialized Music Notation Encodings for Enhancing End-to-End Optical Music Recognition for Pianoform Music},
+  year     = {2024},
+  month    = {Sep},
+  pages    = {83},
+  abstract = {Optical Music Recognition (OMR) has seen considerable advancements with the adoption of Transformer-based architectures, following the successes witnessed in related fields like Optical Character Recognition (OCR) and Handwriting Recognition (HWR). However, the inherently hierarchical and complex nature of Common Western Music Notation (CWMN) poses significant challenges in framing OMR as a traditional sequence-to-sequence translation process, as it cannot be easily linearized into a sequential representation. Current end-to-end approaches in the field rely on adapted score exchange formats as token encodings, which are not specifically optimized for machine learning models. These formats often encode information in a way that introduces long-range dependencies, ambiguous element orders, and extensive dictionaries, making it challenging for statistical models to learn effectively. In this work, I introduce a new structured encoding for CWMN, named ScoreCode, that addresses these challenges and is specifically designed for modern sequence-to-sequence architectures. ScoreCode focuses on directly encoding the visual information present in the notation, while deferring the extraction of composite attributes such as pitch and duration to a subsequent post-processing step. This hybrid approach eliminates long-range dependencies and simplifies the learning process, ultimately resulting in improved performance and precision. By formalizing this encoding as a Context Free Grammar (CFG), specific musical engraving rules can be enforced, and it can be ensured that sentences produced within this grammar are parsable into a hierarchical data representation of music notation. The effectiveness of the encoding is verified through the introduction of a Transformer-based architecture designed to effectively generate output sentences in the ScoreCode grammar using a split encoding approach. To support the training of this model, a comprehensive data generation pipeline has been developed, leveraging open-source tools to automate the creation of large and diverse datasets from MusicXML files. The approach presented in this work achieves state-of-the-art results, reducing the error rate by approximately 90\% compared to the current baseline. This highlights the encoding's potential to enhance the performance of OMR systems and sets a new benchmark for future research and applications in the field.},
+  url      = {http://www2.informatik.uni-stuttgart.de/cgi-bin/NCSTRL/NCSTRL_view.pl?id=MSTR-2024-128&engl=1},
+}
+
 @Article{Malakar2020,
   author   = {Malakar, Samir and Ghosh, Manosij and Chaterjee, Agneet and Bhowmik, Showmik},
   journal  = {Multimedia Tools and Applications},
@@ -5084,6 +5095,19 @@ model for general music symbols which can get 0.92 duration accurary and 0.96 pi
   eprint     = {2509.05329},
   eprinttype = {arxiv},
   file       = {:pdfs/2025 - Optical Music Recognition of Jazz Lead Sheets.pdf:PDF},
+}
+
+@InProceedings{MartinezSevilla2025a,
+  author    = {Martinez-Sevilla, Juan C. and Cerveto-Serrano, Joan and Luna-Barahona, Noelia and Chapman, Greg and Sapp, Craig and Rizo, David and Calvo-Zaragoza, Jorge},
+  booktitle = {Proceedings of the 26th International Society for Music Information Retrieval Conference},
+  title     = {Sheet Music Benchmark: Standardized Optical Music Recognition Evaluation},
+  year      = {2025},
+  month     = {Sep},
+  pages     = {618--625},
+  address   = {Daejeon, South Korea},
+  publisher = {ISMIR},
+  doi       = {10.5281/zenodo.17811446},
+  url       = {https://doi.org/10.5281/zenodo.17811446},
 }
 
 @InProceedings{MasCandela2021,
