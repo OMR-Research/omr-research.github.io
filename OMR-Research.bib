@@ -207,6 +207,16 @@
   file      = {:pdfs/2023 - A Weakly Supervised Approach for Layout Analysis in Music Score Images.pdf:PDF},
 }
 
+@Article{Ayllon2026,
+  author   = {Ayllon, Eric and S\'{a}nchez, Beatriz Serrano and Calvo-Zaragoza, Jorge},
+  journal  = {Neurocomputing},
+  title    = {Exploring Federated Learning in Optical Music Recognition},
+  year     = {2026},
+  abstract = {Optical Music Recognition (OMR) technology plays a crucial role in the preservation of cultural heritage by automating the digitization of music documents, enabling their storage in symbolic formats and their subsequent analysis through digital tools. Progress in this field is, however, constrained by limited data availability: access to or distribution of music collections is frequently restricted due to legal or ownership barriers. This work investigates a potential mitigation of this issue through Federated Learning (FL) strategies, which enable decentralized training and eliminate the need to release restricted collections. Our methodology assumes a setting in which client nodes operate on small, heterogeneous corpora, while evaluation is conducted on established OMR benchmark collections. We examine widely used FL aggregation techniques, such as FedAvg, FedProx, and SCAFFOLD; as well as modern methodologies, such as FedKT. In addition, we introduce two modules specifically designed for OMR: FedClassPrior, which integrates class-prior information to improve symbol balance, and FedNGram, which supports decentralized language modelling to exploit notational regularities during decoding. Experimental results show consistent accuracy improvements when using FL compared to purely local training. Furthermore, the proposed modules substantially narrow the performance gap between standard FL and the ideal scenario in which centralized training is feasible.},
+  doi      = {10.1016/j.neucom.2026.133926},
+  file     = {:pdfs/2026 - Exploring Federated Learning in Optical Music Recognition.pdf:PDF},
+}
+
 @InProceedings{Baba2012,
   author    = {Baba, Tetsuaki and Kikukawa, Yuya and Yoshiike, Toshiki and Suzuki, Tatsuhiko and Shoji, Rika and Kushiyama, Kumiko and Aoki, Makoto},
   booktitle = {ACM SIGGRAPH 2012 Emerging Technologies},
@@ -4441,6 +4451,20 @@ model for general music symbols which can get 0.92 duration accurary and 0.96 pi
   file      = {:pdfs/1992 - A Recognition System for Printed Piano Music Using Musical Knowledge and Constraints.pdf:PDF},
 }
 
+@Misc{Kaushik2026,
+  author     = {Kaushik, Abhimanyu},
+  title      = {{MusicSynth}: An Automated Pipeline for Generating Violin Fingerboard Animations from Sheet Music Using Optical Music Recognition},
+  year       = {2026},
+  abstract   = {Learning the violin is harder than it looks. Unlike piano keys or guitar frets, the violin neck has no markings at all, so a beginner cannot tell by looking where to place each finger. MusicSynth is an open-source web tool that tries to fix that: user uploads a photo of any violin sheet music (or a digital score file), and the system automatically produces a video showing a violin fingerboard with each note highlighted at the right moment -- no software to install, no manual note entry required.
+The system connects three existing open-source tools into one pipeline: an optical music recognition (OMR) library reads the notes from the uploaded image, a MusicXML parser extracts timing information from digital scores, and a video renderer draws the fingerboard frame by frame. The only part built from scratch is the lookup table that maps each musical note to a string and finger position on the violin.
+Tested across 110 public-domain violin scores, MusicSynth correctly identified 91.2% of notes in clean printed music and assigned the right finger position 99.1% of the time when given a digital score file. To the author's knowledge, no freely available tool currently turns a sheet music image into an animated violin fingerboard tutorial automatically and in a single browser-based step.},
+  doi        = {10.48550/arXiv.2605.17181},
+  eprint     = {2605.17181},
+  eprinttype = {arxiv},
+  file       = {:pdfs/2026 - MusicSynth_ an Automated Pipeline for Generating Violin Fingerboard Animations from Sheet Music Using Optical Music Recognition.pdf:PDF},
+  url        = {https://arxiv.org/abs/2605.17181},
+}
+
 @InProceedings{Kim1987,
   author    = {Kim, W. J. and Chung, M. J. and Bien, Z.},
   booktitle = {TENCON 87- Computers and Communications Technology Toward 2000},
@@ -7621,6 +7645,38 @@ the **mens files.},
   file       = {:pdfs/2024 - Knowledge Discovery in Optical Music Recognition_ Enhancing Information Retrieval with Instance Segmentation.pdf:PDF},
 }
 
+@Misc{Shen2026,
+  author   = {Shen, Dan and Sun, Xuandong},
+  title    = {Using Image Recognition Technology to Assist in Music Score Recognition and Instruction in Distance Music Education},
+  year     = {2026},
+  abstract = {Addressing the challenges in remote music education-such as the complex
+sources of sheet music images, significant variations in image quality, the heavy burden of
+manual identification on teachers, and the difficulty of directly applying recognition results to
+teaching-this paper focuses on the structural restoration of low-quality classroom sheet music
+images and the generation of instructional prompts. This paper at first builds a music score
+data arrangement plan which is specially made for remote teaching situations, it unites publicly
+obtainable OMR data together with screenshots, mobile telephone pictures, classroom video
+frames, and teacher-marked manuscripts under one single training and evaluation frame. This
+hereby constructs the RemoteScore-Teach data object, which has the integration of symbol-
+level annotations, MusicXML alignment outcomes, and bar-level teaching-oriented labels.
+Building on this foundation, we propose the STG-OMR model, which integrates visual encoding,
+positional embedding, scale embedding, symbol relationship modeling, sequence decoding, and
+instructional hint generation into a single recognition pipeline. This enables the system to
+simultaneously output structured musical score results and bar-level instructional hints.
+Experimental results demonstrate that the proposed method achieves superior performance on
+both public benchmarks and remote teaching test sets, with Symbol F1, SeqAcc, and Hint-P
+may attain 95.4%, 91.7%, and 89.3% upon RemoteScore-Teach, respectively, and it displays
+higher stability in the situations which include photographed scores, reflective screen captures
+and annotated scores. The cutting experiments further prove that the score position prior
+information, the relation graph restriction conditions and the teaching hint branch structure
+are the main sources that bring performance promotion. This research provides practical
+technical support for pre-class preparation, in-class identification of key measures, and post-
+class assignment screening, while also offering a new implementation path for intelligent score
+analysis in remote music education.},
+  file     = {:pdfs/2026 - Using Image Recognition Technology to Assist in Music Score Recognition and Instruction in Distance Music Education.pdf:PDF},
+  url      = {https://ingegneriasismica.com/articles/2026/IS-BJ030.pdf},
+}
+
 @InProceedings{Sheridan2004,
   author    = {Sheridan, Scott and George, Susan E.},
   booktitle = {2nd Australian Undergraduate Students' Computing Conference},
@@ -8965,6 +9021,36 @@ heuristics from music theory.},
   abstract  = {Data preprocessing techniques are frequently employed to address a model's generalisation capability and performance constraints due to the quality and diversity of its training data. Effective data techniques such as data augmentation are crucial for data that is difficult to acquire, such as annotated scores of lower image quality. This study mainly explores sheet music image preprocessing methods and delves into the impact of these strategies on model performance. By comparing existing methods, this research aims to identify more optimised strategies, enabling the model to handle noise and interference in real-world scenarios better and improving its generalisation capability and performance.},
   file      = {:pdfs/2023 - Improving Sheet Music Recognition Using Data Augmentation and Image Enhancement.pdf:PDF},
   url       = {https://sites.google.com/view/worms2023/proceedings},
+}
+
+@InProceedings{Zhang2025,
+  author       = {Chongbin Zhang and Jiaxiang Zheng and Xinyu Xing},
+  booktitle    = {Fifth International Conference on Electronic Information Engineering and Data Processing (EIEDP 2026)},
+  title        = {{Attention-enhanced CNN for optical recognition of Chinese Suzipu: a cultural heritage digitization approach}},
+  year         = {2026},
+  editor       = {Qing Li and Yuexia Zhang},
+  organization = {International Society for Optics and Photonics},
+  pages        = {142410V},
+  publisher    = {SPIE},
+  volume       = {14241},
+  abstract     = {Historical Suzipu notation, as a vital carrier of traditional Chinese music culture, holds significant importance for the digitization of cultural heritage. However, the complex symbol structures, diverse writing variants, imbalanced category distribution, and substantial cross-edition variations in Suzipu present unique challenges for Optical Music Recognition (OMR). This paper proposes the SUAC model, a deep convolutional network integrating multi-scale feature extraction with a dual attention mechanism for Suzipu pitch recognition. The model employs coordinate convolution to capture spatial positional information, aggregates features across different receptive fields through multi-scale dilated convolution, extracts global context using a pyramid pooling module, and enhances critical feature representation via channel and spatial dual attention mechanisms. To address class imbalance, the model incorporates Focal Loss to reduce the weight of easily classified samples and improve learning capability on difficult samples. Experimental results on the standard dataset demonstrate that SUAC achieves an average accuracy of 94.60% under Leave-One-Edition-Out cross-validation. Ablation studies validate the effective contribution of each key component to model performance. This research provides a novel technical solution for the automatic recognition and digital preservation of historical Chinese musical scores.},
+  doi          = {10.1117/12.3114889},
+  keywords     = {Suzipu notation, Optical Music Recognition, Attention mechanism, Convolutional Neural Network, Historical musical notation, Cultural heritage digitization, Multi-scale feature extraction, Deep learning},
+}
+
+@Article{Zhou2026,
+  author   = {Zhou, Xuanfei and Huang, Yinxuan and Han, Sining and Bai, Jiangyao},
+  journal  = {Computers},
+  title    = {A Multi-Source Pipeline for Extracting Traditional-Style Chinese Melody Data from Symbolic Files and Score Images},
+  year     = {2026},
+  issn     = {2073-431X},
+  number   = {5},
+  pages    = {298},
+  volume   = {15},
+  abstract = {Large-scale symbolic melody datasets are essential for data-driven music information retrieval and generation, yet traditional-style Chinese melodies remain scattered across heterogeneous score formats and image sources. Existing extraction pipelines typically focus on single modalities---either MIDI archives or standard staff notation---and lack unified handling for numbered musical notation (Jianpu) and automated quality assurance. We propose the Multi-Source Melody Pipeline (MSMP), a systems-integration prototype whose front-end admits MIDI, MusicXML, Jianpu images, and staff images, and whose back-end converges on a standardized event-level representation; the present case study exercises the image branch---in particular the Jianpu branch, through a Gemini-2.5-flash vision language model---and treats the MIDI/MusicXML ingestion paths as architectural slots that are wired in but not experimentally validated in this submission. The system employs notation-aware routing to direct score images to appropriate backends (a VLM for Jianpu and rule-based OMR for staff) and enforces a structural validity gate (schema conformance plus at least one melodic track with at least one musical event) on every candidate segment. Validation on a 292-page representative prototype cohort yielded an 80.1\% structural-acceptance rate---explicitly not a transcription accuracy number---and a newly added ground-truth benchmark on 50 manually annotated Jianpu pages reports 95.8\% time-signature exact accuracy, 77.1\% tonal-pitch-class key accuracy, 100\% tempo agreement within {\textpm}5 BPM.},
+  doi      = {10.3390/computers15050298},
+  file     = {:pdfs/2026 - A Multi Source Pipeline for Extracting Traditional Style Chinese Melody Data from Symbolic Files and Score Images.pdf:PDF},
+  url      = {https://www.mdpi.com/2073-431X/15/5/298},
 }
 
 @Comment{jabref-meta: databaseType:bibtex;}
