@@ -167,7 +167,7 @@
   doi        = {10.48550/arXiv.2510.17869},
   eprint     = {2510.17869},
   eprinttype = {arxiv},
-  file       = {:pdfs/2026 - GAN Based Content Conditioned Generation of Handwritten Musical Symbols.pdf:PDF},
+  file       = {:pdfs/2025 - GAN Based Content Conditioned Generation of Handwritten Musical Symbols.pdf:PDF},
 }
 
 @InProceedings{Asbert2026,
@@ -181,7 +181,7 @@
   volume    = {16226},
   abstract  = {The field of Optical Music Recognition ({OMR}) is currently hindered by the scarcity of real annotated data, particularly when dealing with handwritten historical musical scores. In similar fields, such as Handwritten Text Recognition, it was proven that synthetic examples produced with image generation techniques could help to train better-performing recognition architectures. This study explores the generation of realistic, handwritten-looking scores by implementing a music symbol-level Generative Adversarial Network ({GAN}) and assembling its output into a full score using the Smashcima engraving software. We have systematically evaluated the visual fidelity of these generated samples, concluding that the generated symbols exhibit a high degree of realism, marking significant progress in synthetic score generation.},
   doi       = {10.1007/978-3-032-09371-4_5},
-  file      = {:2026 - GAN Based Content Conditioned Generation of Handwritten Musical Symbols.pdf:PDF},
+  file      = {:pdfs/2026 - GAN Based Content Conditioned Generation of Handwritten Musical Symbols.pdf:PDF},
 }
 
 @Misc{Audiveris,
@@ -2083,7 +2083,7 @@ A variety of filters were considered, and two promising ones (run-length ratios 
   year     = {2019},
   note     = {Recording of defense: https://www.youtube.com/live/NVkpZGMEdXw},
   abstract = {In this work, we study the detection of music symbols in images of complex, historical, dense, noisy and damaged printed music scores through the use of Deep Learning detection models. We propose a comparative study of multiple state-of-the-art detection models applied to music symbols as well as a new architecture based on the Spatial Transformer for a very focused music symbol detection task. Although we explored an original detection approach with this new architecture, we obtain 94.81% of mAP while the best state-of- the-art method obtains a mAP of 98.73%. Since the use of Deep Learning methods requires a huge amount of annotated data, we present the Isolating-GAN, a novel unsupervised music symbol detection method based on Generative Adversarial Network (GAN). Using only isolated music symbols and no symbol level detection annotations, we build an encoder-decoder generative model able to filter and isolate music symbols from background noise and shapes and train the model using a hybrid adversarial and image reconstruction loss. Symbols isolated by the generative model are then detected using a small detector pre- trained using isolated symbols in empty white images. With this approach, we obtain a mAP of 82.5% for a detection task with three accidental classes. We also demonstrate that using the Isolating-GAN to filter and isolate symbols before the detection operation reduces the number of false positives from 2,696 to 57. The method was applied on 1,774 pages of historical music scores and was able to detect 38,908 new accidentals.},
-  file     = {:2019 - Combination of Unsupervised Generative Models and a Syntactical Method for Music Symbol Detection with Few Annotated Data.pdf:PDF},
+  file     = {:pdfs/2019 - Combination of Unsupervised Generative Models and a Syntactical Method for Music Symbol Detection with Few Annotated Data.pdf:PDF},
   url      = {https://www.cs.rit.edu/~rlaz/files/dissertation_kwon-young_choi.pdf},
 }
 
@@ -4392,7 +4392,7 @@ model for general music symbols which can get 0.92 duration accurary and 0.96 pi
   volume   = {34},
   abstract = {Music exists in various modalities, such as score images, symbolic scores, {MIDI}, and audio. Translations between such modalities are established as core tasks of music information retrieval, such as automatic music transcription (audio-to-{MIDI}) and optical music recognition (score image to symbolic score). However, most past work on multimodal translation utilizes specialized models trained for each translation task. In this paper, we propose a unified framework based on a common tokenization strategy. We use dedicated separate models for the Image-to-Audio and Audio-to-Image directions, sharing an identical encoder-decoder architecture to handle each task within a coherent framework. Two key factors make this unified approach viable: a new large-scale dataset, and the tokenization of each modality. Firstly, we propose a new dataset that consists of more than 1,300 hours of paired audio-score image data collected from YouTube videos, which is an order of magnitude larger than any existing music modal translation datasets. Secondly, our unified tokenization framework discretizes score images, audio, {MIDI}, and {MusicXML} into a sequence of tokens, enabling standard encoder-decoder Transformers to tackle multiple cross-modal translation as one coherent sequence-to-sequence task. Experimental results confirm that our unified framework improves upon single-task baselines in several key areas, notably reducing the symbol error rate for optical music recognition from 24.58\% to a state-of-the-art 13.67\%, while also seeing substantial improvements across the other translation tasks. Notably, our approach achieves the first musically-coherent score-image-conditioned audio generation, marking a significant breakthrough in cross-modal music generation.},
   doi      = {10.1109/TASLPRO.2025.3648794},
-  file     = {:pdfs/2026 - U-MusT A Unified Framework for Cross-modal Translation of Score Images, Symbolic Music, and Performance Audio.pdf:PDF},
+  file     = {:pdfs/2026 - U MusT_ a Unified Framework for Cross Modal Translation of Score Images, Symbolic Music, and Performance Audio.pdf:PDF},
   url      = {https://ieeexplore.ieee.org/document/11316398},
 }
 
@@ -4462,7 +4462,6 @@ Tested across 110 public-domain violin scores, MusicSynth correctly identified 9
   eprint     = {2605.17181},
   eprinttype = {arxiv},
   file       = {:pdfs/2026 - MusicSynth_ an Automated Pipeline for Generating Violin Fingerboard Animations from Sheet Music Using Optical Music Recognition.pdf:PDF},
-  url        = {https://arxiv.org/abs/2605.17181},
 }
 
 @InProceedings{Kim1987,
@@ -4943,6 +4942,19 @@ Tested across 110 public-domain violin scores, MusicSynth correctly identified 9
   keywords  = {optical character recognition;noised pattern recognition;nondisruption learning set;strongly noised symbol recognition;nondisruption patterns;music symbols;optical music recognition;recognition system;supervised recognition;unsupervised recognition;Pattern recognition;Optical character recognition software;Optical noise;Ordinary magnetoresistance;Geodesy;Probes;Noise generators;Testing;Delay;Computer networks},
 }
 
+@Misc{LunaBarahona2026,
+  author        = {Luna-Barahona, Noelia and R{\'{i}}os-Vila, Antonio and Rizo, David and Calvo-Zaragoza, Jorge},
+  title         = {Direct content-based retrieval from music scores images},
+  year          = {2026},
+  abstract      = {The digitization of musical scores plays a crucial role in their preservation and accessibility, yet information retrieval still depends mainly on metadata searches, such as by title or composer. Content based search in music score images remains underexplored compared to text documents, despite its potential value for musicians, musicologists, and educators. This work contributes to the field by first studying which characteristics of a score are most relevant for search and by defining a systematic method to build query datasets from any annotated corpus. We also consider diverse methods for content-based search on music score images, ranging from transcription-based approaches relying on Optical Music Recognition (OMR), to a transcription-free Transformer model trained to recognize queries directly from score images, and a text-prompted Large Language Model. Our experiments evaluate these models on four corpora exhibiting diverse characteristics in terms of dataset size, image quality, and typesetting mechanisms. Overall, each method excels under different conditions: OMR-based pipelines achieve higher in-domain retrieval, whereas transcription-free models handle domain variability more effectively.},
+  archiveprefix = {arXiv},
+  doi           = {10.48550/arXiv.2605.22255},
+  eprint        = {2605.22255},
+  eprinttype    = {arxiv},
+  file          = {:pdfs/2026 - Direct Content Based Retrieval from Music Scores Images.pdf:PDF},
+  primaryclass  = {cs.CV},
+}
+
 @InProceedings{Luth2002,
   author    = {Luth, Nailja},
   booktitle = {2nd International Conference on WEB Delivering of Music},
@@ -5126,12 +5138,11 @@ Tested across 110 public-domain violin scores, MusicSynth correctly identified 9
   booktitle = {Proceedings of the 26th International Society for Music Information Retrieval Conference},
   title     = {Sheet Music Benchmark: Standardized Optical Music Recognition Evaluation},
   year      = {2025},
+  address   = {Daejeon, South Korea},
   month     = {Sep},
   pages     = {618--625},
-  address   = {Daejeon, South Korea},
   publisher = {ISMIR},
   doi       = {10.5281/zenodo.17811446},
-  url       = {https://doi.org/10.5281/zenodo.17811446},
 }
 
 @InProceedings{MasCandela2021,
