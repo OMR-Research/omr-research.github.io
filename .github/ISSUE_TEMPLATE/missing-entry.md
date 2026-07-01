@@ -1,6 +1,9 @@
 ---
 name: Missing entry
 about: Add a missing entry
+title: ''
+labels: ''
+assignees: ''
 
 ---
 
@@ -32,3 +35,5 @@ Here is an example how such an entry could look like:
   publisher = {Springer},
 }
 ```
+
+If you can, please directly edit the corresponding BibTex file and open a [Pull Request](https://github.com/OMR-Research/omr-research.github.io/compare). Useful resources for getting the Bibtex entry are https://www.doi2bib.org/ as well as https://dblp.org/.
