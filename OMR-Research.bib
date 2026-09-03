@@ -1605,6 +1605,16 @@ A variety of filters were considered, and two promising ones (run-length ratios 
   keywords  = {handwriting recognition;handwritten character recognition;hidden Markov models;image classification;music;statistical analysis;text detection;handwritten text image;hidden Markov model;sheet music;statistical LA;statistical layout analysis;text line classification;text line detection;Feature extraction;Handwriting recognition;Hidden Markov models;Layout;Music;Text recognition;Training;Document Layout Analysis;Hidden Markov Models;text region detection},
 }
 
+@InProceedings{Cao2026,
+  author    = {Cao, Xizheng and Li, Wei and Zhang, Hang},
+  booktitle = {Advanced Intelligent Computing Technology and Applications: 22nd International Conference on Intelligent Computing, {ICIC} 2026, Toronto, Canada, July 22--26, 2026, Proceedings},
+  title     = {{M2-OMR}: {Mamba-2-Based} End-to-End Full-Page Optical Music Recognition},
+  year      = {2026},
+  doi       = {10.1007/978-981-92-3384-7_12},
+  file      = {:pdfs/2026 - M2 OMR_ Mamba 2 Based End to End Full Page Optical Music Recognition.pdf:PDF},
+  url       = {https://link.springer.com/chapter/10.1007/978-981-92-3384-7_12},
+}
+
 @InProceedings{Capela2008,
   author    = {Capela, Artur and Cardoso, Jamie dos Santos and Rebelo, Ana and Guedes, Carlos},
   booktitle = {International Computer Music Conference},
@@ -2717,6 +2727,18 @@ to optical character recognition. Optical character recognition recognizes text 
   doi       = {10.48550/arXiv.2411.15741},
   file      = {:pdfs/2024 - Staff Layout Analysis Using the YOLO Platform.pdf:PDF},
   url       = {https://sites.google.com/view/worms2024/proceedings},
+}
+
+@Misc{Dvorak2026,
+  author     = {Dvo\v{r}{\'{a}}k, Vojt\v{e}ch and B{\'{i}}m, Filip and Mayer, Ji\v{r}{\'{i}} and Dvo\v{r}{\'{a}}kov{\'{a}}, Martina and Herz{\'{a}}nov{\'{a}} Vlkov{\'{a}}, Mark{\'{e}}ta and Pecina, Pavel and {\v{Z}}abi\v{c}ka, Petr and Haji\v{c}, Jan jr.},
+  title      = {{DEMUN}: Fast and accurate discovery of music notation in very large collections},
+  year       = {2026},
+  abstract   = {Much of written musical heritage is preserved and digitised at memory institutions: libraries, museums, and archives. Owing to their collection structures, sheet music tends to be concentrated in large subsets that are defined as collections of music, with corresponding metadata that makes the music findable. However, when studying musical life as opposed to individual works, relevant documents often lie outside of these specialised collections: in textbooks, newspapers, other periodicals, pamphlets, and other documents with extensive circulation. But these documents are typically not catalogued as musical documents, and though there may be a lot of such documents overall, in large library collections, they are still extremely sparse. Manual discovery is thus unfeasible. Automated discovery requires an extremely low false positive rate in order to be useful, and must also operate quickly. We present DEMUN: a twostage lightweight detector of music notation with a false positive rate of 0.015 %. In the test scenario, 4 million images of a national-scale library were processed, out of which 1,500 pages with music notation were discovered, suggesting the entire collection may contain up to 20-30,000 unmarked documents of musical life.},
+  doi        = {10.48550/arXiv.2606.31956},
+  eprint     = {2606.31956},
+  eprinttype = {arxiv},
+  file       = {:pdfs/2026 - DEMUN_ Fast and Accurate Discovery of Music Notation in Very Large Collections.pdf:PDF},
+  url        = {https://arxiv.org/abs/2606.31956},
 }
 
 
@@ -4010,6 +4032,16 @@ a computer program that recognizes a set of musical symbols. A final test of the
   url       = {http://wiki.ccarh.org/images/f/f5/Computing_in_Musicology_06_00.pdf},
 }
 
+@Misc{Hladik2026,
+  author   = {Hlad{\'{i}}k, Filip},
+  note     = {Bachelor's thesis, Brno University of Technology},
+  title    = {Rozpozn{\'{a}}v{\'{a}}n{\'{i}} notov{\'{y}}ch z{\'{a}}pis{\r{u}} pomoc{\'{i}} neuronov{\'{y}}ch s{\'{i}}t{\'{i}}},
+  year     = {2026},
+  abstract = {This thesis addresses optical music recognition of historical music prints with a limited amount of manually annotated data and verifies whether self-training can adapt the model without extensive manual annotation. The implemented model is based on a Transformer encoder-decoder architecture. A metric combining the consistency of forward and reverse decoding with a penalty for structural errors is proposed for pseudo-label selection. Selftraining reduced the error rate on the target domain from 12.29 % to 3.87 % SER, an absolute reduction of 8.42 percentage points, without degrading performance on source datasets. The key finding is that what primarily matters for self-training is the quality of pseudo-labels, not their quantity.},
+  file     = {:pdfs/2026 - Rozpoznavani Notovych Zapisu Pomoci Neuronovych Siti.pdf:PDF},
+  url      = {https://dspace.vut.cz/bitstreams/8b205bd4-0f59-40c6-8e67-7b2fb605c35c/download},
+}
+
 @InProceedings{Homenda1995,
   author    = {Homenda, W{\l}adys{\l}aw},
   booktitle = {Symposium on OE/Aerospace Sensing and Dual Use Photonics},
@@ -4246,6 +4278,16 @@ model for general music symbols which can get 0.92 duration accurary and 0.96 pi
   abstract  = {This paper describes recent progress towards systems for automatic recognition of several different types of musical notation, including printed sheet music, Braille music, and dance notation.},
   doi       = {10.1007/978-3-642-77281-8_22},
   file      = {:pdfs/1992 - Automatic Recognition of Several Types of Musical Notation.pdf:PDF},
+}
+
+@Misc{Ivakhniuk2026,
+  author   = {Ivakhniuk, Roman},
+  note     = {Bachelor's thesis, Brno University of Technology},
+  title    = {Automatizovan{\'{y}} p{\v{r}}epis a spartace historick{\'{y}}ch hlasov{\'{y}}ch knih},
+  year     = {2026},
+  abstract = {This bachelor’s thesis presents a software solution for transcribing 17th-century historical music printed by Pierre Ballard. Currently, evaluating the sound of these digitized compositions is impossible before investing significant time into manual transcription. To solve this, this work implements a multi-stage Optical Music Recognition (OMR) pipeline using YOLO neural networks. The software, named nanoScore, breaks the transcription process into four steps: detecting staves, detecting musical symbols, classifying their vertical positions, and algorithmically reconstructing the polyphonic score into a MusicXML format. To handle occasional neural network prediction errors, an interactive semiautomatic mode allows users to correct mistakes before the final score is generated. Evaluation of the trained models shows high accuracy. Staff and symbol detection reached an mAP50 of 0.995 and 0.927, respectively, and position classification achieved a Top-1 accuracy of 0.982. When tested on a 384-page partbook, the software achieved rhythmic synchronization for 71.5% of the measures across all four voices. Running efficiently on a standard consumer CPU, the pipeline provides musicologists and laypersons with an accessible tool to generate an approximate sound assessment from images, allowing them to hear and evaluate a piece before committing to a manual transcription.},
+  file     = {:pdfs/2026 - Automatizovany Prepis a Spartace Historickych Hlasovych Knih.pdf:PDF},
+  url      = {https://dspace.vut.cz/bitstreams/d719af96-1723-4ec2-9ed2-db40df021ef3/download},
 }
 
 @InProceedings{Jacquemard2022,
@@ -4501,6 +4543,19 @@ Tested across 110 public-domain violin scores, MusicSynth correctly identified 9
   file     = {:pdfs/2025 - On the Automatic Recognition of Jeongganbo Music Notation_ Dataset and Approach.pdf:PDF},
 }
 
+@InProceedings{Kim2026,
+  author     = {Kim, Dongmin and Liu, Brian and Valero-Mas, Jose J. and Jeong, Dasaem},
+  booktitle  = {Proceedings of the 27th International Society for Music Information Retrieval Conference},
+  title      = {A Dataset and Benchmark for Optical Music Recognition of String Quartet Scores},
+  year       = {2026},
+  abstract   = {Optical music recognition (OMR) transcribes music scores into digital formats. While the field has advanced significantly on monophonic and piano-form scores, multi-part score transcription remains underexplored, largely due to the absence of a suitable dataset. We introduce OpenScore String Quartet for Optical Music Recognition (OSSQOMR), the first dataset dedicated to multi-part OMR. Built on the OpenScore String Quartet corpus, OSSQ-OMR pairs digitally encoded scores with their original scanned editions from IMSLP, with all images visually aligned to their transcriptions. The dataset is released with score images at system and staff levels, and paired transcriptions in three encoding formats: Extended Linearized MusicXML (LMXE), **kern, and ABC. In total, OSSQ-OMR contains 24,544 system images and 98,172 staff images drawn from 116 string quartet scores. We accompany the dataset with a benchmark protocol and baseline results from two representative OMR models, evaluated across four random score-level splits with mutually exclusive test sets. Baselines reach OMR-NED as low as 3.6% on synthetic and 5.9% on scanned inputs; results reveal substantial effects of encoding and segmentation choices, with the LSTMbased baseline degrading on scanned inputs roughly 2.6× less than the Transformer-based baseline.},
+  doi        = {10.48550/arXiv.2608.10978},
+  eprint     = {2608.10978},
+  eprinttype = {arxiv},
+  file       = {:pdfs/2026 - A Dataset and Benchmark for Optical Music Recognition of String Quartet Scores.pdf:PDF},
+  url        = {https://arxiv.org/abs/2608.10978},
+}
+
 @Article{Kiriella2014,
   author   = {Kiriella, Dawpadee B. and Kumari, Shyama C. and Ranasinghe, Kavindu C. and Jayaratne, Lakshman},
   journal  = {GSTF Journal on Computing},
@@ -4633,6 +4688,18 @@ Tested across 110 public-domain violin scores, MusicSynth correctly identified 9
   url      = {https://www.researchgate.net/profile/Philip_Chou2/publication/220050304_Markov_source_model_for_printed_music_decoding/links/00b7d51aaadea3a4b6000000/Markov-source-model-for-printed-music-decoding.pdf},
 }
 
+@Misc{Kurek2026,
+  author     = {Kurek, Daniel and Haji\v{c}, Jan jr.},
+  title      = {Towards a foundational model for recognising diastematic {Gregorian} notation},
+  year       = {2026},
+  abstract   = {Optical recognition of Gregorian notation has recently been attempted with end-to-end methods, with four datasets introduced. However, each of these datasets is in a different encoding. We design a common encoding based on the S-GABC proposal, convert all four datasets to this common encoding, and train a shared end-to-end foundational model for diastematic Gregorian notation that establishes a new state of the art across all four datasets.},
+  doi        = {10.48550/arXiv.2606.31454},
+  eprint     = {2606.31454},
+  eprinttype = {arxiv},
+  file       = {:pdfs/2026 - Towards a Foundational Model for Recognising Diastematic Gregorian Notation.pdf:PDF},
+  url        = {https://arxiv.org/abs/2606.31454},
+}
+
 @InProceedings{Kurth2008,
   author    = {Kurth, Frank and Damm, David and Fremerey, Christian and M{\"u}ller, Meinard and Clausen, Michael},
   booktitle = {Research and Advanced Technology for Digital Libraries},
@@ -4727,6 +4794,17 @@ Tested across 110 public-domain violin scores, MusicSynth correctly identified 9
   year        = {2016},
   file        = {:pdfs/2016 - Optical Music Recognition.pdf:PDF},
   url         = {https://scholarship.tricolib.brynmawr.edu/handle/10066/18782},
+}
+
+@InProceedings{Lei2026,
+  author    = {Lei, Zhen and Bai, Peng and Shi, Xiaodong},
+  booktitle = {Advanced Intelligent Computing Technology and Applications: 22nd International Conference on Intelligent Computing, {ICIC} 2026, Toronto, Canada, July 22--26, 2026, Proceedings},
+  title     = {Dual-Loop Multi-agent Framework and Policy Optimization for Numbered Musical Notation Digitization},
+  year      = {2026},
+  abstract  = {Digitizing Numbered Musical Notation (Jianpu) for regional heritage like Gezi Opera is hindered by manual transcription costs and the logical hallucinations of Multimodal Large Language Models (MLLMs). We propose a fully autonomous, dual-loop multi-agent data synthesis pipeline to overcome this. First, a Simplified Intermediate Musical Representation (SIMR) enforces strict melody-lyric slot alignment. Second, a Generator-Reviewer-Optimizer architecture iteratively self-refines. The Reviewer audits outputs using visual fidelity constraints, achieving 87.1% precision and distilling a silver-standard dataset with a 0.952 Melody Joint F1. Additionally, we release a 1,001-measure human-calibrated Golden Dataset. Downstream training on Qwen3-VL-8B-Instruct demonstrates that combining our synthetic data with Supervised Fine-Tuning (SFT) and Group Relative Policy Optimization (GRPO) eliminates formatting failures and substantially improves Bar Exact Match, establishing a robust new baseline.},
+  doi       = {10.1007/978-981-92-3447-9_18},
+  file      = {:pdfs/2026 - Dual Loop Multi Agent Framework and Policy Optimization for Numbered Musical Notation Digitization.pdf:PDF},
+  url       = {https://link.springer.com/chapter/10.1007/978-981-92-3447-9_18},
 }
 
 @InProceedings{Leplumey1993,
@@ -4891,6 +4969,39 @@ Tested across 110 public-domain violin scores, MusicSynth correctly identified 9
   file            = {:pdfs/2015 - A Robust Method for Musical Note Recognition.pdf:PDF},
   isbn            = {9781467380201},
   keywords        = {Computer graphics, Commercial products; Hierarchical structures; Interaction fields; Key structures; Musical notes; Optical music recognition; Primitive relationships; Robust methods, Computer aided design},
+}
+
+@Article{Liu2026,
+  author   = {Liu, Yingkai and Wang, Ruoran and Yang, Jinting and Guo, Yutong and Zhao, Zhengyan and Fu, Shihan and Zhao, Zitong},
+  journal  = {Measurement Science and Technology},
+  title    = {Edge-Guided Structural Conditioning for {Gong-Che} Symbol Localization and Page-Level Counting in Aged Documents},
+  year     = {2026},
+  abstract = {Reliable symbol measurement from aged Gong-Che documents is difficult because
+yellowing, faded ink, and broken strokes degrade local appearance before they fully destroy
+notation structure. We present StructGuide-YOLO, a detector using paired RGB-edge
+input for symbol localization and page-level counting on degraded manuscript pages. The
+method treats RGB as the primary semantic stream and uses a deterministically derived
+edge view as structural guidance through progressive conditioning at three backbone
+scales. We also introduce GongChePair, a paired RGB-edge benchmark built from digital Gong-Che pages and scanned physical scores. The original collection contains 1,545 unique
+pages: 1,082 training pages, 308 validation pages, and 155 test pages. Training-only offline
+augmentation adds 1,082 samples, giving 2,164 training samples and 2,627 page-level
+paired samples in the final protocol. The arithmetic mean of three independently trained
+runs with seeds 0, 1, and 2 is 0.865 mAP@0.5 and 0.449 mAP@[0.5:0.95]. In the task-level
+benchmark comparison, these values exceed those of YOLO11m by 5.4% and 10.6%,
+respectively. At the common confidence threshold of 0.25, which was fixed before
+inspection of the test-set counting results, StructGuide-YOLO also records 9.70 MAE and
+15.40 RMSE, compared with 11.10 and 18.50 for YOLO11m. All compared models use the
+same data partitions, training schedule, augmentation policy, and evaluation protocol,
+while their computational budgets are reported separately. The RGB-only, edge-only,
+simple-concatenation, direct-fusion, capacity, and component-ablation variants provide
+architecture-controlled evidence for the contribution of edge-derived structural guidance.
+Repeatability, page-level uncertainty, degradation, and source/book-family holdout
+analyses characterize performance within the reported evaluation scope. The results
+provide evidence that deterministic structural guidance can improve Gong-Che symbol
+localization and page-level counting reliability under these benchmark protocols.},
+  doi      = {10.1088/1361-6501/ae9f7c},
+  file     = {:pdfs/2026 - Edge Guided Structural Conditioning for Gong Che Symbol Localization and Page Level Counting in Aged Documents.pdf:PDF},
+  url      = {https://doi.org/10.1088/1361-6501/ae9f7c},
 }
 
 @InProceedings{LopezGutierrez2021,
@@ -5423,6 +5534,22 @@ Tested across 110 public-domain violin scores, MusicSynth correctly identified 9
   file      = {:pdfs/2024 - Enhanced User Machine Interaction for Historical Sheet Music Retrieval_ a Musical Notation Approach.pdf:PDF},
   url       = {https://sites.google.com/view/worms2024/proceedings},
   abstract  = {symbols (positions within the staves) which had little of interaction. Leveraging a web piano interface, users can now to do with musical notation.This made the search process less input queries using real musical notes, enhancing both usability intuitive and precise, especially for users who were familiar and accuracy. Even though previous works have already explored this kind of with music theory. implementation, it has only been tested in already transcribed Here we present an enhanced user-machine interaction apand digitalized sheet music. Our approach, based on fully au- p roach for historical sheet music retrieval that enables users to tomatic Probabilistic Indexing (PrIx) of a manuscript, addresses input queries using pitch-relative symbols (musical notation) the intricacies inherent in historical scores, including variations within the same web-based search engine. Our approach in clef types and positions, to transform musical queries into complex Boolean geometric expressions. By integrating these leverages a web piano interface that allows users to input enhancements into an existing search engine, we provide re- queries using real notes within the staff, making the search searchers with a more accessible and efficient means of exploring process more intuitive and precise. We also address the comvast collections of historical sheet music. plexities in historical scores, such as variations in clef types This paper underscores the significance of user-machine interand positions, by transforming musical queries into complex action improvements in facilitating meaningful discoveries and insights in musicology and historical research. Boolean geometric expressions that can be used to search for},
+}
+
+@InProceedings{MenarguezBox2026,
+  author    = {Men{\'{a}}rguez-Box, Aitana and Vidal, Enrique and Toselli, Alejandro H.},
+  booktitle = {Document Analysis Systems: 17th {IAPR} International Workshop, {DAS} 2026, Proceedings},
+  title     = {Modeling ``Musical Words'' for Efficient Sequence Search in Handwritten Music Manuscripts},
+  year      = {2026},
+  editor    = {Shafait, Faisal and Ulges, Adrian and Moetesum, Momina and Yin, Xu-Cheng},
+  pages     = {282--298},
+  publisher = {Springer, Cham},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {16851},
+  abstract  = {Large-scale digitization has made vast collections of historical music manuscripts accessible, yet efficient search within them remains a major challenge. Retrieving melodic patterns from handwritten sources is central to musicological analysis, but current approaches typically rely on deterministic Optical Music Recognition (OMR) followed by symbol-level sequence matching. This pipeline is both error-prone and computationally expensive, limiting its scalability. In this work, we aim to improve retrieval efficiency by modeling recurring note patterns as ``musical words'', learned automatically using Byte Pair Encoding (BPE), and integrating them into a probabilistic indexing (PrIx) framework. By operating on these higher-level units instead of individual symbols, retrieval can be performed over shorter queries and with reduced computational cost. We evaluate the approach on three collections of handwritten chant manuscripts, comparing word-based indexing with conventional note-level search. The results show that BPE-derived ``musical words'' preserve retrieval effectiveness while significantly reducing query time, with gains becoming more pronounced under limited training data. These findings suggest that lexical modeling is a promising direction for scalable and robust retrieval in large collections of handwritten music, while remaining compatible with both probabilistic and conventional retrieval pipelines.},
+  doi       = {10.1007/978-3-032-36207-0_17},
+  file      = {:pdfs/2026 - Modeling ``Musical Words'' for Efficient Sequence Search in Handwritten Music Manuscripts.pdf:PDF},
+  url       = {https://doi.org/10.1007/978-3-032-36207-0_17},
 }
 
 @Article{Mengarelli2019,
@@ -6399,6 +6526,19 @@ the **mens files.},
   doi       = {10.1007/978-3-031-70442-0_19},
   file      = {:pdfs/2024 - Contrastive Self Supervised Learning for Optical Music Recognition.pdf:PDF},
   isbn      = {978-3-031-70441-3},
+}
+
+@InProceedings{Penarrubia2026,
+  author     = {Penarrubia, Carlos and Rios-Vila, Antonio and Fuentes-Martinez, Eliseo and Martinez-Sevilla, Juan C. and Castellanos, Francisco J. and Alfaro-Contreras, Mar{\'{i}}a and Calvo-Zaragoza, Jorge},
+  booktitle  = {Proceedings of the European Conference on Computer Vision ({ECCV} 2026)},
+  title      = {{MuSViT}: A Foundation Vision Model for Sheet Music Representation},
+  year       = {2026},
+  abstract   = {Foundation models have transformed vision and language processing by providing rich, reusable representations that transfer across diverse tasks. Sheet music, as a visual encoding of musical language, lacks such a strong domain-specific backbone. We introduce MUSVIT (Music Score Vision Transformer): the first foundation vision model for sheet music representation—a ViT encoder pre-trained via Masked Autoencoders on 9.7 million pages from the International Music Score Library Project (IMSLP). To handle the complexity of real-world scores, we adopt a two-stage curriculum: a synthetic warm-up on typeset scores followed by large-scale training on the full IMSLP corpus. We evaluate MUSVIT on four downstream tasks—full-page and staff-level music score recognition, music symbol detection, and score difficulty classification—under two scenarios: linear probing (frozen encoder) and fine-tuning. Under linear probing, MUSVIT consistently outperforms modern vision encoders, revealing that general-purpose representations, regardless of scale, fall systematically short on the structured symbolic properties of musical notation. Under fine-tuning, MUSVIT generally improves upon task-specific state-of-the-art methods. An additional embedding-transcription consistency analysis reveals that MUSVIT encodes symbolic musical structure directly in its representation space—unlike other encoders, whose embeddings do not correlate with music notation content. These results establish MUSVIT as a foundation backbone for sheet music understanding.},
+  doi        = {10.48550/arXiv.2606.31811},
+  eprint     = {2606.31811},
+  eprinttype = {arxiv},
+  file       = {:pdfs/2026 - MuSViT_ A Foundation Vision Model for Sheet Music Representation.pdf:PDF},
+  url        = {https://arxiv.org/abs/2606.31811},
 }
 
 @InProceedings{Pham2015,
@@ -7793,6 +7933,22 @@ This paper aims to show that this removal of the stave lines before symbol recog
   abstract  = {In terms of human past knowledge, music may be one of the few things which we are certain that follow us since pre-historic times. As a way of representation, musical score notation has always been the main source of musical expression for non-hearing systems. Programs analogous to optical character recognition systems, called optical music recognition (OMR) systems, have been under intensive development from many years. Nowadays, an interesting application of OMR concerns the online recognition, which allows an automatic conversion of text as it is written on a special digital device. Taking into consideration the current proliferation of small electronic devices with increasing computation power, such as tablets and Smartphones, the exploration of such features applied to OMR may be useful in order to overcome the limitations of offline recognition. The main advantages in using online systems are related to: elimination of segmentation issues caused by overlapped symbols, and extra knowledge about spatial-temporal information of symbols. This thesis represents a step forward on the state-of-the art of optical music recognition with the following contributions: A prototype for capturing gesture-free of musical symbols; the construction of a database collected for a set of users with different musical expertise; statistical analyze of the hand-drawn symbols from the users; study of an classifier using information from the user strokes; and a comparative study between the online and the offline methods.},
 }
 
+@InProceedings{Sinha2026,
+  author    = {Sinha, Ankit and Saha, Atanu and Chattopadhyay, Chiranjoy and Ray, Rahul Kumar},
+  booktitle = {Document Analysis and Recognition -- {ICDAR} 2026: 20th International Conference, Vienna, Austria, August 30 -- September 4, 2026, Proceedings},
+  title     = {Multi-Modal Heterogeneous Music Notation Recognition from Documents: A Framework for Real-Time Symbolic-to-Immersive Mapping},
+  year      = {2026},
+  editor    = {Fink, Gernot A. and Forn{\'{e}}s, Alicia and Kise, Koichi and Lopresti, Daniel},
+  pages     = {279--296},
+  publisher = {Springer, Cham},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {16973},
+  abstract  = {Optical Music Recognition (OMR) usually targets standard Western melodic notation and often neglects the structural complexity of percussion scores. We introduce SWARA: Sheet music With Augmented Recognition for metAverse, a framework that advances Document Image Analysis by enabling the simultaneous recognition and semantic translation of heterogeneous musical notations--specifically piano and drums--within a collaborative immersive environment. SWARA processes scanned sheet music, using symbol recognition and layout analysis to extract melodic (piano) and rhythmic (drum) notation. It turns these into intuitive visual cues on virtual instruments, enabling interactive music performance. SWARA also supports multiuser Virtual Reality (VR) collaboration, letting learners work on the same score simultaneously with synchronized guidance on different instruments. This introduces new challenges in aligning recognition output, coordinating temporal cues, and ensuring consistency across heterogeneous musical symbols. Our contributions include: (1) annotated dataset of sheet music for drums, (2) a recognition pipeline for both piano and drum notation, (3) a semantic conversion framework translating symbols into actionable VR instructions, and a new metric to measure this performance, and (4) collaborative metaverse integration for multiuser learning. By bridging the gap between static symbolic media and dynamic performance, SWARA provides a benchmark and a state-of-the-art framework for real-time document understanding in high-latency, collaborative settings.},
+  doi       = {10.1007/978-3-032-36033-5_17},
+  file      = {:pdfs/2026 - Multi Modal Heterogeneous Music Notation Recognition from Documents_ a Framework for Real Time Symbolic to Immersive Mapping.pdf:PDF},
+  url       = {https://doi.org/10.1007/978-3-032-36033-5_17},
+}
+
 @Misc{SmartScore,
   author       = {Musitek},
   howpublished = {\url{http://www.musitek.com/smartscore-pro.html}},
@@ -8096,6 +8252,17 @@ This paper aims to show that this removal of the stave lines before symbol recog
   location  = {The Hague, Netherlands},
   numpages  = {11},
   abstract  = {Vocal polyphonic music from 1280 to 1600 is written in mensural notation and it is typically presented in a layout with separate parts. In this paper, we introduce the Mensural Scoring-up Tool, a set of scripts designed to automatically transform the separate-parts representation of the music into a score by dealing with the context-dependent nature of the notation through the implementation of the principles of imperfection and alteration, outlined by Franco of Cologne (ca. 1280). This tool exhibits 97\\% accuracy in a corpus of fourteenth- and fifteenth-century pieces, including both black and white mensural notation. The new encoding generated by the Scoring-up Tool could be useful for digital libraries that have digitized their collections of mensural music documents since the symbolic score could accompany the digital images providing a representation that makes the music accessible to a larger audience—since these symbolic scores can easily allow for a conversion into modern values and for playback—and that facilitates music analysis for the experts.},
+}
+
+@Article{Thomae2026,
+  author   = {Thomae, Martha E.},
+  journal  = {Transactions of the International Society for Music Information Retrieval},
+  title    = {Semi-Automatic Pipeline for the Transcription of Mensural Polyphony into Symbolic Interpreted Scores},
+  year     = {2026},
+  abstract = {This paper presents the first semi-automatic pipeline for transcribing early polyphonic music, written in separate parts, into symbolic scores. While current optical music recognition (OMR) software can recognize and encode musical symbols, it falls short of producing complete transcriptions from these historical sources. Polyphonic music from the late Middle Ages and Renaissance is written in mensural notation, where note duration cannot be inferred from graphical symbols alone. Accurate interpretation requires consideration of additional features, such as mensuration signs and the contextual placement of notes. This article introduces an integrated MIR pipeline that transcribes digital images of mensural sources into aligned symbolic scores by combining OMR, a mensural rhythmic interpretation expert system, and error-checking technologies—thereby reducing human intervention. A central aim of this work is to improve interoperability among existing specialized tools rather than develop new monolithic solutions and to rely on free, open-access software to enable adoption by institutions and scholars worldwide, including those in developing countries. The pipeline was successfully applied to the Guatemalan choirbook GCA-Gaha 1, demonstrating its practical utility and effectiveness.},
+  doi      = {10.5334/tismir.292},
+  file     = {:pdfs/2026 - Semi Automatic Pipeline for the Transcription of Mensural Polyphony into Symbolic Interpreted Scores.pdf:PDF},
+  url      = {https://transactions.ismir.net/articles/10.5334/tismir.292},
 }
 
 @InProceedings{Thompson2011,
@@ -8946,6 +9113,18 @@ amongst other web-based tools to evaluate and supervise the recognition process.
   eprint     = {2409.00316},
   eprinttype = {arxiv},
   file       = {:pdfs/2024 - Toward a More Complete OMR Solution.pdf:PDF},
+}
+
+@Misc{Yang2026,
+  author     = {Yang, Guang and Zheng, Brian Siyuan and Ebert, Victoria and Smith, Noah A.},
+  title      = {{LEGATO} 2: Toward Multimodal Sheet Music Recognition and Understanding},
+  year       = {2026},
+  abstract   = {We propose a novel pipeline, Legato 2, for extracting symbolic notation and semantic knowledge from images of sheet music. Legato 2 features the first large-scale neural model for optical music recognition (OMR) to operate sequentially on a system-by-system basis, following the horizontal lines of notation as they are read on the page, rather than treating the page as an undifferentiated image, enabling better scaling to arbitrarily long inputs. It is also the first OMR model capable of generating symbolic transcriptions that include embedded textual content, such as titles and annotations. The pipeline combines system-level segmentation with an autoregressive vision-LM to capture both local notation details and score structure. Across multiple datasets, Legato 2 consistently outperforms prior state of the art. We also show that symbolic transcriptions complement visual inputs for frontier language models, improving their interpretation of dense musical documents. Legato 2 establishes new state-of-the-art performance in both OMR and downstream sheet music understanding.},
+  doi        = {10.48550/arXiv.2607.05769},
+  eprint     = {2607.05769},
+  eprinttype = {arxiv},
+  file       = {:pdfs/2026 - LEGATO 2_ Toward Multimodal Sheet Music Recognition and Understanding.pdf:PDF},
+  url        = {https://arxiv.org/abs/2607.05769},
 }
 
 @InProceedings{Yesilkanat2024,
