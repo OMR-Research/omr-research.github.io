@@ -2989,6 +2989,16 @@ Wrote his Master's Thesis in 2012},
   url      = {https://journals.sagepub.com/doi/abs/10.1177/1029864920972145},
 }
 
+@InProceedings{Shatri2026,
+  author    = {Shatri, Elona and Mayer, Ji{\v{r}}{\'{i}} and Haji{\v{c}} jr., Jan},
+  booktitle = {Proceedings of the 7th International Workshop on Reading Music Systems},
+  title     = {Data-Driven Glyph Positioning for Handwritten Music Synthesis},
+  year      = {2026},
+  address   = {Vienna, Austria},
+  editor    = {R{\'{i}}os-Vila, Antonio and Shatri, Elona and Haji{\v{c}} jr., Jan and Pacha, Alexander and Calvo-Zaragoza, Jorge},
+  abstract  = {Synthesised data is a common strategy to address the lack of annotated handwritten music scores in Optical Music Recognition (OMR). Smashcima is a recent synthesis framework that assembles pages of handwritten scores by sampling glyph images from MUSCIMA++ and positioning them with hard-coded rules. In this work we ask whether these rules are grounded empirically, and whether a learned model for context-dependent positioning can further improve synthesis quality. We extract inter-glyph distributions from $\sim$285 thousand annotated relationships across MUSCIMA++ and OmniOMR, finding that several key parameters deviate systematically from real handwriting. Replacing these constants with empirical means reduces positioning RMSE by up to 60\%. We then train a Graph Neural Network (GNN) on the Music Notation Graph structure to predict context-dependent offsets, achieving an additional 50--85\% RMSE reduction on stems and beams by modelling how neighbouring glyphs constrain placement. Cross-dataset analysis shows that spacing differences between the two corpora are explained by note density ($3.3\times$), not style, and that duration-proportional spacing does not hold in handwriting ($R^2 = 0.001$). In downstream evaluation, a YOLOv8 detector pretrained on GNN-positioned synthetic data achieves +30\% mAP50 over the baseline and +11\% over empirical means when fine-tuned on 200 real handwritten staves, showing that positioning accuracy matters for downstream OMR.},
+}
+
 @Article{Zalkow2020,
   author   = {Zalkow, Frank and Balke, Stefan and Arifi-M{\"u}ller, Vlora and M{\"u}ller, Meinard},
   journal  = {Transactions of the International Society for Music Information Retrieval},
