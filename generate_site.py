@@ -14,6 +14,7 @@ Usage:
 import re
 import sys
 import json
+import hashlib
 import argparse
 import html as html_mod
 from datetime import date
@@ -500,6 +501,11 @@ def render_page(
     """Render a complete interactive HTML page for a bib file."""
     entry_data = [build_entry_json(e, include_pdf_links=pdf_links) for e in entries]
 
+    # Stable "{key}-{sha1(raw)}" id; unique even when a bibTeX key repeats.
+    for d in entry_data:
+        digest = hashlib.sha1(d["raw"].encode("utf-8")).hexdigest()
+        d["uid"] = f"{d['key']}-{digest}"
+
     # Unique years and types for filter dropdowns
     years = sorted({e["year"] for e in entry_data if e["year"] != "0"}, reverse=True)
     types = sorted({e["type"] for e in entry_data})
@@ -692,7 +698,7 @@ function renderEntry(e) {{
     : '';
 
   return `
-<div class="entry-card" id="card-${{esc(e.key)}}" onclick="toggleCard(this)">
+<div class="entry-card" id="card-${{esc(e.uid)}}" onclick="toggleCard(this)">
   <div class="entry-header">
     <div class="entry-chips">
       <span class="entry-year">${{esc(e.year)}}</span>
@@ -703,11 +709,11 @@ function renderEntry(e) {{
     <div class="entry-title">${{titleHtml}}</div>
     ${{e.venue ? `<div class="entry-venue">${{esc(e.venue)}}</div>` : ''}}
   </div>
-  <div class="entry-panel" id="panel-${{esc(e.key)}}">
+  <div class="entry-panel" id="panel-${{esc(e.uid)}}">
     ${{absBlock}}
     <div class="entry-bibtex-wrap">
-      <button class="copy-btn" onclick="copyBib(event, this, '${{esc(e.key)}}')">Copy BibTeX</button>
-      <pre class="entry-bibtex" id="bib-${{esc(e.key)}}">${{esc(e.raw.trim())}}</pre>
+      <button class="copy-btn" onclick="copyBib(event, this)" data-uid="${{esc(e.uid)}}">Copy BibTeX</button>
+      <pre class="entry-bibtex" id="bib-${{esc(e.uid)}}">${{esc(e.raw.trim())}}</pre>
     </div>
   </div>
 </div>`;
@@ -718,10 +724,12 @@ function toggleCard(card) {{
   panel.classList.toggle('open');
 }}
 
-function copyBib(event, btn, key) {{
+function copyBib(event, btn) {{
   event.stopPropagation();
-  const text = document.getElementById('bib-' + key).textContent;
-  navigator.clipboard.writeText(text).then(() => {{
+  const uid = btn.dataset.uid;
+  const e = ENTRIES.find(x => x.uid === uid);
+  if (!e) return;
+  navigator.clipboard.writeText(e.raw.trim()).then(() => {{
     btn.textContent = 'Copied!';
     btn.classList.add('copied');
     setTimeout(() => {{ btn.textContent = 'Copy BibTeX'; btn.classList.remove('copied'); }}, 1800);
