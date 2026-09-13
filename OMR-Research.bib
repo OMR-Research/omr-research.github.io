@@ -7845,6 +7845,16 @@ the **mens files.},
   file       = {:pdfs/2024 - Knowledge Discovery in Optical Music Recognition_ Enhancing Information Retrieval with Instance Segmentation.pdf:PDF},
 }
 
+@InProceedings{Shatri2026,
+  author    = {Shatri, Elona and Mayer, Ji{\v{r}}{\'{i}} and Haji{\v{c}} jr., Jan},
+  booktitle = {Proceedings of the 7th International Workshop on Reading Music Systems},
+  title     = {Data-Driven Glyph Positioning for Handwritten Music Synthesis},
+  year      = {2026},
+  address   = {Vienna, Austria},
+  editor    = {R{\'{i}}os-Vila, Antonio and Shatri, Elona and Haji{\v{c}} jr., Jan and Pacha, Alexander and Calvo-Zaragoza, Jorge},
+  abstract  = {Synthesised data is a common strategy to address the lack of annotated handwritten music scores in Optical Music Recognition (OMR). Smashcima is a recent synthesis framework that assembles pages of handwritten scores by sampling glyph images from MUSCIMA++ and positioning them with hard-coded rules. In this work we ask whether these rules are grounded empirically, and whether a learned model for context-dependent positioning can further improve synthesis quality. We extract inter-glyph distributions from $\sim$285 thousand annotated relationships across MUSCIMA++ and OmniOMR, finding that several key parameters deviate systematically from real handwriting. Replacing these constants with empirical means reduces positioning RMSE by up to 60\%. We then train a Graph Neural Network (GNN) on the Music Notation Graph structure to predict context-dependent offsets, achieving an additional 50--85\% RMSE reduction on stems and beams by modelling how neighbouring glyphs constrain placement. Cross-dataset analysis shows that spacing differences between the two corpora are explained by note density ($3.3\times$), not style, and that duration-proportional spacing does not hold in handwriting ($R^2 = 0.001$). In downstream evaluation, a YOLOv8 detector pretrained on GNN-positioned synthetic data achieves +30\% mAP50 over the baseline and +11\% over empirical means when fine-tuned on 200 real handwritten staves, showing that positioning accuracy matters for downstream OMR.},
+}
+
 @Misc{Shen2026,
   author   = {Shen, Dan and Sun, Xuandong},
   title    = {Using Image Recognition Technology to Assist in Music Score Recognition and Instruction in Distance Music Education},
