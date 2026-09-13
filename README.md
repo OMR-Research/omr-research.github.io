@@ -68,19 +68,31 @@ The `--pdf-links` flag adds a red **PDF** badge next to the DOI/arXiv chips for 
 
 [RenderWebsite.sh](RenderWebsite.sh) is a convenience wrapper that calls the same command.
 
-### Preventing duplicate citation keys
+### Keeping the BibTeX files clean
 
-A duplicate citation key breaks the "Copy BibTeX" button on the website, because the button
-looks up the entry by an HTML id derived from the key — with two entries sharing a key, only
-the first is ever found.
+Two checks run on every push and pull request via
+[`.github/workflows/check-bibtex.yml`](.github/workflows/check-bibtex.yml):
 
-[`.github/workflows/check-bibtex.yml`](.github/workflows/check-bibtex.yml) runs
-`check_bibtex_duplicates.py` on every push and pull request and fails the build if any BibTeX
-file contains a duplicate key. To also catch this locally before committing, enable the tracked
-git hook once per clone:
+- **No duplicate citation keys** (`check_bibtex_duplicates.py`). A duplicate key breaks the
+  "Copy BibTeX" button on the website, because the button looks up the entry by an HTML id
+  derived from the key — with two entries sharing a key, only the first is ever found.
+- **Entries sorted alphabetically by citation key** (`sort_bibtex.py --check`). Keeps the files
+  easy to diff and merge, regardless of where a new entry gets pasted in.
+
+To also catch both locally — and have the sorting fixed automatically — before committing,
+enable the tracked git hook once per clone:
 
 ```bash
 git config core.hooksPath hooks
+```
+
+With the hook enabled, every commit rejects duplicate keys outright, then re-sorts the BibTeX
+files and folds the sorted result into the commit automatically — so a new entry can be pasted
+in anywhere and will end up in the right place on `master`. To sort by hand instead:
+
+```bash
+python3 sort_bibtex.py           # rewrite all three files in sorted order
+python3 sort_bibtex.py --check   # exit 1 if any file is out of order, write nothing
 ```
 
 ### Reviewing changes since a baseline commit

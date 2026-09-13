@@ -13,3 +13,6 @@ jobs:
 
       - name: Check for duplicate citation keys
         run: python3 check_bibtex_duplicates.py
+
+      - name: Check that entries are sorted alphabetically by citation key
+        run: python3 sort_bibtex.py --check

@@ -36,15 +36,17 @@ def parse_bib(path):
         if etype.lower() in ("comment", "string", "preamble"):
             continue
 
-        # Walk brace-balanced content from this @
+        # Walk brace-balanced content from this @. Only "{" / "}" delimit BibTeX
+        # groups; a stray "(" or ")" inside a field value (e.g. an affiliation
+        # like "Institute (Country") must not be mistaken for entry nesting.
         start = m.start()
         depth = 0
         pos = m.end() - 1  # position of opening brace
         entry_end = len(text)
         while pos < len(text):
-            if text[pos] in "{(":
+            if text[pos] == "{":
                 depth += 1
-            elif text[pos] in "})":
+            elif text[pos] == "}":
                 depth -= 1
                 if depth == 0:
                     entry_end = pos + 1

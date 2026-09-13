@@ -135,6 +135,20 @@
   url       = {http://archives.ismir.net/ismir2019/paper/000024.pdf},
 }
 
+@InProceedings{Balke2023,
+  author    = {Balke, Stefan and Maiworm, Adrian},
+  booktitle = {Proceedings of the {GI} Jahrestagung},
+  title     = {Digitalisierung in der Amateurmusik},
+  year      = {2023},
+  pages     = {841--850},
+  publisher = {Gesellschaft f{\"u}r Informatik, Bonn},
+  series    = {{LNI}},
+  volume    = {{P-337}},
+  doi       = {10.18420/INF2023_94},
+  language  = {german},
+  note      = {Requirements analysis for a digital sheet music archive for amateur music associations.},
+}
+
 @Article{Barate2018,
   author   = {Barat{\`{e}}, Adriano and Haus, Goffredo and Ludovico, Luca A.},
   title    = {Advanced Experience of Music through 5G Technologies},
@@ -186,6 +200,21 @@
   abstract = {Automatic music transcription is considered by many to be a key enabling technology in music signal processing. However, the performance of transcription systems is still significantly below that of a human expert, and accuracies reported in recent years seem to have reached a limit, although the field is still very active. In this paper we analyse limitations of current methods and identify promising directions for future research. Current transcription methods use general purpose models which are unable to capture the rich diversity found in music signals. One way to overcome the limited performance of transcription systems is to tailor algorithms to specific use-cases. Semi-automatic approaches are another way of achieving a more reliable transcription. Also, the wealth of musical scores and corresponding audio data now available are a rich potential source of training data, via forced alignment of audio to scores, but large scale utilisation of such data has yet to be attempted. Other promising approaches include the integration of information from multiple algorithms and different musical aspects.},
   doi      = {10.1007/s10844-013-0258-3},
   file     = {:pdfs/2013 - Automatic Music Transcription_ Challenges and Future Directions.pdf:PDF},
+}
+
+@Article{Bertiaux2020,
+  author   = {Bertiaux, Aur{\'e}lien and Gabrielli, Fran{\c{c}}ois and Giraud, Mathieu and Lev{\'e}, Florence},
+  journal  = {Musicae Scientiae},
+  title    = {Associations between music training and the dynamics of writing music by hand},
+  year     = {2020},
+  month    = dec,
+  number   = {1},
+  pages    = {247--259},
+  volume   = {27},
+  abstract = {This study investigates how music training and experience relate to the way musicians write staff notation by hand, examining handwriting dynamics of music notation. The study concerns the motor dynamics of music handwriting rather than automated recognition systems.},
+  doi      = {10.1177/1029864920972145},
+  issn     = {1029-8649},
+  url      = {https://journals.sagepub.com/doi/abs/10.1177/1029864920972145},
 }
 
 @InProceedings{Bezine2004,
@@ -623,29 +652,6 @@ of expressive music performance.},
   url       = {https://www.jstor.org/stable/2346806},
 }
 
-@Article{Fuente2022,
-  author   = {de la Fuente, Carlos and Valero-Mas, Jos{\'e} J. and Castellanos, Francisco J. and Calvo-Zaragoza, Jorge},
-  journal  = {International Journal of Multimedia Information Retrieval},
-  title    = {Multimodal image and audio music transcription},
-  year     = {2022},
-  volume   = {11},
-  pages    = {77--84},
-  doi      = {10.1007/s13735-021-00221-6},
-  url      = {https://link.springer.com/article/10.1007/s13735-021-00221-6},
-  file      = {:pdfs/2022 - Multimodal image and audio music transcription.pdf:PDF},
-}
-
-@MastersThesis{Lambertye2024,
-  author    = {de Lambertye, Gr{\'e}goire},
-  title     = {Music Semantic Reconstruction with Deep Learning: Learning How to Construct Music Notation Graphs With Graph Neural Networks},
-  year      = {2024},
-  school    = {TU Wien},
-  abstract  = {Music is fleeting by nature, existing briefly before fading away. Yet more than one wants to preserve it over time and many music notation systems have been developed with this intention. However, most of these formats have been designed for humans to read them. Optical Music Recognition ({OMR}) is a research field dedicated to investigating how to computationally read music notation and create computer-readable scores from traditional scores. The typical {OMR} pipeline is divided into four stages: Image preprocessing, Music object detection, Semantic reconstruction, and Encoding. The third stage of the pipeline aims at reconstructing the semantics of the music notation, reestablishing connections between the objects detected previously. This work focuses on scores written in the most common notation system called Common Western Music Notation (CWMN). In this context, the semantics are defined by the configuration of the musical primitives (accidental, noteheads, or flags), how they are grouped and arranged defines their interactions and how the music should sound. Some research exhibits the graph-like property of the music and introduces the concept of Music Notation Graph (MuNG): graphs constructed with the music primitives as nodes and their relations as edges. This graph structure makes it a candidate for leveraging the power of Graph Neural Networks ({GNN}). This master thesis investigates how {GNN}s can be used to perform the music semantic reconstruction. We propose a novel pipeline for using {GNN}s in {OMR} and discuss a few unsolved problems of the field like how to measure and compare the output of an {OMR} system or how to define MuNGs.},
-  doi       = {10.34726/hss.2024.120481},
-  file      = {:pdfs/2024 - Music Semantic Reconstruction with Deep Learning.pdf:PDF},
-  url       = {https://repositum.tuwien.at/handle/20.500.12708/202594},
-}
-
 @InProceedings{DegrootMaggetti2020,
   author      = {Degroot-Maggetti, Jacob and de Reuse, Timothy and Feisthauer, Laurent and Howes, Samuel and Ju, Yaolong and Kokubu, Suzaka and Margot, Sylvain and N{\'a}poles L{\'o}pez, N{\'e}stor and Upham, Finn},
   booktitle   = {Proceedings of the 21st International Society for Music Information Retrieval Conference ({ISMIR})},
@@ -867,6 +873,18 @@ of expressive music performance.},
   abstract    = {This paper presents the ASAP dataset of 222 digital musical scores aligned with 1068 performances (over 92 hours) of Western classical piano music, providing downbeat, beat, time signature, and key signature annotations using a workflow combining score analysis and alignment algorithms.},
   file        = {:pdfs/2020 - ASAP A Dataset of Aligned Scores and Performances for Piano Transcription.pdf:PDF},
   url         = {https://archives.ismir.net/ismir2020/paper/000127.pdf},
+}
+
+@Article{Fuente2022,
+  author   = {de la Fuente, Carlos and Valero-Mas, Jos{\'e} J. and Castellanos, Francisco J. and Calvo-Zaragoza, Jorge},
+  journal  = {International Journal of Multimedia Information Retrieval},
+  title    = {Multimodal image and audio music transcription},
+  year     = {2022},
+  volume   = {11},
+  pages    = {77--84},
+  doi      = {10.1007/s13735-021-00221-6},
+  url      = {https://link.springer.com/article/10.1007/s13735-021-00221-6},
+  file      = {:pdfs/2022 - Multimodal image and audio music transcription.pdf:PDF},
 }
 
 @InProceedings{GalnCuenca2024,
@@ -1228,7 +1246,6 @@ of expressive music performance.},
   isbn      = {1598299719, 9781598299717},
 }
 
-
 @Misc{Hart2021,
   author   = {Hart, Delaney R.},
   title    = {Towards an Archaeology of Digital Early Music Heritage: Two Case Studies},
@@ -1504,6 +1521,17 @@ of expressive music performance.},
   file      = {:pdfs/2013 - One Shot Learning by Inverting a Compositional Causal Process.pdf:PDF},
   groups    = {handwriting},
   url       = {http://papers.nips.cc/paper/5128-one-shot-learning-by-inverting-a-compositional-causal-process.pdf},
+}
+
+@MastersThesis{Lambertye2024,
+  author    = {de Lambertye, Gr{\'e}goire},
+  title     = {Music Semantic Reconstruction with Deep Learning: Learning How to Construct Music Notation Graphs With Graph Neural Networks},
+  year      = {2024},
+  school    = {TU Wien},
+  abstract  = {Music is fleeting by nature, existing briefly before fading away. Yet more than one wants to preserve it over time and many music notation systems have been developed with this intention. However, most of these formats have been designed for humans to read them. Optical Music Recognition ({OMR}) is a research field dedicated to investigating how to computationally read music notation and create computer-readable scores from traditional scores. The typical {OMR} pipeline is divided into four stages: Image preprocessing, Music object detection, Semantic reconstruction, and Encoding. The third stage of the pipeline aims at reconstructing the semantics of the music notation, reestablishing connections between the objects detected previously. This work focuses on scores written in the most common notation system called Common Western Music Notation (CWMN). In this context, the semantics are defined by the configuration of the musical primitives (accidental, noteheads, or flags), how they are grouped and arranged defines their interactions and how the music should sound. Some research exhibits the graph-like property of the music and introduces the concept of Music Notation Graph (MuNG): graphs constructed with the music primitives as nodes and their relations as edges. This graph structure makes it a candidate for leveraging the power of Graph Neural Networks ({GNN}). This master thesis investigates how {GNN}s can be used to perform the music semantic reconstruction. We propose a novel pipeline for using {GNN}s in {OMR} and discuss a few unsolved problems of the field like how to measure and compare the output of an {OMR} system or how to define MuNGs.},
+  doi       = {10.34726/hss.2024.120481},
+  file      = {:pdfs/2024 - Music Semantic Reconstruction with Deep Learning.pdf:PDF},
+  url       = {https://repositum.tuwien.at/handle/20.500.12708/202594},
 }
 
 @InProceedings{Lavie2007,
@@ -1898,6 +1926,19 @@ of expressive music performance.},
   isbn      = {978-3-7705-6680-8},
   url       = {https://brill.com/display/book/9783846766804/BP000027.xml},
   file      = {:pdfs/2022 - Adornos Theorie der musikalischen Reproduktion als Herausforderung fur die digitale Codierung musikalischer Schrift.pdf:PDF},
+}
+
+@InProceedings{Moss2021,
+  author    = {Moss, Fabian C. and K{\"o}ster, Maik and Femminis, Melinda and M{\'e}trailler, Coline and Bavaud, Fran{\c{c}}ois},
+  booktitle = {Proceedings of the Computational Humanities Research Conference ({CHR} 2021)},
+  title     = {Digitizing a 19th-Century Music Theory Debate for Computational Analysis},
+  year      = {2021},
+  month     = nov,
+  pages     = {159--170},
+  series    = {{CEUR} Workshop Proceedings},
+  volume    = {2989},
+  file      = {:pdfs_new/2021 - Digitizing a 19th-Century Music Theory Debate for Computational Analysis.pdf:PDF},
+  url       = {https://ceur-ws.org/Vol-2989/short_paper31.pdf},
 }
 
 @InProceedings{Muge2000,
@@ -2723,6 +2764,19 @@ Wrote his Master's Thesis in 2012},
   url       = {https://doi.org/10.1145/3424911.3425519},
 }
 
+@Article{Weiss2023,
+  author   = {Wei{\ss}, Christof and Arifi-M{\"u}ller, Vlora and Krause, Michael and Zalkow, Frank and Klauk, Stephanie and Kleinertz, Rainer and M{\"u}ller, Meinard},
+  journal  = {Transactions of the International Society for Music Information Retrieval},
+  title    = {Wagner Ring Dataset: A Complex Opera Scenario for Music Processing and Computational Musicology},
+  year     = {2023},
+  number   = {1},
+  pages    = {135--149},
+  volume   = {6},
+  abstract = {This paper introduces the Wagner Ring Dataset (WRD), a multi-modal and multi-version annotated dataset built on Wagner's tetralogy Der Ring des Nibelungen. The dataset comprises a piano reduction of the full orchestral score in graphical and symbolic (Sibelius, MusicXML, and MIDI) format as well as 16 recorded performances. The work is focused on audio-score alignment, music processing, and computational musicology, and does not develop or evaluate OMR systems.},
+  doi      = {10.5334/tismir.161},
+  url      = {https://transactions.ismir.net/articles/10.5334/tismir.161},
+}
+
 @Article{Wilson2003,
   author   = {Wilson, D. Randall and Martinez, Tony R.},
   title    = {The general inefficiency of batch training for gradient descent learning},
@@ -2810,6 +2864,21 @@ Wrote his Master's Thesis in 2012},
   file        = {:pdfs/2021 - Piano Sheet Music Identification Using Dynamic N-gram Fingerprinting.pdf:PDF},
   issn        = {2514-3298},
   url         = {https://transactions.ismir.net/articles/10.5334/tismir.70},
+}
+
+@Article{Zalkow2020,
+  author   = {Zalkow, Frank and Balke, Stefan and Arifi-M{\"u}ller, Vlora and M{\"u}ller, Meinard},
+  journal  = {Transactions of the International Society for Music Information Retrieval},
+  title    = {{MTD}: A Multimodal Dataset of Musical Themes for {MIR} Research},
+  year     = {2020},
+  number   = {1},
+  pages    = {180--192},
+  volume   = {3},
+  abstract = {This paper presents the MTD dataset of 2067 musical themes from Barlow and Morgenstern's Dictionary of Musical Themes, including graphical sheet music images, symbolic music encodings, audio recordings, score-to-audio alignments, and metadata. The multimodal dataset supports cross-modal retrieval, music alignment, optical music recognition, and transcription tasks.},
+  doi      = {10.5334/tismir.68},
+  file     = {:pdfs_new/2020 - MTD A Multimodal Dataset of Musical Themes for MIR Research.pdf:PDF},
+  issn     = {2514-3298},
+  url      = {https://transactions.ismir.net/articles/10.5334/tismir.68},
 }
 
 @Article{Zeitler2024,
@@ -2934,76 +3003,6 @@ Wrote his Master's Thesis in 2012},
   url       = {https://www.microsoft.com/en-us/research/publication/edge-boxes-locating-object-proposals-from-edges/},
 }
 
-@InProceedings{Balke2023,
-  author    = {Balke, Stefan and Maiworm, Adrian},
-  booktitle = {Proceedings of the {GI} Jahrestagung},
-  title     = {Digitalisierung in der Amateurmusik},
-  year      = {2023},
-  pages     = {841--850},
-  publisher = {Gesellschaft f{\"u}r Informatik, Bonn},
-  series    = {{LNI}},
-  volume    = {{P-337}},
-  doi       = {10.18420/INF2023_94},
-  language  = {german},
-  note      = {Requirements analysis for a digital sheet music archive for amateur music associations.},
-}
-
-@Article{Weiss2023,
-  author   = {Wei{\ss}, Christof and Arifi-M{\"u}ller, Vlora and Krause, Michael and Zalkow, Frank and Klauk, Stephanie and Kleinertz, Rainer and M{\"u}ller, Meinard},
-  journal  = {Transactions of the International Society for Music Information Retrieval},
-  title    = {Wagner Ring Dataset: A Complex Opera Scenario for Music Processing and Computational Musicology},
-  year     = {2023},
-  number   = {1},
-  pages    = {135--149},
-  volume   = {6},
-  abstract = {This paper introduces the Wagner Ring Dataset (WRD), a multi-modal and multi-version annotated dataset built on Wagner's tetralogy Der Ring des Nibelungen. The dataset comprises a piano reduction of the full orchestral score in graphical and symbolic (Sibelius, MusicXML, and MIDI) format as well as 16 recorded performances. The work is focused on audio-score alignment, music processing, and computational musicology, and does not develop or evaluate OMR systems.},
-  doi      = {10.5334/tismir.161},
-  url      = {https://transactions.ismir.net/articles/10.5334/tismir.161},
-}
-
-@InProceedings{Moss2021,
-  author    = {Moss, Fabian C. and K{\"o}ster, Maik and Femminis, Melinda and M{\'e}trailler, Coline and Bavaud, Fran{\c{c}}ois},
-  booktitle = {Proceedings of the Computational Humanities Research Conference ({CHR} 2021)},
-  title     = {Digitizing a 19th-Century Music Theory Debate for Computational Analysis},
-  year      = {2021},
-  month     = nov,
-  pages     = {159--170},
-  series    = {{CEUR} Workshop Proceedings},
-  volume    = {2989},
-  file      = {:pdfs_new/2021 - Digitizing a 19th-Century Music Theory Debate for Computational Analysis.pdf:PDF},
-  url       = {https://ceur-ws.org/Vol-2989/short_paper31.pdf},
-}
-
-@Article{Bertiaux2020,
-  author   = {Bertiaux, Aur{\'e}lien and Gabrielli, Fran{\c{c}}ois and Giraud, Mathieu and Lev{\'e}, Florence},
-  journal  = {Musicae Scientiae},
-  title    = {Associations between music training and the dynamics of writing music by hand},
-  year     = {2020},
-  month    = dec,
-  number   = {1},
-  pages    = {247--259},
-  volume   = {27},
-  abstract = {This study investigates how music training and experience relate to the way musicians write staff notation by hand, examining handwriting dynamics of music notation. The study concerns the motor dynamics of music handwriting rather than automated recognition systems.},
-  doi      = {10.1177/1029864920972145},
-  issn     = {1029-8649},
-  url      = {https://journals.sagepub.com/doi/abs/10.1177/1029864920972145},
-}
-
-@Article{Zalkow2020,
-  author   = {Zalkow, Frank and Balke, Stefan and Arifi-M{\"u}ller, Vlora and M{\"u}ller, Meinard},
-  journal  = {Transactions of the International Society for Music Information Retrieval},
-  title    = {{MTD}: A Multimodal Dataset of Musical Themes for {MIR} Research},
-  year     = {2020},
-  number   = {1},
-  pages    = {180--192},
-  volume   = {3},
-  abstract = {This paper presents the MTD dataset of 2067 musical themes from Barlow and Morgenstern's Dictionary of Musical Themes, including graphical sheet music images, symbolic music encodings, audio recordings, score-to-audio alignments, and metadata. The multimodal dataset supports cross-modal retrieval, music alignment, optical music recognition, and transcription tasks.},
-  doi      = {10.5334/tismir.68},
-  file     = {:pdfs_new/2020 - MTD A Multimodal Dataset of Musical Themes for MIR Research.pdf:PDF},
-  issn     = {2514-3298},
-  url      = {https://transactions.ismir.net/articles/10.5334/tismir.68},
-}
-
 @Comment{jabref-meta: databaseType:bibtex;}
 
 @Comment{jabref-meta: saveActions:enabled;
@@ -3018,4 +3017,3 @@ title[html_to_latex,unicode_to_latex]
 ;}
 
 @Comment{jabref-meta: saveOrderConfig:specified;citationkey;false;}
-

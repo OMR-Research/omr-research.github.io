@@ -1,6 +1,15 @@
 #!/bin/sh
-# Rejects the commit if any BibTeX file has duplicate citation keys.
+# Rejects the commit if any BibTeX file has duplicate citation keys, then
+# automatically re-sorts the BibTeX files alphabetically by citation key
+# and adds the sorted result to the commit.
 # Enable with: git config core.hooksPath hooks
 
 repository_root=$(git rev-parse --show-toplevel)
-python3 "$repository_root/check_bibtex_duplicates.py"
+
+python3 "$repository_root/check_bibtex_duplicates.py" || exit 1
+
+python3 "$repository_root/sort_bibtex.py"
+git add \
+    "$repository_root/OMR-Research.bib" \
+    "$repository_root/OMR-Related-Research.bib" \
+    "$repository_root/OMR-Research-Unverified.bib"
