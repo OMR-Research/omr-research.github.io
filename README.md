@@ -68,6 +68,21 @@ The `--pdf-links` flag adds a red **PDF** badge next to the DOI/arXiv chips for 
 
 [RenderWebsite.sh](RenderWebsite.sh) is a convenience wrapper that calls the same command.
 
+### Preventing duplicate citation keys
+
+A duplicate citation key breaks the "Copy BibTeX" button on the website, because the button
+looks up the entry by an HTML id derived from the key — with two entries sharing a key, only
+the first is ever found.
+
+[`.github/workflows/check-bibtex.yml`](.github/workflows/check-bibtex.yml) runs
+`check_bibtex_duplicates.py` on every push and pull request and fails the build if any BibTeX
+file contains a duplicate key. To also catch this locally before committing, enable the tracked
+git hook once per clone:
+
+```bash
+git config core.hooksPath hooks
+```
+
 ### Reviewing changes since a baseline commit
 
 `generate_diff_report.py` compares the current `OMR-Research.bib` against any previous commit and writes `diff-report.html` — a browsable report showing new entries and all changed fields (abstracts, PDFs, DOIs, other metadata) side-by-side.

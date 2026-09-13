@@ -1,0 +1,15 @@
+name: Check BibTeX files
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  check-duplicate-keys:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check for duplicate citation keys
+        run: python3 check_bibtex_duplicates.py

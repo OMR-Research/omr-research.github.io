@@ -1,0 +1,6 @@
+#!/bin/sh
+# Rejects the commit if any BibTeX file has duplicate citation keys.
+# Enable with: git config core.hooksPath hooks
+
+repository_root=$(git rev-parse --show-toplevel)
+python3 "$repository_root/check_bibtex_duplicates.py"
